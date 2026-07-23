@@ -636,25 +636,25 @@ export default function HomePage() {
           <div className="home-leadership-grid">
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-mayor')}</div>
-              <h3>Hon. Philip A. Dacayo</h3>
+              <h3>Hon. Georgia D. Gokiangkee</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:mayor@claver.gov.ph">
-                  <i className="bi bi-envelope"></i> mayor@claver.gov.ph
+                <a href="mailto:lguclaver.sdn@gmail.com">
+                  <i className="bi bi-envelope"></i> lguclaver.sdn@gmail.com
                 </a>
-                <a href="tel:0783265002">
-                  <i className="bi bi-telephone"></i> (078) 326-5002
+                <a href="tel:09184711440">
+                  <i className="bi bi-telephone"></i> 0918-471-1440
                 </a>
               </div>
             </div>
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-vice-mayor')}</div>
-              <h3>Hon. Eduardo D. Tiongson</h3>
+              <h3>Hon. Leah D. Patan</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:vicemayor@claver.gov.ph">
-                  <i className="bi bi-envelope"></i> vicemayor@claver.gov.ph
+                <a href="mailto:vicelguclaver.sdn@gmail.com">
+                  <i className="bi bi-envelope"></i> vicelguclaver.sdn@gmail.com
                 </a>
-                <a href="tel:0783265003">
-                  <i className="bi bi-telephone"></i> (078) 326-5003
+                <a href="tel:09184711440">
+                  <i className="bi bi-telephone"></i> 0918-471-1440
                 </a>
               </div>
             </div>
