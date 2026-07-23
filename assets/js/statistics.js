@@ -1,6 +1,6 @@
 /**
  * Statistics Page - Chart.js Implementation
- * Better Solano Portal
+ * Better Claver Portal
  */
 
 // Site branding color palette for charts
@@ -44,42 +44,34 @@ function getChartColors(count) {
 
 // Barangay population data (2024 Census) - Source: PSA, July 1, 2024
 const barangayData = [
-  { name: 'Roxas', population: 9088, classification: 'Urban' },
-  { name: 'Quirino', population: 6572, classification: 'Urban' },
-  { name: 'Osmeña', population: 6403, classification: 'Urban' },
-  { name: 'Quezon', population: 5758, classification: 'Urban' },
-  { name: 'Curifang', population: 4885, classification: 'Rural' },
-  { name: 'Bagahabag', population: 4731, classification: 'Rural' },
-  { name: 'Uddiawan', population: 4217, classification: 'Rural' },
-  { name: 'Bascaran', population: 3845, classification: 'Rural' },
-  { name: 'Aggub', population: 3101, classification: 'Rural' },
-  { name: 'San Luis', population: 2668, classification: 'Rural' },
-  { name: 'Communal', population: 2586, classification: 'Rural' },
-  { name: 'Lactawan', population: 2109, classification: 'Rural' },
-  { name: 'Concepcion', population: 1954, classification: 'Rural' },
-  { name: 'San Juan', population: 1965, classification: 'Rural' },
-  { name: 'Wacal', population: 1398, classification: 'Rural' },
-  { name: 'Dadap', population: 1409, classification: 'Rural' },
-  { name: 'Tucal', population: 1244, classification: 'Rural' },
-  { name: 'Bangaan', population: 1284, classification: 'Rural' },
-  { name: 'Bangar', population: 1146, classification: 'Rural' },
-  { name: 'Pilar D. Galima', population: 1146, classification: 'Rural' },
-  { name: 'Poblacion North', population: 970, classification: 'Urban' },
-  { name: 'Poblacion South', population: 817, classification: 'Urban' },
+  { name: 'Taganito', population: 5982, classification: 'Rural' },
+  { name: 'Cagdianao', population: 4190, classification: 'Rural' },
+  { name: 'Tayaga', population: 3511, classification: 'Urban' },
+  { name: 'Ladgaron', population: 3483, classification: 'Urban' },
+  { name: 'Urbiztondo', population: 3158, classification: 'Rural' },
+  { name: 'Daywan', population: 3047, classification: 'Rural' },
+  { name: 'Hayanggabon', population: 2790, classification: 'Rural' },
+  { name: 'Cabugo', population: 2505, classification: 'Rural' },
+  { name: 'Bagakay', population: 2118, classification: 'Urban' },
+  { name: 'Panatao', population: 1828, classification: 'Rural' },
+  { name: 'Sapa', population: 1058, classification: 'Rural' },
+  { name: 'Lapinigan', population: 874, classification: 'Rural' },
+  { name: 'Magallanes', population: 847, classification: 'Rural' },
+  { name: 'Wangke', population: 642, classification: 'Rural' },
 ];
 
 // Historical population data (Census years)
 const historicalData = {
   years: [1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
-  populations: [38500, 43200, 48100, 52800, 56400, 60500, 65287, 69296],
+  populations: [13452, 14300, 16403, 18258, 23702, 32773, 36033, 39882],
 };
 
 // Economic indicators data
 const economicData = {
-  registeredBusinesses: 1200,
-  agriculturalLand: 8500, // hectares
-  incomeClass: '1st Class',
-  landArea: 162.7, // km²
+  registeredBusinesses: 850,
+  agriculturalLand: 12400, // hectares
+  incomeClass: '2nd Class',
+  landArea: 322.6, // km²
 };
 
 // Chart instances storage

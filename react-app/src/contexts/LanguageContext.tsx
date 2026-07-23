@@ -15,15 +15,15 @@ const translations: Record<string, Record<string, string>> = {
     'nav-contact': 'Contact',
 
     // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of LGU Solano Mayor's Office",
+    'appointment-cta-heading': "Enhancing Appointment Services of LGU Claver Mayor's Office",
     'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
     'appointment-schedule-btn': 'Schedule Appointment',
     'appointment-create-btn': 'Create Account',
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterSolano.org',
+    'hero-welcome': 'Welcome to BetterClaver.org',
     'hero-subtitle':
-      'Access government services, information, and resources for the people of Solano, Nueva Vizcaya.',
+      'Access government services, information, and resources for the people of Claver, Surigao del Norte.',
     'hero-find-service': 'Find a Service',
 
     // Popular Services
@@ -61,7 +61,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Municipal Services Directory',
-    'services-subtitle': 'Browse all services offered by the Municipality of Solano',
+    'services-subtitle': 'Browse all services offered by the Municipality of Claver',
     'life-events-title': 'Browse by Life Event',
     'life-events-subtitle': "Find services based on what's happening in your life",
     'life-starting-business': 'Starting a Business',
@@ -151,11 +151,11 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Major Hospitals',
     'health-stat-bhs': 'Barangay Health Stations',
     'health-stat-mho': 'Municipal Health Office',
-    'health-section-hospitals': 'Hospitals in Solano',
+    'health-section-hospitals': 'Hospitals in Claver',
     'health-section-mho': 'Municipal Health Office',
     'health-section-bhs': 'Barangay Health Stations',
-    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Solano',
-    'health-mho-title': 'Solano Municipal Health Office',
+    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Claver',
+    'health-mho-title': 'Claver Municipal Health Office',
     'health-mho-desc':
       'The Municipal Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -167,37 +167,37 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited private hospital providing comprehensive medical services.',
-    'health-national-highway-solano': 'National Highway, Solano',
+    'health-national-highway-claver': 'National Highway, Claver',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Services Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
       'Also known as New MMG Hospital, providing quality healthcare services to the community.',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
+    'health-bintawan-road-brgy-quezon': 'Taganito Road, Brgy. Ladgaron',
     'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
     'health-private-medical-center-offering-various':
       'Private medical center offering various healthcare and diagnostic services.',
-    'health-aggub-bhs': 'Aggub BHS',
-    'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
+    'health-aggub-bhs': 'Bagakay BHS',
+    'health-bagahabag-bhs': 'Daywan BHS',
+    'health-bangaan-bhs': 'Urbiztondo BHS',
+    'health-bangar-bhs': 'Wangke BHS',
     'health-buenavista-bhs': 'Buenavista BHS',
     'health-calaocan-bhs': 'Calaocan BHS',
     'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
+    'health-concepcion-bhs': 'Magallanes BHS',
+    'health-curifang-bhs': 'Lapinigan BHS',
+    'health-dadap-bhs': 'Daywan BHS',
+    'health-lactawan-bhs': 'Lapinigan BHS',
     'health-nangalisan-bhs': 'Nangalisan BHS',
     'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
+    'health-osmea-bhs': 'Tayaga BHS',
     'health-paitan-bhs': 'Paitan BHS',
     'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
+    'health-poblacion-bhs': 'Ladgaron BHS',
+    'health-quezon-bhs': 'Ladgaron BHS',
+    'health-quirino-bhs': 'Cagdianao BHS',
+    'health-roxas-bhs': 'Taganito BHS',
+    'health-tucal-bhs': 'Urbiztondo BHS',
+    'health-uddiawan-bhs': 'Hayanggabon BHS',
     'health-hivcare-cta-eyebrow': 'Official DOH-Sourced Directory',
     'health-hivcare-cta-heading': 'Find HIV Treatment & Care Facilities Near You',
     'health-hivcare-cta-desc':
@@ -223,7 +223,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page
     'ord-page-title': 'Ordinance Framework',
-    'ord-page-desc': 'Municipal ordinances enacted by the Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Municipal ordinances enacted by the Sangguniang Bayan ng Claver',
     'ord-page-badge': 'Legislative',
     'ord-what-is': 'What is an Ordinance?',
     'ord-what-is-p1':
@@ -238,7 +238,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-traffic': 'Traffic & Transportation',
     'ord-cat-zoning': 'Zoning & Land Use',
     'ord-2025-title': '2025 Ordinances',
-    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Bayan ng Solano in 2025',
+    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Bayan ng Claver in 2025',
     'ord-table-number': 'Ordinance No.',
     'ord-table-title': 'Title',
     'ord-table-date': 'Session Date',
@@ -246,7 +246,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page
     'reso-page-title': 'Resolution Framework',
-    'reso-page-desc': 'Resolutions passed by the Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Resolutions passed by the Sangguniang Bayan ng Claver',
     'reso-page-badge': 'Legislative',
     'reso-what-is': 'What is a Resolution?',
     'reso-what-is-p1':
@@ -261,9 +261,9 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-authorization': 'Authorization',
     'reso-type-appropriation': 'Appropriation',
     'reso-2026-title': '2026 Resolutions',
-    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Solano in 2026',
+    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Claver in 2026',
     'reso-2025-title': '2025 Resolutions',
-    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Solano in 2025',
+    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Claver in 2025',
     'reso-table-number': 'Resolution No.',
     'reso-table-title': 'Title',
     'reso-table-date': 'Session Date',
@@ -271,7 +271,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page
     'biz-page-title': 'Business Services',
-    'biz-page-desc': 'Permits, licenses, and support for businesses in Solano',
+    'biz-page-desc': 'Permits, licenses, and support for businesses in Claver',
     'biz-page-badge': 'Business',
     'biz-permit-new': 'Business Permit (New)',
     'biz-permit-new-desc': "Apply for a new mayor's permit for your business",
@@ -380,7 +380,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Browse complete directory',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Solano at a Glance',
+    'stats-at-a-glance': 'Claver at a Glance',
     'stats-view-statistics': 'View Statistics',
     'stats-population-label': 'Population',
     'stats-population-source': '2024 Census',
@@ -392,12 +392,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Total Municipal Area',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Weather and Map of Solano',
+    'weather-map-title': 'Weather and Map of Claver',
     'weather-mainly-clear': 'Mainly clear',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Claver, Surigao del Norte',
 
     // Homepage - History
-    'history-title': 'Brief History of Solano',
+    'history-title': 'Brief History of Claver',
     'history-1760':
       'The original name of the town was Bintauan, then a Gaddang settlement that is now a barangay of Villaverde.',
     'history-1767':
@@ -409,12 +409,12 @@ const translations: Record<string, Record<string, string>> = {
     'history-1853':
       'The first Ilocanos arrived, brought by Don Diego Lumicao, a former gobernadorcillo.',
     'history-1889':
-      'Renamed Solano in honor of Governor General Ramon Solano y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
+      'Renamed Claver in honor of Governor General Ramon Claver y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
     'history-1957':
-      "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Solano's land area was reduced to 13,980 hectares.",
+      "The barrios of Ibung and Taganito were separated to form the town of Ibung, later renamed as Villaverde. Claver's land area was reduced to 13,980 hectares.",
     'history-once-largest-title': 'Once the Largest',
     'history-once-largest-desc':
-      'Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
+      'Claver was the largest municipality in the province until Caliat and Taganito were separated to become Ladgaron and Villaverde respectively.',
     'history-urban-planning-title': 'Urban Planning',
     'history-urban-planning-desc':
       'The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.',
@@ -428,23 +428,23 @@ const translations: Record<string, Record<string, string>> = {
       'Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.',
     'news-market-title': 'New Public Market Wing Opens',
     'news-market-desc':
-      'The renovated wing of the Solano Public Market is now open to vendors and the public.',
+      'The renovated wing of the Claver Public Market is now open to vendors and the public.',
     'news-power-title': 'Scheduled Power Interruption',
-    'news-power-desc': 'Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.',
+    'news-power-desc': 'Maintenance scheduled for Barangay Tayaga on Dec 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'How well do you know Solano, Nueva Vizcaya?',
+    'quiz-title': 'Claver Info',
+    'quiz-subtitle': 'How well do you know Claver, Surigao del Norte?',
     'quiz-description':
-      "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Nueva Vizcaya's most prominent localities.",
+      "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Surigao del Norte's most prominent localities.",
     'quiz-take': 'Take the Quiz',
 
     // Footer
     'footer-tagline':
-      'Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.',
+      'Empowering the people of Claver with transparent access to the services, programs, and public funds of LGU Claver.',
     'footer-quick-links': 'Quick Links',
     'footer-resources': 'Resources',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-claver-info': 'Claver Info',
     'footer-sitemap': 'Sitemap',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Terms of Use',
@@ -453,18 +453,61 @@ const translations: Record<string, Record<string, string>> = {
     'footer-faq': 'FAQ',
     'footer-open-data': 'Open Data Philippines',
     'footer-foi': 'Freedom of Information',
-    'footer-lgu-portal': 'Official LGU Solano Portal',
+    'footer-lgu-portal': 'Official LGU Claver Portal',
     'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-facebook': 'LGU Claver Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Cost to the People of Solano =',
+    'footer-cost': 'Cost to the People of Claver =',
     'footer-volunteer': 'Volunteer with us',
     'footer-contribute': 'Contribute code with us',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'BetterClaver.org',
     'footer-copyright-disclaimer':
       'All public information sourced from official government portals.',
     'footer-skip-to-main': 'Skip to main content',
+    'stats-view-all-14-barangays': 'View all 14 barangays',
+    'gov-taganito': 'Taganito',
+    'stats-taganito': 'Taganito',
+    'gov-kap-taganito': 'Official Barangay Captain info will be added here.',
+    'gov-cagdianao': 'Cagdianao',
+    'stats-cagdianao': 'Cagdianao',
+    'gov-kap-cagdianao': 'Official Barangay Captain info will be added here.',
+    'gov-tayaga': 'Tayaga',
+    'stats-tayaga': 'Tayaga',
+    'gov-kap-tayaga': 'Official Barangay Captain info will be added here.',
+    'gov-ladgaron': 'Ladgaron',
+    'stats-ladgaron': 'Ladgaron',
+    'gov-kap-ladgaron': 'Official Barangay Captain info will be added here.',
+    'gov-urbiztondo': 'Urbiztondo',
+    'stats-urbiztondo': 'Urbiztondo',
+    'gov-kap-urbiztondo': 'Official Barangay Captain info will be added here.',
+    'gov-daywan': 'Daywan',
+    'stats-daywan': 'Daywan',
+    'gov-kap-daywan': 'Official Barangay Captain info will be added here.',
+    'gov-hayanggabon': 'Hayanggabon',
+    'stats-hayanggabon': 'Hayanggabon',
+    'gov-kap-hayanggabon': 'Official Barangay Captain info will be added here.',
+    'gov-cabugo': 'Cabugo',
+    'stats-cabugo': 'Cabugo',
+    'gov-kap-cabugo': 'Official Barangay Captain info will be added here.',
+    'gov-bagakay': 'Bagakay',
+    'stats-bagakay': 'Bagakay',
+    'gov-kap-bagakay': 'Official Barangay Captain info will be added here.',
+    'gov-panatao': 'Panatao',
+    'stats-panatao': 'Panatao',
+    'gov-kap-panatao': 'Official Barangay Captain info will be added here.',
+    'gov-sapa': 'Sapa',
+    'stats-sapa': 'Sapa',
+    'gov-kap-sapa': 'Official Barangay Captain info will be added here.',
+    'gov-lapinigan': 'Lapinigan',
+    'stats-lapinigan': 'Lapinigan',
+    'gov-kap-lapinigan': 'Official Barangay Captain info will be added here.',
+    'gov-magallanes': 'Magallanes',
+    'stats-magallanes': 'Magallanes',
+    'gov-kap-magallanes': 'Official Barangay Captain info will be added here.',
+    'gov-wangke': 'Wangke',
+    'stats-wangke': 'Wangke',
+    'gov-kap-wangke': 'Official Barangay Captain info will be added here.',
   },
   fil: {
     // Navigation - Filipino
@@ -478,15 +521,15 @@ const translations: Record<string, Record<string, string>> = {
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Solano',
+      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Claver',
     'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
     'appointment-schedule-btn': 'Mag-iskedyul ng Appointment',
     'appointment-create-btn': 'Gumawa ng Account',
 
     // Hero Section
-    'hero-welcome': 'Maligayang Pagdating sa BetterSolano.org',
+    'hero-welcome': 'Maligayang Pagdating sa BetterClaver.org',
     'hero-subtitle':
-      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.',
+      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Claver, Surigao del Norte.',
     'hero-find-service': 'Maghanap ng Serbisyo',
 
     // Popular Services
@@ -524,7 +567,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
-    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Solano',
+    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Claver',
     'life-events-title': 'Maghanap Ayon sa Pangyayari sa Buhay',
     'life-events-subtitle': 'Hanapin ang mga serbisyo batay sa nangyayari sa iyong buhay',
     'life-starting-business': 'Magsimula ng Negosyo',
@@ -620,12 +663,12 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Mga Pangunahing Ospital',
     'health-stat-bhs': 'Mga Barangay Health Station',
     'health-stat-mho': 'Opisina ng Kalusugan ng Munisipalidad',
-    'health-section-hospitals': 'Mga Ospital sa Solano',
+    'health-section-hospitals': 'Mga Ospital sa Claver',
     'health-section-mho': 'Opisina ng Kalusugan ng Munisipalidad',
     'health-section-bhs': 'Mga Barangay Health Station',
     'health-bhs-subtitle':
-      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Solano',
-    'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Solano',
+      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Claver',
+    'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Claver',
     'health-mho-desc':
       'Ang Municipal Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -637,37 +680,37 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ng komprehensibong mga serbisyong medikal.',
-    'health-national-highway-solano': 'Pambansa Highway, Solano',
+    'health-national-highway-claver': 'Pambansa Highway, Claver',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Mga serbisyo Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
       'Also known as Bagong MMG Hospital, nagbibigay ng quality mga serbisyo sa kalusugan sa ang community.',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
+    'health-bintawan-road-brgy-quezon': 'Taganito Road, Brgy. Ladgaron',
     'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
     'health-private-medical-center-offering-various':
       'Pribado medical center offering various healthcare and diagnostic mga serbisyo.',
-    'health-aggub-bhs': 'Aggub BHS',
+    'health-aggub-bhs': 'Bagakay BHS',
     'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
+    'health-bangaan-bhs': 'Urbiztondo BHS',
+    'health-bangar-bhs': 'Wangke BHS',
     'health-buenavista-bhs': 'Buenavista BHS',
     'health-calaocan-bhs': 'Calaocan BHS',
     'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
+    'health-concepcion-bhs': 'Magallanes BHS',
+    'health-curifang-bhs': 'Lapinigan BHS',
+    'health-dadap-bhs': 'Daywan BHS',
+    'health-lactawan-bhs': 'Lapinigan BHS',
     'health-nangalisan-bhs': 'Nangalisan BHS',
     'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
+    'health-osmea-bhs': 'Tayaga BHS',
     'health-paitan-bhs': 'Paitan BHS',
     'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
+    'health-poblacion-bhs': 'Ladgaron BHS',
+    'health-quezon-bhs': 'Ladgaron BHS',
+    'health-quirino-bhs': 'Cagdianao BHS',
+    'health-roxas-bhs': 'Taganito BHS',
+    'health-tucal-bhs': 'Urbiztondo BHS',
+    'health-uddiawan-bhs': 'Hayanggabon BHS',
     'health-hivcare-cta-eyebrow': 'Opisyal na Direktoryo mula sa DOH',
     'health-hivcare-cta-heading': 'Hanapin ang Pasilidad para sa Paggamot at Pangangalaga sa HIV',
     'health-hivcare-cta-desc':
@@ -693,7 +736,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page - Filipino
     'ord-page-title': 'Balangkas ng Ordinansa',
-    'ord-page-desc': 'Mga ordinansang ipinasa ng Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Mga ordinansang ipinasa ng Sangguniang Bayan ng Claver',
     'ord-page-badge': 'Lehislatura',
     'ord-what-is': 'Ano ang Ordinansa?',
     'ord-what-is-p1':
@@ -709,7 +752,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-zoning': 'Zoning at Paggamit ng Lupa',
     'ord-2025-title': 'Mga Ordinansa ng 2025',
     'ord-2025-subtitle':
-      'Mga opisyal na ordinansang ipinasa ng Sangguniang Bayan ng Solano sa 2025',
+      'Mga opisyal na ordinansang ipinasa ng Sangguniang Bayan ng Claver sa 2025',
     'ord-table-number': 'Numero ng Ordinansa',
     'ord-table-title': 'Pamagat',
     'ord-table-date': 'Petsa ng Sesyon',
@@ -717,7 +760,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page - Filipino
     'reso-page-title': 'Balangkas ng Resolusyon',
-    'reso-page-desc': 'Mga resolusyong ipinasa ng Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Mga resolusyong ipinasa ng Sangguniang Bayan ng Claver',
     'reso-page-badge': 'Lehislatura',
     'reso-what-is': 'Ano ang Resolusyon?',
     'reso-what-is-p1':
@@ -733,10 +776,10 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-appropriation': 'Apropriyasyon',
     'reso-2026-title': 'Mga Resolusyon ng 2026',
     'reso-2026-subtitle':
-      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Solano sa 2026',
+      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Claver sa 2026',
     'reso-2025-title': 'Mga Resolusyon ng 2025',
     'reso-2025-subtitle':
-      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Solano sa 2025',
+      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Claver sa 2025',
     'reso-table-number': 'Numero ng Resolusyon',
     'reso-table-title': 'Pamagat',
     'reso-table-date': 'Petsa ng Sesyon',
@@ -744,7 +787,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page - Filipino
     'biz-page-title': 'Serbisyo sa Negosyo',
-    'biz-page-desc': 'Mga permit, lisensya, at suporta para sa mga negosyo sa Solano',
+    'biz-page-desc': 'Mga permit, lisensya, at suporta para sa mga negosyo sa Claver',
     'biz-page-badge': 'Negosyo',
     'biz-permit-new': 'Permit ng Negosyo (Bago)',
     'biz-permit-new-desc': "Mag-apply ng bagong mayor's permit para sa iyong negosyo",
@@ -854,7 +897,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Tingnan ang kumpletong direktoryo',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Isang Tingin sa Solano',
+    'stats-at-a-glance': 'Isang Tingin sa Claver',
     'stats-view-statistics': 'Tingnan ang Estadistika',
     'stats-population-label': 'Populasyon',
     'stats-population-source': '2024 Senso',
@@ -866,12 +909,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Kabuuang Lawak ng Munisipalidad',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Panahon at Mapa ng Solano',
+    'weather-map-title': 'Panahon at Mapa ng Claver',
     'weather-mainly-clear': 'Halos maaliwalas',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Claver, Surigao del Norte',
 
     // Homepage - History
-    'history-title': 'Maikling Kasaysayan ng Solano',
+    'history-title': 'Maikling Kasaysayan ng Claver',
     'history-1760':
       'Ang orihinal na pangalan ng bayan ay Bintauan, isang pamayanan ng Gaddang na ngayon ay barangay ng Villaverde.',
     'history-1767':
@@ -883,12 +926,12 @@ const translations: Record<string, Record<string, string>> = {
     'history-1853':
       'Dumating ang mga unang Ilocano, dinala ni Don Diego Lumicao, isang dating gobernadorcillo.',
     'history-1889':
-      'Pinalitan ang pangalan ng Solano bilang parangal kay Gobernador Heneral Ramon Solano y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
+      'Pinalitan ang pangalan ng Claver bilang parangal kay Gobernador Heneral Ramon Claver y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
     'history-1957':
-      'Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Solano ay nabawasan sa 13,980 ektarya.',
+      'Ang mga baryo ng Ibung at Taganito ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Claver ay nabawasan sa 13,980 ektarya.',
     'history-once-largest-title': 'Dating Pinakamalaki',
     'history-once-largest-desc':
-      'Ang Solano ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.',
+      'Ang Claver ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Taganito upang maging Ladgaron at Villaverde.',
     'history-urban-planning-title': 'Pagpaplano ng Lungsod',
     'history-urban-planning-desc':
       'Ang muling pagbuo noong 1889 ay lumikha ng grid na may 100 parisukat na bloke, bawat isa ay may kabuuang lawak na isang ektarya, na may mga kalye na patungo sa hilaga-timog at silangan-kanluran.',
@@ -902,24 +945,24 @@ const translations: Record<string, Record<string, string>> = {
       'Ang deadline para sa pag-renew ng permit sa negosyo ay Enero 20, 2025. Hinihikayat ang maagang pag-renew.',
     'news-market-title': 'Bagong Wing ng Pampublikong Palengke Bukas Na',
     'news-market-desc':
-      'Ang na-renovate na wing ng Pampublikong Palengke ng Solano ay bukas na sa mga nagtitinda at publiko.',
+      'Ang na-renovate na wing ng Pampublikong Palengke ng Claver ay bukas na sa mga nagtitinda at publiko.',
     'news-power-title': 'Nakaiskedyul na Pagkaputol ng Kuryente',
     'news-power-desc':
-      'Maintenance na nakaiskedyul para sa Barangay Osmeña sa Dis 1, 8:00 AM - 5:00 PM.',
+      'Maintenance na nakaiskedyul para sa Barangay Tayaga sa Dis 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'Gaano mo kakilala ang Solano, Nueva Vizcaya?',
+    'quiz-title': 'Claver Info',
+    'quiz-subtitle': 'Gaano mo kakilala ang Claver, Surigao del Norte?',
     'quiz-description':
-      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Nueva Vizcaya.',
+      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Surigao del Norte.',
     'quiz-take': 'Subukin ang Quiz',
 
     // Footer
     'footer-tagline':
-      'Pagbibigay-kapangyarihan sa mga tao ng Solano na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Solano.',
+      'Pagbibigay-kapangyarihan sa mga tao ng Claver na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Claver.',
     'footer-quick-links': 'Mga Mabilisang Link',
     'footer-resources': 'Mga Mapagkukunan',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-claver-info': 'Claver Info',
     'footer-sitemap': 'Mapa ng Site',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Mga Tuntunin ng Paggamit',
@@ -928,18 +971,61 @@ const translations: Record<string, Record<string, string>> = {
     'footer-faq': 'FAQ',
     'footer-open-data': 'Open Data Philippines',
     'footer-foi': 'Kalayaan sa Impormasyon',
-    'footer-lgu-portal': 'Opisyal na Portal ng LGU Solano',
+    'footer-lgu-portal': 'Opisyal na Portal ng LGU Claver',
     'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-facebook': 'LGU Claver Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos sa mga Tao ng Solano =',
+    'footer-cost': 'Gastos sa mga Tao ng Claver =',
     'footer-volunteer': 'Mag-volunteer sa amin',
     'footer-contribute': 'Mag-ambag ng code sa amin',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'BetterClaver.org',
     'footer-copyright-disclaimer':
       'Lahat ng pampublikong impormasyon ay mula sa mga opisyal na portal ng pamahalaan.',
     'footer-skip-to-main': 'Lumaktaw sa pangunahing nilalaman',
+    'stats-view-all-14-barangays': 'Tingnan ang lahat ng 14 na barangay',
+    'gov-taganito': 'Taganito',
+    'stats-taganito': 'Taganito',
+    'gov-kap-taganito': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-cagdianao': 'Cagdianao',
+    'stats-cagdianao': 'Cagdianao',
+    'gov-kap-cagdianao': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-tayaga': 'Tayaga',
+    'stats-tayaga': 'Tayaga',
+    'gov-kap-tayaga': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-ladgaron': 'Ladgaron',
+    'stats-ladgaron': 'Ladgaron',
+    'gov-kap-ladgaron': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-urbiztondo': 'Urbiztondo',
+    'stats-urbiztondo': 'Urbiztondo',
+    'gov-kap-urbiztondo': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-daywan': 'Daywan',
+    'stats-daywan': 'Daywan',
+    'gov-kap-daywan': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-hayanggabon': 'Hayanggabon',
+    'stats-hayanggabon': 'Hayanggabon',
+    'gov-kap-hayanggabon': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-cabugo': 'Cabugo',
+    'stats-cabugo': 'Cabugo',
+    'gov-kap-cabugo': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-bagakay': 'Bagakay',
+    'stats-bagakay': 'Bagakay',
+    'gov-kap-bagakay': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-panatao': 'Panatao',
+    'stats-panatao': 'Panatao',
+    'gov-kap-panatao': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-sapa': 'Sapa',
+    'stats-sapa': 'Sapa',
+    'gov-kap-sapa': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-lapinigan': 'Lapinigan',
+    'stats-lapinigan': 'Lapinigan',
+    'gov-kap-lapinigan': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-magallanes': 'Magallanes',
+    'stats-magallanes': 'Magallanes',
+    'gov-kap-magallanes': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
+    'gov-wangke': 'Wangke',
+    'stats-wangke': 'Wangke',
+    'gov-kap-wangke': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
   },
   ilo: {
     // Navigation - Ilocano
@@ -953,15 +1039,15 @@ const translations: Record<string, Record<string, string>> = {
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Solano',
+      'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Claver',
     'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',
     'appointment-schedule-btn': 'Ag-iskedyul ti Appointment',
     'appointment-create-btn': 'Agaramid ti Account',
 
     // Hero Section
-    'hero-welcome': 'Naragsak nga Isasangbay iti BetterSolano.org',
+    'hero-welcome': 'Naragsak nga Isasangbay iti BetterClaver.org',
     'hero-subtitle':
-      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Solano, Nueva Vizcaya.',
+      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Claver, Surigao del Norte.',
     'hero-find-service': 'Agsapul ti Serbisyo',
 
     // Popular Services
@@ -999,7 +1085,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Direktorio ti Serbisyo ti Munisipalidad',
-    'services-subtitle': 'Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Solano',
+    'services-subtitle': 'Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Claver',
     'life-events-title': 'Agsapul Segun iti Pasamak iti Biag',
     'life-events-subtitle': 'Biroken dagiti serbisyo segun iti mapasamak iti biagmo',
     'life-starting-business': 'Mangrugi ti Negosyo',
@@ -1095,12 +1181,12 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Dagiti Kangrunaan nga Ospital',
     'health-stat-bhs': 'Dagiti Barangay Health Station',
     'health-stat-mho': 'Opisina ti Salun-at ti Munisipalidad',
-    'health-section-hospitals': 'Dagiti Ospital idiay Solano',
+    'health-section-hospitals': 'Dagiti Ospital idiay Claver',
     'health-section-mho': 'Opisina ti Salun-at ti Munisipalidad',
     'health-section-bhs': 'Dagiti Barangay Health Station',
     'health-bhs-subtitle':
-      '22 a Barangay Health Stations/Centers a mangserserbisio iti amin a barangay ti Solano',
-    'health-mho-title': 'Opisina ti Salun-at ti Munisipalidad ti Solano',
+      '22 a Barangay Health Stations/Centers a mangserserbisio iti amin a barangay ti Claver',
+    'health-mho-title': 'Opisina ti Salun-at ti Munisipalidad ti Claver',
     'health-mho-desc':
       'Ti Municipal Health Office ket mangted ti kangrunaan a serbisio ti salun-at a mairaman ti lying-in facility ken serbisio ti laboratorio. Daytoy ti kangrunaan a public health center ti munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
@@ -1112,37 +1198,37 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ti komprehensibong dagiti serbisyong medikal.',
-    'health-national-highway-solano': 'Nailian Highway, Solano',
+    'health-national-highway-claver': 'Nailian Highway, Claver',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Dagiti serbisio Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
       'Also known as Baro a MMG Hospital, nagbibigay ti quality dagiti serbisio iti kalusugan iti ti community.',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
+    'health-bintawan-road-brgy-quezon': 'Taganito Road, Brgy. Ladgaron',
     'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
     'health-private-medical-center-offering-various':
       'Pribado medical center offering various healthcare and diagnostic dagiti serbisio.',
-    'health-aggub-bhs': 'Aggub BHS',
+    'health-aggub-bhs': 'Bagakay BHS',
     'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
+    'health-bangaan-bhs': 'Urbiztondo BHS',
+    'health-bangar-bhs': 'Wangke BHS',
     'health-buenavista-bhs': 'Buenavista BHS',
     'health-calaocan-bhs': 'Calaocan BHS',
     'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
+    'health-concepcion-bhs': 'Magallanes BHS',
+    'health-curifang-bhs': 'Lapinigan BHS',
+    'health-dadap-bhs': 'Daywan BHS',
+    'health-lactawan-bhs': 'Lapinigan BHS',
     'health-nangalisan-bhs': 'Nangalisan BHS',
     'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
+    'health-osmea-bhs': 'Tayaga BHS',
     'health-paitan-bhs': 'Paitan BHS',
     'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
+    'health-poblacion-bhs': 'Ladgaron BHS',
+    'health-quezon-bhs': 'Ladgaron BHS',
+    'health-quirino-bhs': 'Cagdianao BHS',
+    'health-roxas-bhs': 'Taganito BHS',
+    'health-tucal-bhs': 'Urbiztondo BHS',
+    'health-uddiawan-bhs': 'Hayanggabon BHS',
     'health-hivcare-cta-eyebrow': 'Opisial a Direktorio manipud iti DOH',
     'health-hivcare-cta-heading':
       'Birukem ti Pasilidad para iti Panangagas ken Panangaywan iti HIV',
@@ -1169,7 +1255,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page - Ilocano
     'ord-page-title': 'Balangkas ti Ordinansa',
-    'ord-page-desc': 'Dagiti ordinansa a naipasa ti Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Dagiti ordinansa a naipasa ti Sangguniang Bayan ng Claver',
     'ord-page-badge': 'Lehislatura',
     'ord-what-is': 'Ania ti Ordinansa?',
     'ord-what-is-p1':
@@ -1185,7 +1271,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-zoning': 'Zoning ken Panagusar ti Daga',
     'ord-2025-title': 'Dagiti Ordinansa ti 2025',
     'ord-2025-subtitle':
-      'Dagiti opisial nga ordinansa a naipasa ti Sangguniang Bayan ng Solano iti 2025',
+      'Dagiti opisial nga ordinansa a naipasa ti Sangguniang Bayan ng Claver iti 2025',
     'ord-table-number': 'Numero ti Ordinansa',
     'ord-table-title': 'Titulo',
     'ord-table-date': 'Petsa ti Sesion',
@@ -1193,7 +1279,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page - Ilocano
     'reso-page-title': 'Balangkas ti Resolusion',
-    'reso-page-desc': 'Dagiti resolusion a naipasa ti Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Dagiti resolusion a naipasa ti Sangguniang Bayan ng Claver',
     'reso-page-badge': 'Lehislatura',
     'reso-what-is': 'Ania ti Resolusion?',
     'reso-what-is-p1':
@@ -1209,10 +1295,10 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-appropriation': 'Apropriyasion',
     'reso-2026-title': 'Dagiti Resolusion ti 2026',
     'reso-2026-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Solano iti 2026',
+      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Claver iti 2026',
     'reso-2025-title': 'Dagiti Resolusion ti 2025',
     'reso-2025-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Solano iti 2025',
+      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Claver iti 2025',
     'reso-table-number': 'Numero ti Resolusion',
     'reso-table-title': 'Titulo',
     'reso-table-date': 'Petsa ti Sesion',
@@ -1220,7 +1306,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page - Ilocano
     'biz-page-title': 'Serbisio ti Negosio',
-    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Solano',
+    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Claver',
     'biz-page-badge': 'Negosio',
     'biz-permit-new': 'Permit ti Negosio (Baro)',
     'biz-permit-new-desc': "Agaplikar ti baro a mayor's permit para iti negosio",
@@ -1333,7 +1419,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Kitaen ti kompleto a direktorio',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Maysa a Panagkita iti Solano',
+    'stats-at-a-glance': 'Maysa a Panagkita iti Claver',
     'stats-view-statistics': 'Kitaen ti Estadistika',
     'stats-population-label': 'Populasion',
     'stats-population-source': '2024 a Senso',
@@ -1345,12 +1431,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Dagup a Kalawa ti Munisipalidad',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Tiempo ken Mapa ti Solano',
+    'weather-map-title': 'Tiempo ken Mapa ti Claver',
     'weather-mainly-clear': 'Kaaduan a nalawag',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Claver, Surigao del Norte',
 
     // Homepage - History
-    'history-title': 'Ababa a Pakasaritaan ti Solano',
+    'history-title': 'Ababa a Pakasaritaan ti Claver',
     'history-1760':
       'Ti orihinal a nagan ti ili ket Bintauan, maysa a pagnaedanan ti Gaddang a ita ket barangay ti Villaverde.',
     'history-1767':
@@ -1362,12 +1448,12 @@ const translations: Record<string, Record<string, string>> = {
     'history-1853':
       'Dimteng dagiti umuna nga Ilocano, inyeg ni Don Diego Lumicao, maysa a dati a gobernadorcillo.',
     'history-1889':
-      'Nabaliwan ti nagan iti Solano tapno padayawan ni Gobernador Heneral Ramon Solano y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.',
+      'Nabaliwan ti nagan iti Claver tapno padayawan ni Gobernador Heneral Ramon Claver y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.',
     'history-1957':
-      'Dagiti baryo ti Ibung ken Bintawan ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Solano ket nabassitan iti 13,980 ektarya.',
+      'Dagiti baryo ti Ibung ken Taganito ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Claver ket nabassitan iti 13,980 ektarya.',
     'history-once-largest-title': 'Idi Kadakkelan',
     'history-once-largest-desc':
-      'Ti Solano ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Bintawan tapno agbalin a Quezon ken Villaverde.',
+      'Ti Claver ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Taganito tapno agbalin a Ladgaron ken Villaverde.',
     'history-urban-planning-title': 'Panagplano ti Ili',
     'history-urban-planning-desc':
       'Ti panagpasayaat idi 1889 ket nangaramid iti grid a 100 a kuadrado a bloke, tunggal maysa ket addaan dagup a kalawa a maysa nga ektarya, nga addaan kadagiti kalsada a mapan iti amianan-abagatan ken daya-laud.',
@@ -1381,24 +1467,24 @@ const translations: Record<string, Record<string, string>> = {
       'Ti deadline para iti panag-renew ti permit ti negosio ket Enero 20, 2025. Maparegta ti nasapa a panag-renew.',
     'news-market-title': 'Baro a Wing ti Pampubliko a Tiendaan Nalukat',
     'news-market-desc':
-      'Ti na-renovate a wing ti Pampubliko a Tiendaan ti Solano ket nalukat kadagiti aglaklako ken publiko.',
+      'Ti na-renovate a wing ti Pampubliko a Tiendaan ti Claver ket nalukat kadagiti aglaklako ken publiko.',
     'news-power-title': 'Naiskedyul a Pannakaputol ti Kuryente',
     'news-power-desc':
-      'Maintenance a naiskedyul para iti Barangay Osmeña iti Dis 1, 8:00 AM - 5:00 PM.',
+      'Maintenance a naiskedyul para iti Barangay Tayaga iti Dis 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'Kasano ti pannakaammom iti Solano, Nueva Vizcaya?',
+    'quiz-title': 'Claver Info',
+    'quiz-subtitle': 'Kasano ti pannakaammom iti Claver, Surigao del Norte?',
     'quiz-description':
-      'Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Nueva Vizcaya.',
+      'Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Surigao del Norte.',
     'quiz-take': 'Subokan ti Quiz',
 
     // Footer
     'footer-tagline':
-      'Panangted ti bileg kadagiti umili ti Solano nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti LGU Solano.',
+      'Panangted ti bileg kadagiti umili ti Claver nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti LGU Claver.',
     'footer-quick-links': 'Dagiti Napartak a Silpo',
     'footer-resources': 'Dagiti Rekurso',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-claver-info': 'Claver Info',
     'footer-sitemap': 'Mapa ti Site',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Dagiti Kondision ti Panagusar',
@@ -1407,18 +1493,61 @@ const translations: Record<string, Record<string, string>> = {
     'footer-faq': 'FAQ',
     'footer-open-data': 'Open Data Philippines',
     'footer-foi': 'Wayawaya ti Impormasion',
-    'footer-lgu-portal': 'Opisial a Portal ti LGU Solano',
+    'footer-lgu-portal': 'Opisial a Portal ti LGU Claver',
     'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-facebook': 'LGU Claver Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos kadagiti Umili ti Solano =',
+    'footer-cost': 'Gastos kadagiti Umili ti Claver =',
     'footer-volunteer': 'Ag-volunteer kadakami',
     'footer-contribute': 'Ag-ambag ti code kadakami',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'BetterClaver.org',
     'footer-copyright-disclaimer':
       'Amin a pampubliko nga impormasion ket nagtaud kadagiti opisial a portal ti gobierno.',
     'footer-skip-to-main': 'Lumaktaw iti kangrunaan a linaon',
+    'stats-view-all-14-barangays': 'Kitaen ti amin a 14 a barangay',
+    'gov-taganito': 'Taganito',
+    'stats-taganito': 'Taganito',
+    'gov-kap-taganito': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-cagdianao': 'Cagdianao',
+    'stats-cagdianao': 'Cagdianao',
+    'gov-kap-cagdianao': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-tayaga': 'Tayaga',
+    'stats-tayaga': 'Tayaga',
+    'gov-kap-tayaga': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-ladgaron': 'Ladgaron',
+    'stats-ladgaron': 'Ladgaron',
+    'gov-kap-ladgaron': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-urbiztondo': 'Urbiztondo',
+    'stats-urbiztondo': 'Urbiztondo',
+    'gov-kap-urbiztondo': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-daywan': 'Daywan',
+    'stats-daywan': 'Daywan',
+    'gov-kap-daywan': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-hayanggabon': 'Hayanggabon',
+    'stats-hayanggabon': 'Hayanggabon',
+    'gov-kap-hayanggabon': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-cabugo': 'Cabugo',
+    'stats-cabugo': 'Cabugo',
+    'gov-kap-cabugo': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-bagakay': 'Bagakay',
+    'stats-bagakay': 'Bagakay',
+    'gov-kap-bagakay': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-panatao': 'Panatao',
+    'stats-panatao': 'Panatao',
+    'gov-kap-panatao': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-sapa': 'Sapa',
+    'stats-sapa': 'Sapa',
+    'gov-kap-sapa': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-lapinigan': 'Lapinigan',
+    'stats-lapinigan': 'Lapinigan',
+    'gov-kap-lapinigan': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-magallanes': 'Magallanes',
+    'stats-magallanes': 'Magallanes',
+    'gov-kap-magallanes': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
+    'gov-wangke': 'Wangke',
+    'stats-wangke': 'Wangke',
+    'gov-kap-wangke': 'Opisyal a impormasyon ti Kapitan ti Barangay ket maidagdagto ditoy.',
   },
 };
 
@@ -1437,7 +1566,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Load saved language from localStorage
-    const savedLang = localStorage.getItem('bettersolano_lang') as Language;
+    const savedLang = localStorage.getItem('betterclaver_lang') as Language;
     if (savedLang && ['en', 'fil', 'ilo'].includes(savedLang)) {
       setLanguageState(savedLang);
     }
@@ -1445,7 +1574,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('bettersolano_lang', lang);
+    localStorage.setItem('betterclaver_lang', lang);
   };
 
   const t = (key: string): string => {

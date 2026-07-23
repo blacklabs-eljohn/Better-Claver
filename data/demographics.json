@@ -2,17 +2,88 @@
   "_schema_version": "1.0",
   "_status": "draft",
   "_source": "Philippine Statistics Authority (PSA)",
-  "_note": "Awaiting official data from PSA / LGU Solano planning office",
-  "municipality": "Solano",
-  "province": "Nueva Vizcaya",
-  "region": "Region II - Cagayan Valley",
+  "_note": "Awaiting official data from PSA / LGU Claver planning office",
+  "municipality": "Claver",
+  "province": "Surigao del Norte",
+  "region": "Region XIII - Caraga",
   "population": {
-    "total": 69296,
-    "year": 2024,
+    "total": 36033,
+    "year": 2020,
     "source": "PSA Census"
   },
-  "land_area_km2": 162.7,
-  "barangay_count": 22,
-  "income_class": "1st",
-  "barangays": []
+  "land_area_km2": 322.6,
+  "barangay_count": 14,
+  "income_class": "2nd Class",
+  "barangays": [
+    {
+      "name": "Taganito",
+      "population": 5982,
+      "classification": "Rural"
+    },
+    {
+      "name": "Cagdianao",
+      "population": 4190,
+      "classification": "Rural"
+    },
+    {
+      "name": "Tayaga",
+      "population": 3511,
+      "classification": "Urban"
+    },
+    {
+      "name": "Ladgaron",
+      "population": 3483,
+      "classification": "Urban"
+    },
+    {
+      "name": "Urbiztondo",
+      "population": 3158,
+      "classification": "Rural"
+    },
+    {
+      "name": "Daywan",
+      "population": 3047,
+      "classification": "Rural"
+    },
+    {
+      "name": "Hayanggabon",
+      "population": 2790,
+      "classification": "Rural"
+    },
+    {
+      "name": "Cabugo",
+      "population": 2505,
+      "classification": "Rural"
+    },
+    {
+      "name": "Bagakay",
+      "population": 2118,
+      "classification": "Urban"
+    },
+    {
+      "name": "Panatao",
+      "population": 1828,
+      "classification": "Rural"
+    },
+    {
+      "name": "Sapa",
+      "population": 1058,
+      "classification": "Rural"
+    },
+    {
+      "name": "Lapinigan",
+      "population": 874,
+      "classification": "Rural"
+    },
+    {
+      "name": "Magallanes",
+      "population": 847,
+      "classification": "Rural"
+    },
+    {
+      "name": "Wangke",
+      "population": 642,
+      "classification": "Rural"
+    }
+  ]
 }
