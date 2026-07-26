@@ -1,4 +1,5 @@
 /* Better Claver - Complete Main Stylesheet */
+.info-bar, .info-bar-item, .info-bar-weather, .info-bar-datetime, .info-bar-rates { display: none !important; }
 :root {
   --color-primary: #0032a0;
   --color-primary-dark: #002170;
