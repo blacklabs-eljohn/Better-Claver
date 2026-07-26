@@ -102,9 +102,14 @@
   // ─── Init ─────────────────────────────────────────────────────────────────
 
   function init() {
-    try {
-      if (localStorage.getItem(STORAGE_KEY)) return;
-    } catch (e) {}
+    var path = window.location.pathname;
+    var isHomePage = path === '/' || path.endsWith('/index.html') || path.endsWith('/BetterClaver/') || path.endsWith('/BetterClaver/index.html');
+    
+    if (!isHomePage) {
+      try {
+        if (localStorage.getItem(STORAGE_KEY)) return;
+      } catch (e) {}
+    }
 
     var overlay = document.getElementById('vol-popup-overlay');
     if (!overlay) return;
@@ -137,9 +142,7 @@
     var ctaBtn = overlay.querySelector('.vol-popup-cta');
     if (ctaBtn) {
       ctaBtn.addEventListener('click', function () {
-        setTimeout(function () {
-          dismiss(overlay);
-        }, 150);
+        dismiss(overlay);
       });
     }
 

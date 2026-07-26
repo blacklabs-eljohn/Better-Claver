@@ -1161,55 +1161,54 @@
     </div>
   </footer>
 
-  <!-- Volunteer Recruitment Popup -->
+    <!-- Civic Disclaimer Popup -->
   <div id="vol-popup-overlay" class="vol-popup-overlay" role="dialog" aria-modal="true"
     aria-labelledby="vol-popup-title" aria-hidden="true">
     <div class="vol-popup">
-      <button class="vol-popup-close" type="button" aria-label="Close volunteer popup">
+      <button class="vol-popup-close" type="button" aria-label="Close disclaimer popup">
         <i class="bi bi-x-lg" aria-hidden="true"></i>
       </button>
       <div class="vol-popup-header">
         <div class="vol-popup-header-bg" aria-hidden="true"></div>
         <img src="assets/images/logo/better-claver-logo-white.svg" alt="BetterClaver.org" class="vol-popup-logo"
           width="210" height="76" loading="eager" draggable="false" />
-        <h2 id="vol-popup-title" class="vol-popup-title">Be Part of Something Greater</h2>
-        <p class="vol-popup-header-sub">Claver, Surigao del Norte deserves a world-class digital government. Help us
-          build it.</p>
+        <h2 id="vol-popup-title" class="vol-popup-title">Civic Transparency Disclaimer</h2>
+        <p class="vol-popup-header-sub">Empowering Claveranons with open, accessible, and transparent municipal data.</p>
       </div>
       <div class="vol-popup-body">
-        <p class="vol-popup-lead">We are looking for passionate <strong>Claveranons</strong> who want to serve their
-          community through their craft.</p>
-        <div class="vol-popup-roles" role="list">
+        <p class="vol-popup-lead" style="font-weight: 700; color: #0036a7; margin-bottom: 12px;">
+          BetterClaver is an independent, non-partisan community project and is NOT an official website of the Municipality of Claver.
+        </p>
+        <p style="font-size: 0.9rem; line-height: 1.6; color: var(--color-text-light); margin-bottom: 16px;">
+          All public records, budget figures, ordinances, executive orders, demographics, and municipal data displayed on this portal are <strong>100% sourced directly from official government portals</strong> (LGU Claver, PSA Census, DTI, CSC, and public domain archives).
+        </p>
+        <div class="vol-popup-roles" role="list" style="margin-bottom: 20px;">
           <div class="vol-popup-role" role="listitem">
-            <i class="bi bi-code-slash" aria-hidden="true"></i>
-            <span>Software Dev</span>
+            <i class="bi bi-shield-check" aria-hidden="true"></i>
+            <span>Official Data Sources</span>
           </div>
           <div class="vol-popup-role" role="listitem">
-            <i class="bi bi-layers" aria-hidden="true"></i>
-            <span>UI/UX Design</span>
+            <i class="bi bi-people-fill" aria-hidden="true"></i>
+            <span>Community Driven</span>
           </div>
           <div class="vol-popup-role" role="listitem">
-            <i class="bi bi-palette" aria-hidden="true"></i>
-            <span>Graphic Design</span>
+            <i class="bi bi-journal-bookmark-fill" aria-hidden="true"></i>
+            <span>Public Archives</span>
           </div>
           <div class="vol-popup-role" role="listitem">
-            <i class="bi bi-pencil-square" aria-hidden="true"></i>
-            <span>Content Creation</span>
-          </div>
-          <div class="vol-popup-role" role="listitem">
-            <i class="bi bi-megaphone" aria-hidden="true"></i>
-            <span>Digital Marketing</span>
+            <i class="bi bi-eye-fill" aria-hidden="true"></i>
+            <span>Non-Partisan</span>
           </div>
         </div>
         <div class="vol-popup-actions">
-          <a href="mailto:volunteer@betterclaver.org" class="vol-popup-cta" rel="noopener">
-            <i class="bi bi-envelope-heart-fill" aria-hidden="true"></i>
-            I Want to Volunteer
-          </a>
-          <button class="vol-popup-skip" type="button">Maybe Later</button>
+          <button class="vol-popup-cta vol-popup-close-btn" type="button" style="width: 100%; border: none; cursor: pointer;">
+            <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+            I Understand & Continue
+          </button>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
