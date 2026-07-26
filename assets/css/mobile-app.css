@@ -1,0 +1,688 @@
+/* BetterClaver — Native Mobile App Stylesheet
+   Strictly active at @media (max-width: 768px)
+   Transforms the website into a native iOS / Android application feel.
+*/
+
+@media (max-width: 768px) {
+  :root {
+    --mobile-tabbar-height: 62px;
+    --mobile-header-height: 52px;
+    --app-radius: 16px;
+    --app-bg: #f8fafc;
+  }
+
+  /* ─── Global Reset & Mobile App Viewport Settings ──────── */
+  html, body {
+    overflow-x: hidden !important;
+    background-color: var(--app-bg) !important;
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  body {
+    padding-bottom: calc(var(--mobile-tabbar-height) + env(safe-area-inset-bottom, 12px) + 16px) !important;
+    font-size: 15px !important;
+  }
+
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* ─── Hide Legacy Top Bar & Mobile Hamburger Menu ──────── */
+  .hotline-bar {
+    display: none !important;
+  }
+
+  .main-nav,
+  .mobile-menu-toggle {
+    display: none !important;
+  }
+
+  /* ─── Compact Native App Top Header ────────────────────── */
+  .site-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+    background: rgba(255, 255, 255, 0.94) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8) !important;
+    padding: 6px 16px !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03) !important;
+  }
+
+  .header-inner {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: var(--mobile-header-height) !important;
+    gap: 8px !important;
+  }
+
+  .logo-container {
+    padding: 0 !important;
+  }
+
+  .logo-img {
+    height: 34px !important;
+    width: auto !important;
+  }
+
+  .header-actions {
+    padding: 0 !important;
+  }
+
+  .lang-selector {
+    display: flex !important;
+    gap: 3px !important;
+    background: #f1f5f9 !important;
+    padding: 3px !important;
+    border-radius: 20px !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  .lang-btn {
+    padding: 4px 10px !important;
+    font-size: 0.6875rem !important;
+    font-weight: 700 !important;
+    border-radius: 16px !important;
+    border: none !important;
+    background: transparent !important;
+    color: #64748b !important;
+    line-height: 1.2 !important;
+  }
+
+  .lang-btn.active,
+  .lang-btn:hover {
+    background: #0056d6 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 6px rgba(0, 86, 214, 0.25) !important;
+  }
+
+  /* ─── PWA Install Banner — Positioned Above Bottom Dock ── */
+  .pwa-install-banner {
+    position: fixed !important;
+    bottom: calc(var(--mobile-tabbar-height) + env(safe-area-inset-bottom, 12px) + 12px) !important;
+    left: 14px !important;
+    right: 14px !important;
+    z-index: 9980 !important;
+    background: #0f172a !important;
+    color: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 12px 16px !important;
+    box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.35) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 12px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .pwa-install-content {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    font-size: 0.8125rem !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+  }
+
+  .pwa-install-content i {
+    font-size: 1.2rem !important;
+    color: #38bdf8 !important;
+  }
+
+  .pwa-install-btn {
+    background: #0056d6 !important;
+    color: white !important;
+    border: none !important;
+    padding: 6px 14px !important;
+    border-radius: 10px !important;
+    font-size: 0.78125rem !important;
+    font-weight: 700 !important;
+  }
+
+  .pwa-install-dismiss {
+    background: transparent !important;
+    border: none !important;
+    color: #94a3b8 !important;
+    font-size: 1.2rem !important;
+    padding: 2px 6px !important;
+  }
+
+  /* ─── Fixed Bottom App Navigation Dock Bar ──────────────── */
+  .mobile-tab-bar {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: calc(var(--mobile-tabbar-height) + env(safe-area-inset-bottom, 0px)) !important;
+    padding-bottom: env(safe-area-inset-bottom, 0px) !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+    border-top: 1px solid rgba(226, 232, 240, 0.9) !important;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05) !important;
+    display: grid !important;
+    grid-template-columns: repeat(5, 1fr) !important;
+    z-index: 9990 !important;
+    user-select: none !important;
+    -webkit-user-select: none !important;
+  }
+
+  .mobile-tab-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 3px !important;
+    color: #64748b !important;
+    text-decoration: none !important;
+    font-size: 0.6875rem !important;
+    font-weight: 600 !important;
+    transition: color 0.15s ease, transform 0.15s ease !important;
+    position: relative !important;
+    padding: 6px 0 !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+  }
+
+  .mobile-tab-item i {
+    font-size: 1.3rem !important;
+    line-height: 1 !important;
+    transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+  }
+
+  .mobile-tab-item.active {
+    color: #0056d6 !important;
+  }
+
+  .mobile-tab-item.active i {
+    transform: scale(1.12) !important;
+  }
+
+  .mobile-tab-item:active {
+    transform: scale(0.92) !important;
+  }
+
+  .mobile-tab-item--emergency {
+    color: #dc2626 !important;
+  }
+
+  .mobile-tab-emergency-pulse {
+    position: absolute !important;
+    top: -2px !important;
+    right: -4px !important;
+    width: 7px !important;
+    height: 7px !important;
+    background-color: #ef4444 !important;
+    border-radius: 50% !important;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9) !important;
+    animation: emergencyPulse 1.5s infinite !important;
+  }
+
+  @keyframes emergencyPulse {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+  }
+
+  /* ─── Slide-Up Drawer Sheet ───────────────────────────── */
+  .mobile-drawer-overlay {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: rgba(15, 23, 42, 0.55) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    z-index: 9995 !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: opacity 0.25s ease, visibility 0.25s ease !important;
+  }
+
+  .mobile-drawer-overlay.active {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .mobile-drawer-sheet {
+    position: fixed !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    max-height: 85vh !important;
+    background: #ffffff !important;
+    border-radius: 24px 24px 0 0 !important;
+    box-shadow: 0 -10px 35px rgba(15, 23, 42, 0.25) !important;
+    z-index: 9999 !important;
+    transform: translateY(100%) !important;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    padding-bottom: calc(env(safe-area-inset-bottom, 16px) + 12px) !important;
+  }
+
+  .mobile-drawer-sheet.active {
+    transform: translateY(0) !important;
+  }
+
+  .mobile-drawer-drag-handle {
+    width: 38px !important;
+    height: 5px !important;
+    background: #cbd5e1 !important;
+    border-radius: 10px !important;
+    margin: 10px auto 6px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .mobile-drawer-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 10px 20px 14px !important;
+    border-bottom: 1px solid #f1f5f9 !important;
+  }
+
+  .mobile-drawer-title {
+    font-size: 1.1rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .mobile-drawer-title i {
+    color: #0056d6 !important;
+  }
+
+  .mobile-drawer-close {
+    background: #f1f5f9 !important;
+    border: none !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #64748b !important;
+    font-size: 1rem !important;
+    cursor: pointer !important;
+  }
+
+  .mobile-drawer-body {
+    padding: 16px 20px !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .mobile-drawer-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .mobile-drawer-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    padding: 12px 14px !important;
+    background: #f8fafc !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 14px !important;
+    color: #1e293b !important;
+    text-decoration: none !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+  }
+
+  .mobile-drawer-item-icon {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 10px !important;
+    background: #ebf5ff !important;
+    color: #0056d6 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1rem !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* ─── Hero Section Native App Banner ───────────────────── */
+  .home-hero-v2 {
+    padding: 24px 0 28px !important;
+    background-size: 30px 30px, 30px 30px, auto !important;
+    border-radius: 0 0 24px 24px !important;
+  }
+
+  .home-hero-v2-inner {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+
+  .home-hero-v2-text {
+    text-align: center !important;
+  }
+
+  .hero-location-badge {
+    padding: 5px 14px !important;
+    font-size: 0.78125rem !important;
+    margin-bottom: 12px !important;
+  }
+
+  .home-hero-v2-text h1 {
+    font-size: 1.65rem !important;
+    line-height: 1.25 !important;
+    font-weight: 800 !important;
+    margin-bottom: 10px !important;
+    letter-spacing: -0.3px !important;
+    white-space: normal !important;
+  }
+
+  .home-hero-v2-text p {
+    font-size: 0.875rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 16px !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  .home-hero-v2-actions {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  .home-hero-v2-actions .btn {
+    padding: 10px 14px !important;
+    font-size: 0.8125rem !important;
+    border-radius: 12px !important;
+    min-height: 44px !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* ─── Hero Top Tasks Widget Card ───────────────────────── */
+  .home-hero-tasks-card {
+    padding: 18px 16px !important;
+    border-radius: 20px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+  }
+
+  .hero-tasks-header h3 {
+    font-size: 1.15rem !important;
+  }
+
+  .hero-tasks-header p {
+    font-size: 0.8125rem !important;
+  }
+
+  .hero-tasks-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+    margin: 14px 0 12px !important;
+  }
+
+  .hero-task-btn {
+    padding: 10px 10px !important;
+    border-radius: 12px !important;
+    font-size: 0.78125rem !important;
+    gap: 8px !important;
+    min-height: 48px !important;
+  }
+
+  .hero-task-icon {
+    width: 32px !important;
+    height: 32px !important;
+    font-size: 0.95rem !important;
+    border-radius: 8px !important;
+  }
+
+  /* ─── Popular Services App Grid (3 Columns) ────────────── */
+  .home-services-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+    margin-top: 14px !important;
+  }
+
+  .home-service-card {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 14px 8px !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03) !important;
+    text-decoration: none !important;
+  }
+
+  .home-service-icon {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 14px !important;
+    background: #ebf5ff !important;
+    color: #0056d6 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 1.25rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .home-service-content h3 {
+    font-size: 0.78125rem !important;
+    font-weight: 700 !important;
+    color: #0f172a !important;
+    margin: 0 !important;
+    line-height: 1.25 !important;
+  }
+
+  .home-service-content p,
+  .home-service-arrow {
+    display: none !important; /* Compact tile view */
+  }
+
+  /* ─── Glance Section (Mobile Dashboard Widget) ──────────── */
+  .glance-section-v3 {
+    padding: 28px 0 !important;
+  }
+
+  .glance-weather-card {
+    padding: 16px 14px !important;
+    border-radius: 18px !important;
+    margin-bottom: 18px !important;
+  }
+
+  .glance-weather-pill {
+    font-size: 0.65rem !important;
+    padding: 4px 12px !important;
+    margin-bottom: 14px !important;
+  }
+
+  .glance-weather-body {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  .glance-weather-main {
+    grid-column: 1 / -1 !important;
+    margin-bottom: 4px !important;
+  }
+
+  .glance-weather-main-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 4px !important;
+  }
+
+  .glance-weather-temp {
+    font-size: 2.5rem !important;
+  }
+
+  .glance-weather-desc {
+    font-size: 0.8125rem !important;
+  }
+
+  .glance-weather-stat {
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding: 8px 12px !important;
+    border-radius: 12px !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+  }
+
+  .glance-weather-stat-val {
+    font-size: 1.1rem !important;
+  }
+
+  .glance-stats-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px !important;
+  }
+
+  .glance-stat-col {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 16px !important;
+    padding: 14px 10px !important;
+    border-right: none !important;
+    border-bottom: none !important;
+  }
+
+  .glance-stat-icon {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .glance-stat-val {
+    font-size: 1.5rem !important;
+  }
+
+  .glance-stat-lbl {
+    font-size: 0.8125rem !important;
+  }
+
+  .glance-stat-sub {
+    font-size: 0.7rem !important;
+  }
+
+  .glance-footer-action {
+    margin-top: 18px !important;
+    padding-top: 14px !important;
+  }
+
+  /* ─── Citizen's Charter & History Mobile Cards ──────────── */
+  .charter-section {
+    padding: 24px 0 !important;
+  }
+
+  .charter-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .charter-card {
+    padding: 14px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  .history-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .history-summary {
+    position: static !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  /* ─── Facebook Section ─────────────────────────────────── */
+  .home-fb-section {
+    padding: 24px 0 !important;
+  }
+
+  .home-fb {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+
+  .fb-plugin-wrap iframe {
+    width: 100% !important;
+    height: 420px !important;
+    border-radius: 16px !important;
+  }
+
+  /* ─── Municipal Leadership Mobile Cards ────────────────── */
+  .home-leadership-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .home-leader-card {
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* ─── Contact Cards Mobile Layout ──────────────────────── */
+  .home-contact-v2-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .home-contact-v2-card {
+    padding: 14px 16px !important;
+    border-radius: 16px !important;
+  }
+
+  /* ─── Inner Pages Polish (Barangays, Budget, Emergency) ── */
+  .official-cards-grid,
+  .barangay-cards-grid,
+  .budget-cards-grid,
+  .emergency-cards-grid,
+  .jobs-cards-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+
+  .card, .official-card, .barangay-card, .office-card {
+    border-radius: 16px !important;
+    padding: 16px !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  /* ─── Table Horizontal Scroll Wrapper ──────────────────── */
+  table {
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
