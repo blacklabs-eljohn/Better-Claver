@@ -458,47 +458,90 @@
       </div>
     </section>
 
-    <!-- Quick Stats -->
-    <section class="home-stats-v2">
+    <!-- Claver at a Glance (Enhanced Visual Hub) -->
+    <section class="glance-section-v3" aria-label="Claver at a Glance and Current Weather">
       <div class="container">
-        <div class="home-stats-v2-header">
-          <h2 data-i18n="home-claver-at-a-glance">Claver at a Glance</h2>
-          <a href="statistics/" class="home-section-link"><i class="bi bi-arrow-right"></i>
-            <span data-i18n="home-view-statistics">View Statistics</span></a>
-        </div>
-        <div class="home-stats-v2-grid">
-          <a href="statistics/" class="home-stat-card">
-            <div class="home-stat-card-icon"><i class="bi bi-people-fill"></i></div>
-            <div class="home-stat-card-content">
-              <span class="home-stat-card-value" data-count="69296">69,296</span>
-              <span class="home-stat-card-label" data-i18n="home-population">Population</span>
-              <span class="home-stat-card-source" data-i18n="home-2024-census">2024 Census</span>
+        <div class="glance-card-container">
+          <!-- Top Weather Card -->
+          <div class="glance-weather-card">
+            <div class="glance-weather-pill">
+              <i class="bi bi-brightness-high-fill"></i> <span data-i18n="glance-weather-title">CURRENT WEATHER · CLAVER, SURIGAO DEL NORTE</span>
             </div>
-          </a>
-          <a href="government/" class="home-stat-card">
-            <div class="home-stat-card-icon"><i class="bi bi-geo-alt-fill"></i></div>
-            <div class="home-stat-card-content">
-              <span class="home-stat-card-value">14</span>
-              <span class="home-stat-card-label" data-i18n="home-barangays">Barangays</span>
-              <span class="home-stat-card-source" data-i18n="home-administrative-units">Administrative Units</span>
+
+            <div class="glance-weather-body">
+              <!-- Humidity -->
+              <div class="glance-weather-stat">
+                <i class="bi bi-droplet-fill glance-weather-stat-icon"></i>
+                <div class="glance-weather-stat-data">
+                  <span class="glance-weather-stat-val" id="glance-humidity">84%</span>
+                  <span class="glance-weather-stat-lbl" data-i18n="glance-humidity-lbl">HUMIDITY</span>
+                </div>
+              </div>
+
+              <!-- Main Temp & Graphic -->
+              <div class="glance-weather-main">
+                <div class="glance-weather-icon-wrapper">
+                  <i class="bi bi-cloud-rain-fill glance-weather-main-icon" id="glance-weather-icon"></i>
+                </div>
+                <div class="glance-weather-temp-wrap">
+                  <span class="glance-weather-temp" id="glance-temp">28.1°C</span>
+                  <span class="glance-weather-desc" id="glance-desc" data-i18n="glance-weather-drizzle">Partly Cloudy / Drizzle</span>
+                </div>
+              </div>
+
+              <!-- Wind -->
+              <div class="glance-weather-stat">
+                <i class="bi bi-wind glance-weather-stat-icon"></i>
+                <div class="glance-weather-stat-data">
+                  <span class="glance-weather-stat-val" id="glance-wind">9 km/h</span>
+                  <span class="glance-weather-stat-lbl" data-i18n="glance-wind-lbl">KM/H WIND</span>
+                </div>
+              </div>
             </div>
-          </a>
-          <a href="budget/" class="home-stat-card">
-            <div class="home-stat-card-icon"><i class="bi bi-award-fill"></i></div>
-            <div class="home-stat-card-content">
-              <span class="home-stat-card-value" data-i18n="home-1st-class">1st Class</span>
-              <span class="home-stat-card-label" data-i18n="home-municipality">Municipality</span>
-              <span class="home-stat-card-source" data-i18n="home-income-classification">Income Classification</span>
-            </div>
-          </a>
-          <a href="statistics/" class="home-stat-card">
-            <div class="home-stat-card-icon"><i class="bi bi-rulers"></i></div>
-            <div class="home-stat-card-content">
-              <span class="home-stat-card-value" data-i18n="home-16270-km">162.70 km²</span>
-              <span class="home-stat-card-label" data-i18n="home-land-area">Land Area</span>
-              <span class="home-stat-card-source" data-i18n="home-total-municipal-area">Total Municipal Area</span>
-            </div>
-          </a>
+          </div>
+
+          <!-- Bottom 4 Columns Stats Grid -->
+          <div class="glance-stats-grid">
+            <!-- 1. Population -->
+            <a href="government/profile.html" class="glance-stat-col">
+              <div class="glance-stat-icon"><i class="bi bi-people-fill"></i></div>
+              <div class="glance-stat-val">35,435</div>
+              <div class="glance-stat-lbl" data-i18n="home-population">Population</div>
+              <div class="glance-stat-sub" data-i18n="glance-pop-sub">2024 Census (PSA)</div>
+            </a>
+
+            <!-- 2. Barangays -->
+            <a href="government/barangays.html" class="glance-stat-col">
+              <div class="glance-stat-icon"><i class="bi bi-geo-alt-fill"></i></div>
+              <div class="glance-stat-val">14</div>
+              <div class="glance-stat-lbl" data-i18n="home-barangays">Barangays</div>
+              <div class="glance-stat-sub" data-i18n="glance-brgy-sub">Component barangays</div>
+            </a>
+
+            <!-- 3. Municipality -->
+            <a href="government/profile.html" class="glance-stat-col">
+              <div class="glance-stat-icon"><i class="bi bi-building-fill"></i></div>
+              <div class="glance-stat-val" data-i18n="home-1st-class">1st Class</div>
+              <div class="glance-stat-lbl" data-i18n="home-municipality">Municipality</div>
+              <div class="glance-stat-sub" data-i18n="glance-mun-sub">Province of Surigao del Norte</div>
+            </a>
+
+            <!-- 4. Land Area -->
+            <a href="government/profile.html" class="glance-stat-col">
+              <div class="glance-stat-icon"><i class="bi bi-map-fill"></i></div>
+              <div class="glance-stat-val">162.70</div>
+              <div class="glance-stat-lbl"><span data-i18n="glance-km-unit">km²</span> <span data-i18n="home-land-area">Land Area</span></div>
+              <div class="glance-stat-sub" data-i18n="glance-area-sub">Total municipal land area</div>
+            </a>
+          </div>
+
+          <!-- Bottom Action Button -->
+          <div class="glance-footer-action">
+            <a href="government/profile.html" class="glance-action-btn">
+              <span data-i18n="glance-view-profile-btn">VIEW MUNICIPAL PROFILE</span>
+              <i class="bi bi-arrow-right"></i><i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
         </div>
       </div>
     </section>

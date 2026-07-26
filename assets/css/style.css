@@ -8551,6 +8551,251 @@ a.a11y-contact-item:hover i {
   padding: var(--spacing-xl) 0;
 }
 
+/* ============================================
+   Glance Section V3 - Reference Image Match
+   ============================================ */
+
+.glance-section-v3 {
+  padding: 60px 0;
+  background: var(--color-bg-alt);
+}
+
+.glance-card-container {
+  background: linear-gradient(135deg, #0056d6 0%, #0036a7 100%);
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(135deg, #0056d6 0%, #0036a7 100%);
+  background-size: 20px 20px, 100% 100%;
+  border-radius: 24px;
+  padding: 40px;
+  color: white;
+  box-shadow: 0 20px 50px rgba(0, 54, 167, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Weather Card */
+.glance-weather-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 20px;
+  padding: 28px 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.glance-weather-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.9);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.glance-weather-pill i {
+  color: #fbbf24;
+}
+
+.glance-weather-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.glance-weather-stat {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 120px;
+}
+
+.glance-weather-stat-icon {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.glance-weather-stat-data {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.glance-weather-stat-val {
+  font-size: 1.35rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.glance-weather-stat-lbl {
+  font-size: 0.7rem;
+  font-weight: 700;
+  opacity: 0.75;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.glance-weather-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.glance-weather-main-icon {
+  font-size: 3.5rem;
+  color: #60a5fa;
+  filter: drop-shadow(0 8px 16px rgba(0,0,0,0.2));
+  margin-bottom: 8px;
+}
+
+.glance-weather-temp {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+
+.glance-weather-desc {
+  font-size: 0.95rem;
+  opacity: 0.85;
+  font-weight: 500;
+  margin-top: 6px;
+}
+
+/* Stats 4 Columns */
+.glance-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  position: relative;
+}
+
+.glance-stat-col {
+  text-align: center;
+  padding: 16px 20px;
+  color: white;
+  text-decoration: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.glance-stat-col:last-child {
+  border-right: none;
+}
+
+.glance-stat-col:hover {
+  transform: translateY(-4px);
+  text-decoration: none;
+  color: white;
+}
+
+.glance-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin: 0 auto 16px;
+  color: #93c5fd;
+}
+
+.glance-stat-val {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 6px;
+  letter-spacing: -0.5px;
+}
+
+.glance-stat-lbl {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  opacity: 0.95;
+}
+
+.glance-stat-sub {
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+/* Footer Action */
+.glance-footer-action {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 36px;
+  padding-top: 24px;
+  text-align: center;
+}
+
+.glance-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: gap 0.2s ease, opacity 0.2s ease;
+}
+
+.glance-action-btn:hover {
+  gap: 12px;
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+  .glance-stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  .glance-stat-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 24px;
+  }
+  .glance-stat-col:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+  .glance-stat-col:last-child, .glance-stat-col:nth-child(3) {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .glance-card-container {
+    padding: 24px 16px;
+    border-radius: 16px;
+  }
+  .glance-weather-card {
+    padding: 20px 16px;
+  }
+  .glance-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  .glance-stat-col {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+}
+
 .home-stats-v2-header {
   display: flex;
   justify-content: space-between;
