@@ -25,7 +25,19 @@ const translations: Record<string, Record<string, string>> = {
     'appointment-create-btn': 'Create Account',
 
     // Hero Section
+    'hero-location-badge': 'Claver, Surigao del Norte',
     'hero-welcome': 'Welcome to\nBetterClaver.org',
+    'hero-top-tasks-title': 'Top Tasks',
+    'hero-top-tasks-subtitle': 'Jump straight to the things people do most.',
+    'hero-task-biz': 'Apply for a Business Permit',
+    'hero-task-tax': 'Renew Permit / Pay Business Tax',
+    'hero-task-health': 'Find Health Services',
+    'hero-task-scholarship': 'Apply for a Scholarship',
+    'hero-task-birth': 'Request Birth Certificate',
+    'hero-task-social': 'Social Welfare Assistance',
+    'hero-task-infra': 'Report Infrastructure Issue',
+    'hero-task-emergency': 'Emergency Hotlines',
+    'hero-view-all-services': 'View all services',
     'hero-subtitle':
       'Access government services, information, and resources for the people of Claver.',
     'hero-find-service': 'Find a Service',
@@ -653,7 +665,19 @@ const translations: Record<string, Record<string, string>> = {
     'appointment-create-btn': 'Gumawa ng Account',
 
     // Hero Section
+    'hero-location-badge': 'Claver, Surigao del Norte',
     'hero-welcome': 'Maligayang Pagdating sa\nBetterClaver.org',
+    'hero-top-tasks-title': 'Pangunahing Gawain',
+    'hero-top-tasks-subtitle': 'Pumunta agad sa mga madalas gawin ng mga mamamayan.',
+    'hero-task-biz': 'Kumuha ng Business Permit',
+    'hero-task-tax': 'Mag-renew ng Permit / Magbayad ng Buwis',
+    'hero-task-health': 'Maghanap ng Serbisyo sa Kalusugan',
+    'hero-task-scholarship': 'Mag-apply para sa Scholarship',
+    'hero-task-birth': 'Kumuha ng Birth Certificate',
+    'hero-task-social': 'Tulong sa Serbisyong Panlipunan',
+    'hero-task-infra': 'Mag-ulat ng Isyu sa Imprastraktura',
+    'hero-task-emergency': 'Mga Hotline sa Saklolo',
+    'hero-view-all-services': 'Tingnan ang lahat ng serbisyo',
     'hero-subtitle':
       'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Claver.',
     'hero-find-service': 'Maghanap ng Serbisyo',
@@ -1293,7 +1317,19 @@ const translations: Record<string, Record<string, string>> = {
     'appointment-create-btn': 'Paghimo nan Account',
 
     // Hero Section
+    'hero-location-badge': 'Claver, Surigao del Norte',
     'hero-welcome': 'Marajaw na Pagsangbay sa\nBetterClaver.org',
+    'hero-top-tasks-title': 'Mga Unang Baluhaton',
+    'hero-top-tasks-subtitle': 'Derecho na sa mga ginahimo nan kadaghanan.',
+    'hero-task-biz': 'Kumuha nan Business Permit',
+    'hero-task-tax': 'Mag-renew nan Permit / Magbayad nan Buwis',
+    'hero-task-health': 'Mangita nan Serbisyo sa Lawas',
+    'hero-task-scholarship': 'Mag-apply para sa Scholarship',
+    'hero-task-birth': 'Kumuha nan Birth Certificate',
+    'hero-task-social': 'Tabang sa Serbisyong Panlipunan',
+    'hero-task-infra': 'Mag-report nan Isyu sa Imprastraktura',
+    'hero-task-emergency': 'Mga Emergency Hotline',
+    'hero-view-all-services': 'Tan-awa tanan serbisyo',
     'hero-subtitle':
       'I-access ang mga serbisyo nan gobyerno, impormasyon, sanan mga kapanguhaan para sa mga lungsodnon nan Claver.',
     'hero-find-service': 'Biroka an Serbisyo',

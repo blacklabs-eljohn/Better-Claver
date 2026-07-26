@@ -6507,14 +6507,134 @@ cklist with Icons - Proper Indentation */
   align-items: center;
 }
 
-.home-hero-v2-text h1 {
-  font-size: 3.5rem;
-  font-weight: 800;
+.hero-location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.15);
   color: white;
-  margin-bottom: var(--spacing-md);
-  line-height: 1.15;
-  white-space: pre-line;
-  letter-spacing: -0.5px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+  backdrop-filter: blur(8px);
+}
+
+.hero-location-badge i {
+  color: #ffcc00;
+}
+
+/* Hero Top Tasks Card */
+.home-hero-tasks-card {
+  background: rgba(255, 255, 255, 0.10);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-tasks-header h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 6px;
+}
+
+.hero-tasks-header p {
+  font-size: 0.925rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+}
+
+.hero-tasks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0 20px;
+}
+
+.hero-task-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  color: white;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.35;
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.hero-task-btn:hover {
+  background: rgba(255, 255, 255, 0.24);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.hero-task-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: white;
+  color: #0056d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-task-btn--emergency {
+  background: rgba(220, 38, 38, 0.22);
+  border-color: rgba(239, 68, 68, 0.4);
+}
+
+.hero-task-btn--emergency:hover {
+  background: rgba(220, 38, 38, 0.35);
+  border-color: rgba(239, 68, 68, 0.6);
+}
+
+.hero-task-icon--emergency {
+  background: #ffe4e6;
+  color: #dc2626;
+}
+
+.hero-tasks-footer {
+  margin-top: 16px;
+}
+
+.hero-tasks-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.925rem;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.hero-tasks-link:hover {
+  opacity: 0.85;
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hero-tasks-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .home-hero-v2-text p {
