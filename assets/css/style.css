@@ -6733,6 +6733,161 @@ cklist with Icons - Proper Indentation */
     grid-template-columns: 1fr;
     gap: 40px;
   }
+
+  .about-scope-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Scope Boundaries (In Scope vs Out of Scope) */
+.about-scope-section {
+  padding: 80px 0;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.about-scope-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.about-scope-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+.about-scope-card--in {
+  border-top: 4px solid #16a34a;
+}
+
+.about-scope-card--out {
+  border-top: 4px solid #dc2626;
+}
+
+.about-scope-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.about-scope-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.25rem;
+}
+
+.about-scope-badge--in {
+  background: rgba(22, 163, 74, 0.1);
+  color: #16a34a;
+}
+
+.about-scope-badge--out {
+  background: rgba(220, 38, 38, 0.1);
+  color: #dc2626;
+}
+
+.about-scope-header h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0c2d6b;
+  margin: 0;
+}
+
+.about-scope-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-scope-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+
+.about-scope-list li i {
+  font-size: 1.1rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.about-scope-card--in li i {
+  color: #16a34a;
+}
+
+.about-scope-card--out li i {
+  color: #dc2626;
+}
+
+/* Data Sources & Freshness Section */
+.about-sources-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.about-sources-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.about-source-card {
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.about-source-card:hover {
+  background: white;
+  transform: translateY(-3px);
+  border-color: #1c4b9e;
+  box-shadow: 0 8px 20px -5px rgba(12, 45, 107, 0.08);
+}
+
+.about-source-icon {
+  width: 52px;
+  height: 52px;
+  background: rgba(12, 45, 107, 0.06);
+  color: #0c2d6b;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto 16px;
+}
+
+.about-source-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.about-source-card p {
+  font-size: 0.9rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
 }
 
 /* Citizen's Charter Section styling */
