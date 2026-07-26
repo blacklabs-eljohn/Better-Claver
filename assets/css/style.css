@@ -6527,6 +6527,16 @@ cklist with Icons - Proper Indentation */
   color: #ffcc00;
 }
 
+.home-hero-v2-text h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.15;
+  white-space: pre-line;
+  letter-spacing: -0.5px;
+}
+
 /* Hero Top Tasks Card */
 .home-hero-tasks-card {
   background: rgba(255, 255, 255, 0.10);
