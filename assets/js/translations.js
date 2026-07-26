@@ -56,6 +56,8 @@ const translations = {
     // Hero Section
     'nav-jobs': 'Careers & Jobs',
     'nav-gov-emergency': 'Emergency Response',
+    'nav-gov-tourism': 'Tourism & Festivals',
+    'nav-gov-tourism-soon': 'Tourism & Festivals (Coming Soon)',
     'hero-task-jobs': 'Careers & Jobs',
     'hero-location-badge': 'Claver, Surigao del Norte',
     'glance-weather-title': 'CURRENT WEATHER · CLAVER, SURIGAO DEL NORTE',
