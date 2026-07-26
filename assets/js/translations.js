@@ -54,6 +54,7 @@ const translations = {
     'breadcrumb-terms': 'Terms of Use',
 
     // Hero Section
+    'nav-jobs': 'Careers & Jobs',
     'hero-location-badge': 'Claver, Surigao del Norte',
     'budget-viz-tag': 'Budget & Mining Royalty Visualizer',
     'budget-viz-title': "Where Claver's Funds Go",
