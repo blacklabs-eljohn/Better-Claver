@@ -209,14 +209,12 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer-bottom-new">
-          <div className="footer-copyright">
-            <span className="footer-copyright-text">
-              &copy; {currentYear} {t('footer-copyright-text')}
+                    <div className="footer-copyright">
+            <span className="footer-copyright-left">
+              &copy; {currentYear} {t('footer-copyright-text')} | {t('footer-copyright-disclaimer')}
             </span>
-            <span className="footer-copyright-license">MIT | CC BY 4.0</span>
-            <span className="footer-copyright-disclaimer">{t('footer-copyright-disclaimer')}</span>
-            <span className="footer-version">
-              <i className="bi bi-boxes"></i> {version ? `Ver. ${version}` : ''}
+            <span className="footer-copyright-right">
+              Developed by <a href="https://ethan.stoodioph.com/founder.html" target="_blank" rel="noopener noreferrer">Ethan</a>
             </span>
           </div>
         </div>

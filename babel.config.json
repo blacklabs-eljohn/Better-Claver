@@ -4,13 +4,11 @@
       "@babel/preset-env",
       {
         "targets": {
-          "browsers": [
-            "last 2 versions",
-            "Safari >= 10",
-            "iOS >= 10",
-            "not dead",
-            "not op_mini all"
-          ]
+          "chrome": "80",
+          "safari": "13.1",
+          "edge": "80",
+          "firefox": "74",
+          "ios": "13.4"
         },
         "useBuiltIns": false
       }

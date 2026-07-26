@@ -9,6 +9,9 @@ const translations: Record<string, Record<string, string>> = {
     'nav-home': 'Home',
     'nav-services': 'Services',
     'nav-government': 'Government',
+    'nav-gov-profile': 'Municipal Profile',
+    'nav-gov-officials': 'Government Officials',
+    'nav-gov-barangays': 'Barangays',
     'nav-statistics': 'Statistics',
     'nav-legislative': 'Legislative',
     'nav-transparency': 'Transparency',
@@ -559,9 +562,12 @@ const translations: Record<string, Record<string, string>> = {
     'nav-home': 'Tahanan',
     'nav-services': 'Mga Serbisyo',
     'nav-government': 'Pamahalaan',
+    'nav-gov-profile': 'Profile ng Munisipalidad',
+    'nav-gov-officials': 'Mga Opisyal ng Pamahalaan',
+    'nav-gov-barangays': 'Mga Barangay',
     'nav-statistics': 'Estadistika',
-    'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
+    'nav-legislative': 'Lehislatibo',
+    'nav-transparency': 'Transparency',
     'nav-contact': 'Makipag-ugnayan',
 
     // Appointment CTA
@@ -1117,60 +1123,63 @@ const translations: Record<string, Record<string, string>> = {
     'stats-wangke': 'Wangke',
     'gov-kap-wangke': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
   },
-  ilo: {
+  sug: {
     // Navigation - Ilocano
-    'nav-home': 'Pagtaengan',
-    'nav-services': 'Dagiti Serbisyo',
-    'nav-government': 'Gobierno',
+    'nav-home': 'Home',
+    'nav-services': 'Mga Serbisyo',
+    'nav-government': 'Gobyerno',
+    'nav-gov-profile': 'Profile nan Munisipyo',
+    'nav-gov-officials': 'Mga Opisyal nan Gobyerno',
+    'nav-gov-barangays': 'Mga Barangay',
     'nav-statistics': 'Estadistika',
-    'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
-    'nav-contact': 'Kontaken',
+    'nav-legislative': 'Lehislatibo',
+    'nav-transparency': 'Transparency',
+    'nav-contact': 'Kontak',
 
     // Appointment CTA
     'appointment-cta-heading':
       'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Claver',
     'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',
-    'appointment-schedule-btn': 'Ag-iskedyul ti Appointment',
-    'appointment-create-btn': 'Agaramid ti Account',
+    'appointment-schedule-btn': 'Mag-iskedyul nan Appointment',
+    'appointment-create-btn': 'Paghimo nan Account',
 
     // Hero Section
-    'hero-welcome': 'Naragsak nga Isasangbay iti BetterClaver.org',
+    'hero-welcome': 'Marajaw na Pagsangbay sa BetterClaver.org',
     'hero-subtitle':
       'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Claver, Surigao del Norte.',
-    'hero-find-service': 'Agsapul ti Serbisyo',
+    'hero-find-service': 'Biroka an Serbisyo',
 
     // Popular Services
-    'section-popular': 'Dagiti Popular a Serbisyo',
-    'service-certificates': 'Dagiti Sertipiko',
-    'service-certificates-desc': 'Sertipiko ti pannakayanak, kasar, ken patay',
-    'service-business': 'Permit ti Negosyo',
-    'service-business-desc': 'Baro a permit ken panagrenew',
-    'service-tax': 'Panagbayad ti Buwis',
-    'service-tax-desc': 'Buwis ti sanikua ken negosyo',
-    'service-social': 'Serbisyo Sosyal',
-    'service-social-desc': 'Serbisyo para kadagiti senior citizen ken PWD',
-    'service-health': 'Serbisyo ti Salun-at',
-    'service-health-desc': 'Tulong medikal ken dagiti programa',
-    'btn-view-all-services': 'Kitaen Amin a Serbisyo',
+    'section-popular': 'Mga Popular na Serbisyo',
+    'service-certificates': 'Mga Sertipiko',
+    'service-certificates-desc': 'Sertipiko nan pagkatawo, kasal, sanan kamatayon',
+    'service-business': 'Permit nan Negosyo',
+    'service-business-desc': 'Bag-o na permit sanan pag-renew',
+    'service-tax': 'Pagbayad nan Buwis',
+    'service-tax-desc': 'Buwis sa propedad sanan negosyo',
+    'service-social': 'Mga Serbisyo Sosyal',
+    'service-social-desc': 'Serbisyo para sa mga senior citizen sanan PWD',
+    'service-health': 'Serbisyo sa Kalusugan',
+    'service-health-desc': 'Tulong medikal sanan mga programa',
+    'btn-view-all-services': 'Kitaa an Tanan na Serbisyo',
 
     // Latest Updates
     'section-updates': 'Kabarbaro nga Update',
     'btn-view-all': 'Kitaen Amin',
 
     // Municipal Leadership
-    'section-leadership': 'Panguluan ti Munisipalidad',
-    'title-mayor': 'Mayor ti Munisipalidad',
-    'title-vice-mayor': 'Bise Mayor ti Munisipalidad',
-    'btn-view-officials': 'Kitaen Amin nga Opisyal',
+    'section-leadership': 'Pamunoan nan Munisipyo',
+    'title-mayor': 'Mayor nan Lungsod',
+    'title-vice-mayor': 'Bise Mayor nan Lungsod',
+    'btn-view-officials': 'Kitaa an Tanan na Opisyal',
 
     // Contact Section
-    'section-contact': 'Impormasyon ti Panagkontak',
+    'section-contact': 'Impormasyon sa Pagkontak',
     'contact-phone': 'Telepono',
     'contact-email': 'Email',
     'contact-address': 'Adres',
     'contact-hours': 'Lunes-Biernes: 8:00 AM - 5:00 PM',
-    'contact-response': 'Sumungbat kami iti uneg ti 24 nga oras',
+    'contact-response': 'Mosungbat kami sa sulod nan 24 oras',
     'contact-municipal-hall': 'Munisipio',
 
     // Services Page
@@ -1686,7 +1695,7 @@ const translations: Record<string, Record<string, string>> = {
   },
 };
 
-type Language = 'en' | 'fil' | 'ilo';
+type Language = 'en' | 'fil' | 'sug';
 
 interface LanguageContextType {
   language: Language;
@@ -1702,7 +1711,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   useEffect(() => {
     // Load saved language from localStorage
     const savedLang = localStorage.getItem('betterclaver_lang') as Language;
-    if (savedLang && ['en', 'fil', 'ilo'].includes(savedLang)) {
+    if (savedLang && ['en', 'fil', 'sug'].includes(savedLang)) {
       setLanguageState(savedLang);
     }
   }, []);

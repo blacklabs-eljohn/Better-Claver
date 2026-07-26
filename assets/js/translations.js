@@ -10,6 +10,9 @@ const translations = {
     'nav-home': 'Home',
     'nav-services': 'Services',
     'nav-government': 'Government',
+    'nav-gov-profile': 'Municipal Profile',
+    'nav-gov-officials': 'Government Officials',
+    'nav-gov-barangays': 'Barangays',
     'nav-statistics': 'Statistics',
     'nav-legislative': 'Legislative',
     'nav-transparency': 'Transparency',
@@ -6557,9 +6560,12 @@ const translations = {
     'nav-home': 'Tahanan',
     'nav-services': 'Mga Serbisyo',
     'nav-government': 'Pamahalaan',
+    'nav-gov-profile': 'Profile ng Munisipalidad',
+    'nav-gov-officials': 'Mga Opisyal ng Pamahalaan',
+    'nav-gov-barangays': 'Mga Barangay',
     'nav-statistics': 'Estadistika',
-    'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
+    'nav-legislative': 'Lehislatibo',
+    'nav-transparency': 'Transparency',
     'nav-contact': 'Makipag-ugnayan',
     'nav-budget': 'Badyet',
     'nav-news': 'Balita',
@@ -13114,14 +13120,17 @@ const translations = {
     'gov-kap-wangke': 'Opisyal na impormasyon ng Kapitan ng Barangay ay idadagdag dito.',
   },
 
-  ilo: {
-    'nav-home': 'Pagtaengan',
-    'nav-services': 'Dagiti Serbisio',
-    'nav-government': 'Gobierno',
+  sug: {
+    'nav-home': 'Home',
+    'nav-services': 'Mga Serbisyo',
+    'nav-government': 'Gobyerno',
+    'nav-gov-profile': 'Profile nan Munisipyo',
+    'nav-gov-officials': 'Mga Opisyal nan Gobyerno',
+    'nav-gov-barangays': 'Mga Barangay',
     'nav-statistics': 'Estadistika',
-    'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Kinasiluag',
-    'nav-contact': 'Kontaken',
+    'nav-legislative': 'Lehislatibo',
+    'nav-transparency': 'Transparency',
+    'nav-contact': 'Kontak',
     'nav-budget': 'Badyet',
     'nav-news': 'Damag',
     'nav-faq': 'Saludsod',
@@ -13162,10 +13171,10 @@ const translations = {
     'appointment-cta-heading':
       'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Claver',
     'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',
-    'appointment-schedule-btn': 'Ag-iskedyul ti Appointment',
-    'appointment-create-btn': 'Agaramid ti Account',
+    'appointment-schedule-btn': 'Mag-iskedyul nan Appointment',
+    'appointment-create-btn': 'Paghimo nan Account',
     'section-popular': 'Dagiti Popular a Serbisio',
-    'service-certificates': 'Dagiti Sertipiko',
+    'service-certificates': 'Mga Sertipiko',
     'service-certificates-desc': 'Sertipiko ti pannakayanak, kasar, ken ipapatay',
     'service-business': 'Dagiti Permit ti Negosio',
     'service-business-desc': 'Baro a permit ken panagpabaro',
@@ -13174,7 +13183,7 @@ const translations = {
     'service-social': 'Serbisio Sosial',
     'service-social-desc': 'Serbisio para kadagiti senior citizen ken PWD',
     'service-health': 'Serbisio ti Salun-at',
-    'service-health-desc': 'Tulong medikal ken dagiti programa',
+    'service-health-desc': 'Tulong medikal sanan mga programa',
     'btn-view-all-services': 'Kitaen Amin a Serbisio',
     'btn-view-services': 'Kitaen dagiti Serbisio',
     'btn-learn-more': 'Ammuem Pay',
@@ -13186,8 +13195,8 @@ const translations = {
     'btn-view-all': 'Kitaen Amin',
     'btn-read-more': 'Agbasa Pay',
     'section-leadership': 'Panangidaulo ti Munisipalidad',
-    'title-mayor': 'Mayor ti Munisipalidad',
-    'title-vice-mayor': 'Bise Mayor ti Munisipalidad',
+    'title-mayor': 'Mayor nan Lungsod',
+    'title-vice-mayor': 'Bise Mayor nan Lungsod',
     'title-councilor': 'Konsehal',
     'title-secretary': 'Sekretario',
     'btn-view-officials': 'Kitaen Amin nga Opisial',
@@ -13197,7 +13206,7 @@ const translations = {
     'contact-address': 'Adres',
     'contact-visit': 'Bisitaen Dakami',
     'contact-hours': 'Lunes-Biernes: 8:00 AM - 5:00 PM',
-    'contact-response': 'Sumungbat kami iti uneg ti 24 nga oras',
+    'contact-response': 'Mosungbat kami sa sulod nan 24 oras',
     'contact-municipal-hall': 'Munisipio',
     'contact-location': 'Lokasion',
     'contact-directions': 'Alaen ti Direksion',
@@ -19699,16 +19708,16 @@ const translations = {
 const TranslationEngine = {
   currentLang: 'en',
   defaultLang: 'en',
-  supportedLangs: ['en', 'fil', 'ilo'],
+  supportedLangs: ['en', 'fil', 'sug'],
   langNames: {
     en: 'English',
     fil: 'Filipino',
-    ilo: 'Ilocano',
+    sug: 'Surigaonon',
   },
   langCodes: {
     en: 'en',
     fil: 'fil',
-    ilo: 'ilo',
+    ilo: 'sug',
   },
   initialized: false,
   observers: [],
@@ -19744,7 +19753,7 @@ const TranslationEngine = {
 
     // Map common codes
     if (langCode === 'tl' || langCode === 'fil') return 'fil';
-    if (langCode === 'ilo') return 'ilo';
+    if (langCode === 'sug') return 'sug';
     if (langCode === 'en') return 'en';
 
     return this.defaultLang;
