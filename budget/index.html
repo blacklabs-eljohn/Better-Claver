@@ -244,6 +244,109 @@
           </div>
         </div>
       </section>
+
+      <!-- Interactive Budget & Mining Royalty Visualizer -->
+      <section class="section" style="background: var(--color-bg-alt); padding: 60px 0;">
+        <div class="container">
+          <div class="charter-header-container" style="text-align: center; margin-bottom: 40px;">
+            <span class="charter-tag"><i class="bi bi-pie-chart-fill"></i> <span data-i18n="budget-viz-tag">Budget & Mining Royalty Visualizer</span></span>
+            <h2 class="charter-title" data-i18n="budget-viz-title">Where Claver's Funds Go</h2>
+            <p class="charter-desc" data-i18n="budget-viz-desc">
+              Visual allocation of municipal revenue, National Tax Allotment (NTA), and Mining Tax Royalties across public sectors.
+            </p>
+          </div>
+
+          <div class="grid grid-2" style="gap: 30px; align-items: start;">
+            <!-- Sector Allocation Visualizer -->
+            <div class="charter-card" style="padding: 28px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+              <h3 style="margin-top: 0; margin-bottom: 20px; font-size: 1.3rem; font-weight: 700; color: var(--color-primary);">
+                <i class="bi bi-bar-chart-steps"></i> Sector Allocation Breakdown (2025 AIP)
+              </h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 18px;">
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem;">
+                    <span><i class="bi bi-tools" style="color: #0056d6;"></i> Infrastructure & Public Works</span>
+                    <span>35% (₱218.4 M)</span>
+                  </div>
+                  <div style="width: 100%; height: 10px; background: #e9ecef; border-radius: 20px; overflow: hidden;">
+                    <div style="width: 35%; height: 100%; background: #0056d6; border-radius: 20px;"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem;">
+                    <span><i class="bi bi-heart-pulse-fill" style="color: #06a77d;"></i> Health & Sanitation</span>
+                    <span>22% (₱137.2 M)</span>
+                  </div>
+                  <div style="width: 100%; height: 10px; background: #e9ecef; border-radius: 20px; overflow: hidden;">
+                    <div style="width: 22%; height: 100%; background: #06a77d; border-radius: 20px;"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem;">
+                    <span><i class="bi bi-people-fill" style="color: #f77f00;"></i> Social Welfare & Assistance</span>
+                    <span>18% (₱112.3 M)</span>
+                  </div>
+                  <div style="width: 100%; height: 10px; background: #e9ecef; border-radius: 20px; overflow: hidden;">
+                    <div style="width: 18%; height: 100%; background: #f77f00; border-radius: 20px;"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem;">
+                    <span><i class="bi bi-flower1" style="color: #2a9d8f;"></i> Agriculture & Environment</span>
+                    <span>15% (₱93.6 M)</span>
+                  </div>
+                  <div style="width: 100%; height: 10px; background: #e9ecef; border-radius: 20px; overflow: hidden;">
+                    <div style="width: 15%; height: 100%; background: #2a9d8f; border-radius: 20px;"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div style="display: flex; justify-content: space-between; font-weight: 600; margin-bottom: 6px; font-size: 0.95rem;">
+                    <span><i class="bi bi-shield-lock-fill" style="color: #d62828;"></i> Public Safety & Disaster Preparedness</span>
+                    <span>10% (₱62.4 M)</span>
+                  </div>
+                  <div style="width: 100%; height: 10px; background: #e9ecef; border-radius: 20px; overflow: hidden;">
+                    <div style="width: 10%; height: 100%; background: #d62828; border-radius: 20px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mining Royalty Allocation Card -->
+            <div class="charter-card" style="padding: 28px; background: white; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-left: 5px solid #f77f00;">
+              <h3 style="margin-top: 0; margin-bottom: 12px; font-size: 1.3rem; font-weight: 700; color: var(--color-primary); display: flex; align-items: center; gap: 8px;">
+                <i class="bi bi-gem" style="color: #f77f00;"></i> Mining Tax Royalty Allocation
+              </h3>
+              <p style="font-size: 0.925rem; color: var(--color-text-light); margin-bottom: 20px;">
+                As Surigao del Norte's premier mining hub, Claver receives statutory local shares from mineral extraction tax royalties (R.A. 7942 / Local Government Code Sec. 290).
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 14px;">
+                <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--color-bg-alt); border-radius: 12px; font-size: 0.9rem;">
+                  <span><strong>Total Mining Royalty Share:</strong></span>
+                  <span style="color: #f77f00; font-weight: 700;">₱348.50 Million</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--color-bg-alt); border-radius: 12px; font-size: 0.9rem;">
+                  <span><strong>Host Barangay Allocation (40%):</strong></span>
+                  <span style="font-weight: 600;">₱139.40 M</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--color-bg-alt); border-radius: 12px; font-size: 0.9rem;">
+                  <span><strong>Municipal Share (45%):</strong></span>
+                  <span style="font-weight: 600;">₱156.82 M</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding: 12px 16px; background: var(--color-bg-alt); border-radius: 12px; font-size: 0.9rem;">
+                  <span><strong>Provincial Share (15%):</strong></span>
+                  <span style="font-weight: 600;">₱52.28 M</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="sre-section-v2 animate-on-scroll">
         <div class="container">
           <div class="sre-header-v2">
