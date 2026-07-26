@@ -744,18 +744,10 @@ body.mobile-menu-open {
   color: var(--color-info);
 }
 
-.breadcrumbs {
-  padding: var(--spacing-sm) 0;
-  color: var(--color-text-light);
-  font-size: 0.875rem;
-}
-
-.breadcrumbs a {
-  color: var(--color-text-light);
-}
-
-.breadcrumbs span {
-  margin: 0 8px;
+.breadcrumbs,
+.profile-breadcrumbs,
+nav[aria-label="Breadcrumb"] {
+  display: none !important;
 }
 
 .sr-only {
