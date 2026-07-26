@@ -56,41 +56,43 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Appointment Services CTA */}
-      <section className="appointment-cta-section" aria-label="Mayor's Office Appointment Services">
+      {/* Citizen's Charter Section */}
+      <section className="charter-section" aria-label="Citizen's Charter Service Guide">
         <div className="container">
-          <div className="appointment-cta-inner">
-            <div className="appointment-cta-animation" aria-hidden="true">
-              <dotlottie-player
-                src="/assets/animation/ramonloganjr-booking.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></dotlottie-player>
+          <div className="charter-inner">
+            <div className="charter-header-container">
+              <span className="charter-tag">{t('charter-tag')}</span>
+              <h2 className="charter-title">{t('charter-title')}</h2>
+              <p className="charter-desc">{t('charter-desc')}</p>
             </div>
-            <div className="appointment-cta-content">
-              <h2 className="appointment-cta-heading">{t('appointment-cta-heading')}</h2>
-              <p className="appointment-cta-subtitle">{t('appointment-cta-subtitle')}</p>
-              <div className="appointment-cta-actions">
-                <a
-                  href="https://claver.gov.ph/user/auth/login.php"
-                  className="appointment-cta-btn appointment-cta-btn--primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-calendar-check" aria-hidden="true"></i>{' '}
-                  {t('appointment-schedule-btn')}
-                </a>
-                <a
-                  href="https://claver.gov.ph/user/auth/register.php"
-                  className="appointment-cta-btn appointment-cta-btn--outline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-person-plus" aria-hidden="true"></i>{' '}
-                  {t('appointment-create-btn')}
-                </a>
+
+            <div className="charter-grid">
+              <div className="charter-card">
+                <div className="charter-card-icon"><i className="bi bi-file-earmark-check"></i></div>
+                <h3>{t('charter-step1-title')}</h3>
+                <p>{t('charter-step1-desc')}</p>
+              </div>
+              <div className="charter-card">
+                <div className="charter-card-icon"><i className="bi bi-send-check"></i></div>
+                <h3>{t('charter-step2-title')}</h3>
+                <p>{t('charter-step2-desc')}</p>
+              </div>
+              <div className="charter-card">
+                <div className="charter-card-icon"><i className="bi bi-clipboard2-check"></i></div>
+                <h3>{t('charter-step3-title')}</h3>
+                <p>{t('charter-step3-desc')}</p>
+              </div>
+            </div>
+
+            <div className="charter-action-panel">
+              <div className="charter-action-content">
+                <h4>{t('charter-download-title')}</h4>
+                <p>{t('charter-download-desc')}</p>
+              </div>
+              <div className="charter-action-btn-wrapper">
+                <Link href="/services/certificates" className="charter-action-btn">
+                  <i className="bi bi-journal-text"></i> {t('charter-read-btn')}
+                </Link>
               </div>
             </div>
           </div>

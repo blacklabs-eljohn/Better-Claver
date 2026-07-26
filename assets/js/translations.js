@@ -53,13 +53,27 @@ const translations = {
     'breadcrumb-terms': 'Terms of Use',
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterClaver.org',
+    'hero-welcome': 'Welcome to\nBetterClaver.org',
     'hero-subtitle':
-      'Access government services, information, and resources for the people of Claver, Surigao del Norte.',
+      'Access government services, information, and resources for the people of Claver.',
     'hero-browse': 'Browse Services',
     'hero-contact': 'Contact Us',
     'hero-search-placeholder': 'Search for services...',
     'hero-find-service': 'Find a Service',
+
+    // Citizen's Charter Section
+    'charter-tag': "Citizen's Charter",
+    'charter-title': 'Your Guide to Government Transactions',
+    'charter-desc': 'In compliance with the Ease of Doing Business Act, we provide step-by-step guidelines, service standards, and requirements to serve you better.',
+    'charter-step1-title': '1. Check Requirements',
+    'charter-step1-desc': 'Find the list of documents, clearances, and fees required for your target service in our directory.',
+    'charter-step2-title': '2. Submit & Process',
+    'charter-step2-desc': 'Submit applications online or at designated department windows with standardized processing timelines.',
+    'charter-step3-title': '3. Track & Receive',
+    'charter-step3-desc': 'Monitor your application status and safely pick up your documents or certificates once finalized.',
+    'charter-download-title': "Download the Complete LGU Citizen's Charter Handbook",
+    'charter-download-desc': 'Access processing times, office locations, and service standards for all municipal offices.',
+    'charter-read-btn': 'Read Service Standards',
 
     // Appointment CTA
     'appointment-cta-heading': "Enhancing Appointment Services of LGU Claver Mayor's Office",
@@ -6597,13 +6611,27 @@ const translations = {
     'breadcrumb-sitemap': 'Mapa ng Site',
     'breadcrumb-privacy': 'Patakaran sa Pagkapribado',
     'breadcrumb-terms': 'Mga Tuntunin ng Paggamit',
-    'hero-welcome': 'Maligayang Pagdating sa BetterClaver.org',
+    'hero-welcome': 'Maligayang Pagdating sa\nBetterClaver.org',
     'hero-subtitle':
-      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Claver, Surigao del Norte.',
+      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Claver.',
     'hero-browse': 'Tingnan ang mga Serbisyo',
     'hero-contact': 'Makipag-ugnayan sa Amin',
     'hero-search-placeholder': 'Maghanap ng serbisyo...',
     'hero-find-service': 'Maghanap ng Serbisyo',
+
+    // Citizen's Charter Section
+    'charter-tag': 'Karta ng Mamamayan',
+    'charter-title': 'Iyong Gabay sa mga Transaksyon sa Pamahalaan',
+    'charter-desc': 'Alinsunod sa Ease of Doing Business Act, nagbibigay kami ng sunod-sunod na alituntunin, pamantayan sa serbisyo, at mga kinakailangan upang mapaglingkuran ka nang mas mahusay.',
+    'charter-step1-title': '1. Suriin ang mga Kakailanganin',
+    'charter-step1-desc': 'Hanapin ang listahan ng mga dokumento, clearance, at bayarin na kinakailangan para sa iyong target na serbisyo.',
+    'charter-step2-title': '2. Isumite at Iproseso',
+    'charter-step2-desc': 'Isumite ang mga aplikasyon online o sa mga itinalagang bintana ng kagawaran na may standardized na takdang panahon.',
+    'charter-step3-title': '3. Subaybayan at Tanggapin',
+    'charter-step3-desc': 'Subaybayan ang katayuan ng iyong aplikasyon at ligtas na kunin ang iyong mga dokumento o sertipiko kapag tapos na.',
+    'charter-download-title': 'I-download ang Kumpletong Handbook ng Karta ng Mamamayan ng LGU',
+    'charter-download-desc': 'I-access ang mga oras ng pagproseso, lokasyon ng opisina, at mga pamantayan sa serbisyo para sa lahat ng tanggapang munisipal.',
+    'charter-read-btn': 'Basahin ang mga Pamantayan',
     'appointment-cta-heading':
       'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Claver',
     'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
@@ -13161,13 +13189,27 @@ const translations = {
     'breadcrumb-sitemap': 'Mapa ti Site',
     'breadcrumb-privacy': 'Pagannurotan ti Pagkapribado',
     'breadcrumb-terms': 'Dagiti Kondision ti Panagusar',
-    'hero-welcome': 'Naragsak a Panangyawat iti BetterClaver.org',
+    'hero-welcome': 'Marajaw na Pagsangbay sa\nBetterClaver.org',
     'hero-subtitle':
-      'Aksesen dagiti serbisio ti gobierno, impormasion, ken dagiti rekurso para kadagiti umili ti Claver, Surigao del Norte.',
-    'hero-browse': 'Kitaen dagiti Serbisio',
-    'hero-contact': 'Kontaken Dakami',
-    'hero-search-placeholder': 'Agsapul ti serbisio...',
-    'hero-find-service': 'Agsapul ti Serbisio',
+      'I-access ang mga serbisyo nan gobyerno, impormasyon, sanan mga kapanguhaan para sa mga lungsodnon nan Claver.',
+    'hero-browse': 'Tan-awon ang mga Serbisyo',
+    'hero-contact': 'Makipag-ugnayan sa Amu',
+    'hero-search-placeholder': 'Maghanap nan serbisyo...',
+    'hero-find-service': 'Maghanap nan Serbisyo',
+
+    // Citizen's Charter Section
+    'charter-tag': 'Karta nan Lungsodnon',
+    'charter-title': 'Imo Giya sa mga Transaksyon sa Gobyerno',
+    'charter-desc': 'Alinsunod sa Ease of Doing Business Act, naghatag kami nan sunod-sunod na mga sumbanan, pamantayan sa serbisyo, sanan mga kinahanglanon para mas mapalambo an pag-alagad kaninyo.',
+    'charter-step1-title': '1. Susiha an mga Kinahanglanon',
+    'charter-step1-desc': 'Pangitaa an listahan nan mga dokumento, clearance, sanan bayad na kinahanglanon para sa imo target na serbisyo.',
+    'charter-step2-title': '2. Isumite sanan Iproseso',
+    'charter-step2-desc': 'Isumite an mga aplikasyon online o sa mga natudlo na bintana nan opisina na may sumbanan na takdang panahon.',
+    'charter-step3-title': '3. Subaybayan sanan Dawata',
+    'charter-step3-desc': 'Subaybayan an estado nan imo aplikasyon sanan kuhaa nan luwas an imo mga dokumento o sertipiko pagkahuman.',
+    'charter-download-title': 'I-download an Kumpleto na Handbook nan Karta nan Lungsodnon nan LGU',
+    'charter-download-desc': 'I-access an oras nan pagproseso, lokasyon nan mga opisina, sanan mga pamantayan sa serbisyo para sa tanan opisina sa munisipyo.',
+    'charter-read-btn': 'Basaha an mga Pamantayan',
     'appointment-cta-heading':
       'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Claver',
     'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',

@@ -6491,7 +6491,8 @@ cklist with Icons - Proper Indentation */
 
 /* Hero V2 - Two Column Layout */
 .home-hero-v2 {
-  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+  background: linear-gradient(rgba(12, 45, 107, 0.85), rgba(28, 75, 158, 0.85)), url('../images/banners/heroo.png') no-repeat center center;
+  background-size: cover;
   padding: 120px 0;
 }
 
@@ -6503,10 +6504,13 @@ cklist with Icons - Proper Indentation */
 }
 
 .home-hero-v2-text h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  font-weight: 800;
   color: white;
-  margin-bottom: var(--spacing-sm);
-  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.15;
+  white-space: pre-line;
+  letter-spacing: -0.5px;
 }
 
 .home-hero-v2-text p {
@@ -6556,136 +6560,169 @@ cklist with Icons - Proper Indentation */
   text-decoration: none;
 }
 
-/* Appointment CTA Section */
-.appointment-cta-section {
-  background:
-    radial-gradient(circle, rgba(0, 50, 160, 0.12) 1px, transparent 1px), var(--color-bg-alt);
+/* Citizen's Charter Section styling */
+.charter-section {
+  background: radial-gradient(circle, rgba(12, 45, 107, 0.08) 1px, transparent 1px), #f9fafb;
   background-size: 20px 20px;
   padding: 80px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.appointment-cta-inner {
-  display: flex;
+.charter-header-container {
+  max-width: 800px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.charter-tag {
+  display: inline-flex;
   align-items: center;
-  gap: 48px;
-  max-width: 1200px;
-  margin: 0 auto;
+  gap: 8px;
+  background: rgba(12, 45, 107, 0.08);
+  color: #0c2d6b;
+  padding: 6px 16px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  text-transform: uppercase;
 }
 
-.appointment-cta-animation {
-  flex: 0 0 420px;
-  max-width: 420px;
-}
-
-.appointment-cta-animation dotlottie-player {
-  width: 100%;
-  height: auto;
-}
-
-.appointment-cta-content {
-  flex: 1;
-  text-align: left;
-}
-
-.appointment-cta-heading {
+.charter-title {
   font-size: 2.25rem;
   font-weight: 800;
-  color: var(--color-text);
-  line-height: 1.2;
-  margin: 0 0 16px 0;
+  color: #0c2d6b;
+  margin-bottom: 16px;
 }
 
-.appointment-cta-subtitle {
-  font-size: 1.0625rem;
-  color: var(--color-text-light);
-  margin: 0 0 32px 0;
+.charter-desc {
+  font-size: 1.125rem;
+  color: #4b5563;
+  line-height: 1.6;
 }
 
-.appointment-cta-actions {
-  display: flex;
+.charter-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.charter-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 32px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.charter-card:hover {
+  transform: translateY(-5px);
+  border-color: #1c4b9e;
+  box-shadow: 0 10px 25px -5px rgba(12, 45, 107, 0.1);
+}
+
+.charter-card-icon {
+  width: 64px;
+  height: 64px;
+  background: rgba(12, 45, 107, 0.06);
+  color: #0c2d6b;
+  border-radius: 50%;
+  display: inline-flex;
   align-items: center;
-  gap: 16px;
-  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
 }
 
-.appointment-cta-btn {
+.charter-card:hover .charter-card-icon {
+  background: #0c2d6b;
+  color: white;
+}
+
+.charter-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 12px;
+}
+
+.charter-card p {
+  font-size: 0.9375rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.charter-action-panel {
+  background: linear-gradient(135deg, #0c2d6b 0%, #1c4b9e 100%);
+  border-radius: 20px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  box-shadow: 0 10px 30px rgba(12, 45, 107, 0.15);
+}
+
+.charter-action-content h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.charter-action-content p {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.charter-action-btn {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 28px;
-  border-radius: 8px;
+  background: white;
+  color: #0c2d6b;
+  padding: 14px 32px;
+  border-radius: 10px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   transition: all 0.2s ease;
-  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.appointment-cta-btn--primary {
-  background: #152c95;
-  color: white;
-}
-
-.appointment-cta-btn--primary:hover {
-  background: #13277c;
-  box-shadow: 0 4px 16px rgba(21, 44, 149, 0.3);
+.charter-action-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  background: #f9fafb;
+  color: #0c2d6b;
   text-decoration: none;
-  color: white;
 }
 
-.appointment-cta-btn--outline {
-  background: white;
-  color: var(--color-text);
-  border: 1px solid #d1d5db;
-}
-
-.appointment-cta-btn--outline:hover {
-  border-color: var(--color-text);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
-  color: var(--color-text);
+@media (max-width: 992px) {
+  .charter-action-panel {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+    padding: 32px;
+  }
 }
 
 @media (max-width: 768px) {
-  .appointment-cta-section {
-    padding: 56px 0;
+  .charter-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
-
-  .appointment-cta-inner {
-    flex-direction: column;
-    text-align: center;
-    gap: 32px;
+  
+  .charter-title {
+    font-size: 1.75rem;
   }
-
-  .appointment-cta-animation {
-    flex: none;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .appointment-cta-content {
-    text-align: center;
-  }
-
-  .appointment-cta-heading {
-    font-size: 1.5rem;
-  }
-
-  .appointment-cta-subtitle {
-    font-size: 0.9375rem;
-    margin-bottom: 24px;
-  }
-
-  .appointment-cta-actions {
-    justify-content: center;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .appointment-cta-btn {
-    width: 100%;
-    justify-content: center;
-    padding: 14px 24px;
+  
+  .charter-desc {
+    font-size: 1rem;
   }
 }
 
@@ -7320,7 +7357,8 @@ cklist with Icons - Proper Indentation */
 
 @media (max-width: 768px) {
   .home-hero-v2-text h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
+    line-height: 1.2;
   }
 
   .home-hero-v2-text p {

@@ -24,10 +24,24 @@ const translations: Record<string, Record<string, string>> = {
     'appointment-create-btn': 'Create Account',
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterClaver.org',
+    'hero-welcome': 'Welcome to\nBetterClaver.org',
     'hero-subtitle':
-      'Access government services, information, and resources for the people of Claver, Surigao del Norte.',
+      'Access government services, information, and resources for the people of Claver.',
     'hero-find-service': 'Find a Service',
+
+    // Citizen's Charter Section
+    'charter-tag': "Citizen's Charter",
+    'charter-title': 'Your Guide to Government Transactions',
+    'charter-desc': 'In compliance with the Ease of Doing Business Act, we provide step-by-step guidelines, service standards, and requirements to serve you better.',
+    'charter-step1-title': '1. Check Requirements',
+    'charter-step1-desc': 'Find the list of documents, clearances, and fees required for your target service in our directory.',
+    'charter-step2-title': '2. Submit & Process',
+    'charter-step2-desc': 'Submit applications online or at designated department windows with standardized processing timelines.',
+    'charter-step3-title': '3. Track & Receive',
+    'charter-step3-desc': 'Monitor your application status and safely pick up your documents or certificates once finalized.',
+    'charter-download-title': "Download the Complete LGU Citizen's Charter Handbook",
+    'charter-download-desc': 'Access processing times, office locations, and service standards for all municipal offices.',
+    'charter-read-btn': 'Read Service Standards',
 
     // Popular Services
     'section-popular': 'Popular Services',
@@ -578,10 +592,24 @@ const translations: Record<string, Record<string, string>> = {
     'appointment-create-btn': 'Gumawa ng Account',
 
     // Hero Section
-    'hero-welcome': 'Maligayang Pagdating sa BetterClaver.org',
+    'hero-welcome': 'Maligayang Pagdating sa\nBetterClaver.org',
     'hero-subtitle':
-      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Claver, Surigao del Norte.',
+      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Claver.',
     'hero-find-service': 'Maghanap ng Serbisyo',
+
+    // Citizen's Charter Section
+    'charter-tag': 'Karta ng Mamamayan',
+    'charter-title': 'Iyong Gabay sa mga Transaksyon sa Pamahalaan',
+    'charter-desc': 'Alinsunod sa Ease of Doing Business Act, nagbibigay kami ng sunod-sunod na alituntunin, pamantayan sa serbisyo, at mga kinakailangan upang mapaglingkuran ka nang mas mahusay.',
+    'charter-step1-title': '1. Suriin ang mga Kakailanganin',
+    'charter-step1-desc': 'Hanapin ang listahan ng mga dokumento, clearance, at bayarin na kinakailangan para sa iyong target na serbisyo.',
+    'charter-step2-title': '2. Isumite at Iproseso',
+    'charter-step2-desc': 'Isumite ang mga aplikasyon online o sa mga itinalagang bintana ng kagawaran na may standardized na takdang panahon.',
+    'charter-step3-title': '3. Subaybayan at Tanggapin',
+    'charter-step3-desc': 'Subaybayan ang katayuan ng iyong aplikasyon at ligtas na kunin ang iyong mga dokumento o sertipiko kapag tapos na.',
+    'charter-download-title': 'I-download ang Kumpletong Handbook ng Karta ng Mamamayan ng LGU',
+    'charter-download-desc': 'I-access ang mga oras ng pagproseso, lokasyon ng opisina, at mga pamantayan sa serbisyo para sa lahat ng tanggapang munisipal.',
+    'charter-read-btn': 'Basahin ang mga Pamantayan',
 
     // Popular Services
     'section-popular': 'Mga Sikat na Serbisyo',
@@ -1144,10 +1172,24 @@ const translations: Record<string, Record<string, string>> = {
     'appointment-create-btn': 'Paghimo nan Account',
 
     // Hero Section
-    'hero-welcome': 'Marajaw na Pagsangbay sa BetterClaver.org',
+    'hero-welcome': 'Marajaw na Pagsangbay sa\nBetterClaver.org',
     'hero-subtitle':
-      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Claver, Surigao del Norte.',
+      'I-access ang mga serbisyo nan gobyerno, impormasyon, sanan mga kapanguhaan para sa mga lungsodnon nan Claver.',
     'hero-find-service': 'Biroka an Serbisyo',
+
+    // Citizen's Charter Section
+    'charter-tag': 'Karta nan Lungsodnon',
+    'charter-title': 'Imo Giya sa mga Transaksyon sa Gobyerno',
+    'charter-desc': 'Alinsunod sa Ease of Doing Business Act, naghatag kami nan sunod-sunod na mga sumbanan, pamantayan sa serbisyo, sanan mga kinahanglanon para mas mapalambo an pag-alagad kaninyo.',
+    'charter-step1-title': '1. Susiha an mga Kinahanglanon',
+    'charter-step1-desc': 'Pangitaa an listahan nan mga dokumento, clearance, sanan bayad na kinahanglanon para sa imo target na serbisyo.',
+    'charter-step2-title': '2. Isumite sanan Iproseso',
+    'charter-step2-desc': 'Isumite an mga aplikasyon online o sa mga natudlo na bintana nan opisina na may sumbanan na takdang panahon.',
+    'charter-step3-title': '3. Subaybayan sanan Dawata',
+    'charter-step3-desc': 'Subaybayan an estado nan imo aplikasyon sanan kuhaa nan luwas an imo mga dokumento o sertipiko pagkahuman.',
+    'charter-download-title': 'I-download an Kumpleto na Handbook nan Karta nan Lungsodnon nan LGU',
+    'charter-download-desc': 'I-access an oras nan pagproseso, lokasyon nan mga opisina, sanan mga pamantayan sa serbisyo para sa tanan opisina sa munisipyo.',
+    'charter-read-btn': 'Basaha an mga Pamantayan',
 
     // Popular Services
     'section-popular': 'Mga Popular na Serbisyo',
