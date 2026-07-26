@@ -6491,8 +6491,12 @@ cklist with Icons - Proper Indentation */
 
 /* Hero V2 - Two Column Layout */
 .home-hero-v2 {
-  background: linear-gradient(rgba(12, 45, 107, 0.85), rgba(28, 75, 158, 0.85)), url('../images/banners/heroo.png') no-repeat center center;
-  background-size: cover;
+  background-color: #002b8d;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(135deg, #002b8d 0%, #001a54 100%);
+  background-size: 50px 50px, 50px 50px, auto;
   padding: 120px 0;
 }
 
