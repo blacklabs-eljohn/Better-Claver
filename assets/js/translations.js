@@ -55,6 +55,8 @@ const translations = {
 
     // Hero Section
     'nav-jobs': 'Careers & Jobs',
+    'nav-gov-emergency': 'Emergency Response',
+    'hero-task-jobs': 'Careers & Jobs',
     'hero-location-badge': 'Claver, Surigao del Norte',
     'budget-viz-tag': 'Budget & Mining Royalty Visualizer',
     'budget-viz-title': "Where Claver's Funds Go",
@@ -6752,6 +6754,8 @@ const translations = {
     'breadcrumb-privacy': 'Patakaran sa Pagkapribado',
     'breadcrumb-terms': 'Mga Tuntunin ng Paggamit',
     'hero-location-badge': 'Claver, Surigao del Norte',
+    'nav-gov-emergency': 'Tugon sa Emergency',
+    'hero-task-jobs': 'Mga Trabaho',
     'budget-viz-tag': 'Visualizer ng Badyet at Mining Royalty',
     'budget-viz-title': 'Kung Saan Napupunta ang Pondo ng Claver',
     'budget-viz-desc': 'Visual na alokasyon ng pampublikong kita, NTA, at Mining Tax Royalties sa mga pampublikong sektor.',
@@ -13469,6 +13473,8 @@ const translations = {
     'breadcrumb-privacy': 'Pagannurotan ti Pagkapribado',
     'breadcrumb-terms': 'Dagiti Kondision ti Panagusar',
     'hero-location-badge': 'Claver, Surigao del Norte',
+    'nav-gov-emergency': 'Tugon sa Emergency',
+    'hero-task-jobs': 'Mga Trabaho',
     'budget-viz-tag': 'Visualizer nan Badyet sanan Mining Royalty',
     'budget-viz-title': 'Hain Nagadugto an Pondo nan Claver',
     'budget-viz-desc': 'Visual na alokasyon nan pampublikong kita, NTA, sanan Mining Tax Royalties sa mga pampublikong sektor.',
