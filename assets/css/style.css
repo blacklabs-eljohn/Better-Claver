@@ -6564,6 +6564,177 @@ cklist with Icons - Proper Indentation */
   text-decoration: none;
 }
 
+/* ============================================
+   About Page Styles
+   ============================================ */
+
+/* About Hero */
+.about-hero {
+  background-color: #002b8d;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(135deg, #002b8d 0%, #001a54 100%);
+  background-size: 50px 50px, 50px 50px, auto;
+  padding: 100px 0 80px;
+  color: white;
+  text-align: center;
+}
+
+.about-hero-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.about-hero .charter-tag {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  margin: 20px 0 16px;
+}
+
+.about-hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+}
+
+/* What is BetterClaver? */
+.about-what-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.about-what-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.about-what-text h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0c2d6b;
+  margin: 16px 0;
+}
+
+.about-what-text p {
+  font-size: 1.0625rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.about-what-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-feature-item:hover {
+  transform: translateY(-3px);
+  border-color: #1c4b9e;
+  box-shadow: 0 8px 20px -5px rgba(12, 45, 107, 0.08);
+}
+
+.about-feature-item .charter-card-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  font-size: 1.25rem;
+  margin-bottom: 0;
+}
+
+.about-feature-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.about-feature-item p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Tech Stack */
+.about-tech-section {
+  padding: 64px 0;
+  background: white;
+}
+
+.about-tech-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.about-tech-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 24px;
+  background: rgba(12, 45, 107, 0.06);
+  color: #0c2d6b;
+  border: 1px solid rgba(12, 45, 107, 0.12);
+  border-radius: 30px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease;
+}
+
+.about-tech-badge:hover {
+  background: #0c2d6b;
+  color: white;
+  border-color: #0c2d6b;
+}
+
+/* About CTA */
+.about-cta-section {
+  padding: 0 0 80px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .about-hero {
+    padding: 72px 0 56px;
+  }
+
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .about-what-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 /* Citizen's Charter Section styling */
 .charter-section {
   background: radial-gradient(circle, rgba(12, 45, 107, 0.08) 1px, transparent 1px), #f9fafb;
