@@ -333,6 +333,26 @@
     gap: 10px !important;
   }
 
+  .mobile-drawer-main-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 12px 16px !important;
+    background: linear-gradient(135deg, #0056d6 0%, #0036a7 100%) !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    font-size: 0.875rem !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 12px rgba(0, 86, 214, 0.25) !important;
+  }
+
+  .mobile-drawer-main-link:hover,
+  .mobile-drawer-main-link:active {
+    color: #ffffff !important;
+    text-decoration: none !important;
+  }
+
   .mobile-drawer-item {
     display: flex !important;
     align-items: center !important;

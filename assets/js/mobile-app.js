@@ -1,5 +1,5 @@
 /* BetterClaver - Mobile App Native JavaScript
-   Manages fixed bottom tab bar navigation, slide-up drawer, and mobile app interactions.
+   Manages fixed bottom tab bar navigation, dedicated slide-up bottom sheets for Services, Govt, and More.
    Only activates when window width <= 768px.
 */
 
@@ -7,7 +7,7 @@
   'use strict';
 
   function initMobileAppNav() {
-    // Only inject on mobile viewports
+    // Only activate on mobile viewports
     if (window.innerWidth > 768) {
       removeExistingMobileApp();
       return;
@@ -28,20 +28,20 @@
         '<i class="bi ' + (currentPage === 'home' ? 'bi-house-fill' : 'bi-house') + '"></i>' +
         '<span>Home</span>' +
       '</a>' +
-      '<a href="/services/" class="mobile-tab-item ' + (currentPage === 'services' ? 'active' : '') + '" data-tab="services">' +
+      '<button type="button" class="mobile-tab-item ' + (currentPage === 'services' ? 'active' : '') + '" id="mobile-tab-services-btn" data-tab="services" aria-label="Open Services Menu">' +
         '<i class="bi ' + (currentPage === 'services' ? 'bi-grid-fill' : 'bi-grid') + '"></i>' +
         '<span>Services</span>' +
-      '</a>' +
+      '</button>' +
       '<a href="/emergency/" class="mobile-tab-item mobile-tab-item--emergency ' + (currentPage === 'emergency' ? 'active' : '') + '" data-tab="emergency">' +
         '<i class="bi ' + (currentPage === 'emergency' ? 'bi-broadcast-pin' : 'bi-broadcast') + '">' +
           '<span class="mobile-tab-emergency-pulse"></span>' +
         '</i>' +
         '<span>Emergency</span>' +
       '</a>' +
-      '<a href="/government/" class="mobile-tab-item ' + (currentPage === 'government' ? 'active' : '') + '" data-tab="government">' +
+      '<button type="button" class="mobile-tab-item ' + (currentPage === 'government' ? 'active' : '') + '" id="mobile-tab-govt-btn" data-tab="government" aria-label="Open Government Menu">' +
         '<i class="bi ' + (currentPage === 'government' ? 'bi-building-fill' : 'bi-building') + '"></i>' +
         '<span>Govt</span>' +
-      '</a>' +
+      '</button>' +
       '<button type="button" class="mobile-tab-item ' + (currentPage === 'more' ? 'active' : '') + '" id="mobile-tab-more-btn" data-tab="more" aria-label="Open More Menu">' +
         '<i class="bi bi-three-dots"></i>' +
         '<span>More</span>' +
@@ -49,59 +49,166 @@
 
     body.appendChild(tabBar);
 
-    // ─── Render Slide-Up "More" Drawer ─────────────────────────────────
+    // ─── Render Shared Overlay ──────────────────────────────────────────
     var overlay = document.createElement('div');
     overlay.className = 'mobile-drawer-overlay';
     overlay.id = 'mobile-drawer-overlay';
+    body.appendChild(overlay);
 
-    var drawer = document.createElement('div');
-    drawer.className = 'mobile-drawer-sheet';
-    drawer.id = 'mobile-drawer-sheet';
-    drawer.setAttribute('role', 'dialog');
-    drawer.setAttribute('aria-modal', 'true');
-    drawer.setAttribute('aria-label', 'More Navigation Options');
+    // ─── 1. Services Bottom Sheet Drawer ───────────────────────────────
+    var servicesSheet = document.createElement('div');
+    servicesSheet.className = 'mobile-drawer-sheet';
+    servicesSheet.id = 'mobile-drawer-services-sheet';
+    servicesSheet.setAttribute('role', 'dialog');
+    servicesSheet.setAttribute('aria-label', 'Services Dropdown Menu');
 
-    drawer.innerHTML =
+    var rootPath = getRootPath();
+
+    servicesSheet.innerHTML =
       '<div class="mobile-drawer-drag-handle"></div>' +
       '<div class="mobile-drawer-header">' +
-        '<h3 class="mobile-drawer-title"><i class="bi bi-app-indicator"></i> More Options</h3>' +
-        '<button type="button" class="mobile-drawer-close" id="mobile-drawer-close-btn" aria-label="Close Menu">' +
+        '<h3 class="mobile-drawer-title"><i class="bi bi-grid-fill"></i> Municipal Services</h3>' +
+        '<button type="button" class="mobile-drawer-close" data-close="services" aria-label="Close Menu">' +
+          '<i class="bi bi-x-lg"></i>' +
+        '</button>' +
+      '</div>' +
+      '<div class="mobile-drawer-body">' +
+        '<a href="' + rootPath + 'services/" class="mobile-drawer-main-link">' +
+          '<span>Browse All Services Directory</span> <i class="bi bi-arrow-right"></i>' +
+        '</a>' +
+        '<div class="mobile-drawer-grid">' +
+          '<a href="' + rootPath + 'services/certificates.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-file-earmark-text-fill"></i></div>' +
+            '<span>Certificates</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/business.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-shop"></i></div>' +
+            '<span>Business Permits</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/tax-payments.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-cash-coin"></i></div>' +
+            '<span>Tax Payments</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/social-services.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-people-fill"></i></div>' +
+            '<span>Social Services</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/health.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-heart-pulse-fill"></i></div>' +
+            '<span>Health & RHU</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/agriculture.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-tree-fill"></i></div>' +
+            '<span>Agriculture</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/infrastructure.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-tools"></i></div>' +
+            '<span>Infrastructure</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/education.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-mortarboard-fill"></i></div>' +
+            '<span>Education</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/public-safety.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-shield-check"></i></div>' +
+            '<span>Public Safety</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'services/environment.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-flower1"></i></div>' +
+            '<span>Environment</span>' +
+          '</a>' +
+        '</div>' +
+      '</div>';
+    body.appendChild(servicesSheet);
+
+    // ─── 2. Govt Bottom Sheet Drawer ──────────────────────────────────
+    var govtSheet = document.createElement('div');
+    govtSheet.className = 'mobile-drawer-sheet';
+    govtSheet.id = 'mobile-drawer-govt-sheet';
+    govtSheet.setAttribute('role', 'dialog');
+    govtSheet.setAttribute('aria-label', 'Government Dropdown Menu');
+
+    govtSheet.innerHTML =
+      '<div class="mobile-drawer-drag-handle"></div>' +
+      '<div class="mobile-drawer-header">' +
+        '<h3 class="mobile-drawer-title"><i class="bi bi-building-fill"></i> LGU Government</h3>' +
+        '<button type="button" class="mobile-drawer-close" data-close="govt" aria-label="Close Menu">' +
+          '<i class="bi bi-x-lg"></i>' +
+        '</button>' +
+      '</div>' +
+      '<div class="mobile-drawer-body">' +
+        '<a href="' + rootPath + 'government/" class="mobile-drawer-main-link">' +
+          '<span>Government Portal Overview</span> <i class="bi bi-arrow-right"></i>' +
+        '</a>' +
+        '<div class="mobile-drawer-grid">' +
+          '<a href="' + rootPath + 'government/profile.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-info-circle-fill"></i></div>' +
+            '<span>Municipal Profile</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'government/index.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-person-badge-fill"></i></div>' +
+            '<span>Elected Officials</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'government/barangays.html" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-geo-alt-fill"></i></div>' +
+            '<span>14 Barangays</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'emergency/" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-broadcast-pin"></i></div>' +
+            '<span>Emergency Center</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'tourism/" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-compass-fill"></i></div>' +
+            '<span>Tourism & Festivals</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'legislative/" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-journal-text"></i></div>' +
+            '<span>Legislative Archive</span>' +
+          '</a>' +
+        '</div>' +
+      '</div>';
+    body.appendChild(govtSheet);
+
+    // ─── 3. More Bottom Sheet Drawer ──────────────────────────────────
+    var moreSheet = document.createElement('div');
+    moreSheet.className = 'mobile-drawer-sheet';
+    moreSheet.id = 'mobile-drawer-more-sheet';
+    moreSheet.setAttribute('role', 'dialog');
+    moreSheet.setAttribute('aria-label', 'More Navigation Options');
+
+    moreSheet.innerHTML =
+      '<div class="mobile-drawer-drag-handle"></div>' +
+      '<div class="mobile-drawer-header">' +
+        '<h3 class="mobile-drawer-title"><i class="bi bi-three-dots"></i> More Options</h3>' +
+        '<button type="button" class="mobile-drawer-close" data-close="more" aria-label="Close Menu">' +
           '<i class="bi bi-x-lg"></i>' +
         '</button>' +
       '</div>' +
       '<div class="mobile-drawer-body">' +
         '<div class="mobile-drawer-grid">' +
-          '<a href="/jobs/" class="mobile-drawer-item">' +
+          '<a href="' + rootPath + 'jobs/" class="mobile-drawer-item">' +
             '<div class="mobile-drawer-item-icon"><i class="bi bi-briefcase-fill"></i></div>' +
             '<span>Careers & Jobs</span>' +
           '</a>' +
-          '<a href="/budget/" class="mobile-drawer-item">' +
+          '<a href="' + rootPath + 'budget/" class="mobile-drawer-item">' +
             '<div class="mobile-drawer-item-icon"><i class="bi bi-pie-chart-fill"></i></div>' +
             '<span>Transparency</span>' +
           '</a>' +
-          '<a href="/government/barangays.html" class="mobile-drawer-item">' +
-            '<div class="mobile-drawer-item-icon"><i class="bi bi-geo-alt-fill"></i></div>' +
-            '<span>Barangays</span>' +
-          '</a>' +
-          '<a href="/legislative/" class="mobile-drawer-item">' +
-            '<div class="mobile-drawer-item-icon"><i class="bi bi-journal-text"></i></div>' +
-            '<span>Legislative</span>' +
-          '</a>' +
-          '<a href="/tourism/" class="mobile-drawer-item">' +
-            '<div class="mobile-drawer-item-icon"><i class="bi bi-compass-fill"></i></div>' +
-            '<span>Tourism</span>' +
-          '</a>' +
-          '<a href="/contact/" class="mobile-drawer-item">' +
+          '<a href="' + rootPath + 'contact/" class="mobile-drawer-item">' +
             '<div class="mobile-drawer-item-icon"><i class="bi bi-telephone-fill"></i></div>' +
             '<span>Contact Us</span>' +
           '</a>' +
-          '<a href="/about/" class="mobile-drawer-item">' +
+          '<a href="' + rootPath + 'about/" class="mobile-drawer-item">' +
             '<div class="mobile-drawer-item-icon"><i class="bi bi-info-circle-fill"></i></div>' +
             '<span>About Project</span>' +
           '</a>' +
-          '<a href="/faq/" class="mobile-drawer-item">' +
+          '<a href="' + rootPath + 'faq/" class="mobile-drawer-item">' +
             '<div class="mobile-drawer-item-icon"><i class="bi bi-question-circle-fill"></i></div>' +
             '<span>FAQ & Help</span>' +
+          '</a>' +
+          '<a href="' + rootPath + 'news/" class="mobile-drawer-item">' +
+            '<div class="mobile-drawer-item-icon"><i class="bi bi-newspaper"></i></div>' +
+            '<span>News & Updates</span>' +
           '</a>' +
         '</div>' +
         '<div class="mobile-drawer-lang-wrap">' +
@@ -113,32 +220,49 @@
           '</div>' +
         '</div>' +
       '</div>';
+    body.appendChild(moreSheet);
 
-    body.appendChild(overlay);
-    body.appendChild(drawer);
-
-    // ─── Attach Events ────────────────────────────────────────────────
+    // ─── Attach Drawer Button Events ──────────────────────────────────
+    var servicesBtn = document.getElementById('mobile-tab-services-btn');
+    var govtBtn = document.getElementById('mobile-tab-govt-btn');
     var moreBtn = document.getElementById('mobile-tab-more-btn');
-    var closeBtn = document.getElementById('mobile-drawer-close-btn');
+
+    if (servicesBtn) {
+      servicesBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        triggerHaptic();
+        openDrawer('services');
+      });
+    }
+
+    if (govtBtn) {
+      govtBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        triggerHaptic();
+        openDrawer('govt');
+      });
+    }
 
     if (moreBtn) {
       moreBtn.addEventListener('click', function (e) {
         e.preventDefault();
         triggerHaptic();
-        openDrawer();
+        openDrawer('more');
       });
     }
 
-    if (closeBtn) {
-      closeBtn.addEventListener('click', function () {
+    // Close buttons
+    var closeBtns = document.querySelectorAll('.mobile-drawer-close');
+    closeBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
         triggerHaptic();
-        closeDrawer();
+        closeAllDrawers();
       });
-    }
+    });
 
-    overlay.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeAllDrawers);
 
-    // Haptic feedback on all mobile tabs
+    // Haptic feedback on all tabs
     var tabItems = tabBar.querySelectorAll('.mobile-tab-item');
     tabItems.forEach(function (item) {
       item.addEventListener('click', function () {
@@ -146,48 +270,52 @@
       });
     });
 
-    // Touch drag down to close drawer
-    var touchStartY = 0;
-    drawer.addEventListener('touchstart', function (e) {
-      touchStartY = e.touches[0].clientY;
-    }, { passive: true });
+    // Touch drag down to close
+    var allSheets = [servicesSheet, govtSheet, moreSheet];
+    allSheets.forEach(function (sheet) {
+      var touchStartY = 0;
+      sheet.addEventListener('touchstart', function (e) {
+        touchStartY = e.touches[0].clientY;
+      }, { passive: true });
 
-    drawer.addEventListener('touchmove', function (e) {
-      var touchY = e.touches[0].clientY;
-      var diffY = touchY - touchStartY;
-      if (diffY > 60) {
-        closeDrawer();
-      }
-    }, { passive: true });
+      sheet.addEventListener('touchmove', function (e) {
+        var touchY = e.touches[0].clientY;
+        var diffY = touchY - touchStartY;
+        if (diffY > 60) {
+          closeAllDrawers();
+        }
+      }, { passive: true });
+    });
   }
 
-  function openDrawer() {
+  function openDrawer(type) {
+    closeAllDrawers();
     var overlay = document.getElementById('mobile-drawer-overlay');
-    var drawer = document.getElementById('mobile-drawer-sheet');
-    if (overlay && drawer) {
+    var sheet = document.getElementById('mobile-drawer-' + type + '-sheet');
+    if (overlay && sheet) {
       overlay.classList.add('active');
-      drawer.classList.add('active');
+      sheet.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
   }
 
-  function closeDrawer() {
+  function closeAllDrawers() {
     var overlay = document.getElementById('mobile-drawer-overlay');
-    var drawer = document.getElementById('mobile-drawer-sheet');
-    if (overlay && drawer) {
-      overlay.classList.remove('active');
-      drawer.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+    var sheets = document.querySelectorAll('.mobile-drawer-sheet');
+    if (overlay) overlay.classList.remove('active');
+    sheets.forEach(function (sheet) {
+      sheet.classList.remove('active');
+    });
+    document.body.style.overflow = '';
   }
 
   function removeExistingMobileApp() {
     var bar = document.querySelector('.mobile-tab-bar');
     var overlay = document.getElementById('mobile-drawer-overlay');
-    var drawer = document.getElementById('mobile-drawer-sheet');
+    var sheets = document.querySelectorAll('.mobile-drawer-sheet');
     if (bar) bar.remove();
     if (overlay) overlay.remove();
-    if (drawer) drawer.remove();
+    sheets.forEach(function (sheet) { sheet.remove(); });
   }
 
   function triggerHaptic() {
@@ -196,16 +324,26 @@
     }
   }
 
+  function getRootPath() {
+    var depth = (window.location.pathname.match(/\//g) || []).length - 1;
+    if (window.location.pathname.endsWith('/')) depth--;
+    if (depth <= 0) return '/';
+    var prefix = '';
+    for (var i = 0; i < depth; i++) {
+      prefix += '../';
+    }
+    return prefix;
+  }
+
   function detectCurrentPage() {
     var path = window.location.pathname.toLowerCase();
     if (path === '/' || path.indexOf('/index.html') !== -1) return 'home';
     if (path.indexOf('/services/') !== -1 || path.indexOf('/service-details/') !== -1) return 'services';
     if (path.indexOf('/emergency/') !== -1) return 'emergency';
-    if (path.indexOf('/government/') !== -1 && path.indexOf('/barangays.html') === -1) return 'government';
+    if (path.indexOf('/government/') !== -1) return 'government';
     return 'more';
   }
 
-  // Initialize on DOM load and window resize
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', initMobileAppNav);
   } else {
