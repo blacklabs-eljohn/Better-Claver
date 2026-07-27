@@ -563,4 +563,54 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   initEduAccordion();
+
+  // Transparent to Liquid Glass Navbar Effect (Desktop Only)
+  const initHeaderScrollEffect = () => {
+    const siteHeader = document.querySelector('.site-header');
+    if (!siteHeader) return;
+
+    const isDesktop = () => window.matchMedia('(min-width: 1025px)').matches;
+    const hasHero = () => !!document.querySelector('.home-hero-v2, .about-hero, .page-hero, .hero-section, section[class*="hero"]');
+
+    const updateHeaderState = () => {
+      if (!isDesktop()) {
+        siteHeader.classList.remove('is-transparent', 'is-scrolled');
+        return;
+      }
+
+      if (!hasHero()) {
+        siteHeader.classList.remove('is-transparent');
+        siteHeader.classList.add('is-scrolled');
+        return;
+      }
+
+      const scrollY = window.scrollY || window.pageYOffset;
+      if (scrollY <= 20) {
+        siteHeader.classList.add('is-transparent');
+        siteHeader.classList.remove('is-scrolled');
+      } else {
+        siteHeader.classList.remove('is-transparent');
+        siteHeader.classList.add('is-scrolled');
+      }
+    };
+
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateHeaderState();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    });
+
+    window.addEventListener('resize', updateHeaderState);
+
+    // Run initial state update
+    updateHeaderState();
+  };
+
+  initHeaderScrollEffect();
 });
+

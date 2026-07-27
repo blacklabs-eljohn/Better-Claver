@@ -231,6 +231,11 @@ p {
   top: 0;
   z-index: 1000;
   padding: 12px 0;
+  transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              backdrop-filter 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              -webkit-backdrop-filter 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-inner {
@@ -250,6 +255,7 @@ p {
 .logo-img {
   height: 48px;
   width: auto;
+  transition: filter 0.35s ease;
 }
 
 .logo-text {
@@ -288,6 +294,7 @@ p {
   -ms-user-select: none;
   user-select: none;
   font-weight: 500;
+  transition: color 0.35s ease, text-shadow 0.35s ease;
 }
 
 .main-nav a:hover,
@@ -399,6 +406,129 @@ body.mobile-menu-open {
   background-color: var(--color-primary);
   color: var(--color-white);
   border-color: var(--color-primary);
+}
+
+/* ==========================================================================
+   Desktop-Only Transparent & Liquid Glass Header
+   ========================================================================== */
+@media (min-width: 1025px) {
+  /* Pull hero section background under transparent header (exactly to bottom edge of hotline bar) */
+  body[data-page="home"] .home-hero-v2,
+  .about-hero,
+  .page-hero,
+  .hero-section {
+    margin-top: -74px;
+    padding-top: calc(120px + 74px);
+  }
+
+  /* Transparent Header State (at page top) */
+  .site-header.is-transparent {
+    background-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    outline: none !important;
+    margin-top: 0 !important;
+  }
+
+  .site-header.is-transparent .logo-img {
+    filter: brightness(0) invert(1);
+  }
+
+  .site-header.is-transparent .main-nav > ul > li > a {
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  }
+
+  .site-header.is-transparent .main-nav > ul > li > a:hover,
+  .site-header.is-transparent .main-nav > ul > li > a.active {
+    color: #7dd3fc !important;
+  }
+
+  .site-header.is-transparent .main-nav .has-dropdown > a::after {
+    border-top-color: #ffffff;
+  }
+
+  .site-header.is-transparent .main-nav .has-dropdown > a:hover::after,
+  .site-header.is-transparent .main-nav .has-dropdown > a.active::after {
+    border-top-color: #7dd3fc;
+  }
+
+  .site-header.is-transparent .lang-btn {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.35);
+    background-color: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .site-header.is-transparent .lang-btn:hover,
+  .site-header.is-transparent .lang-btn.active {
+    background-color: #ffffff;
+    color: var(--color-primary);
+    border-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .site-header.is-transparent .main-nav .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(225, 231, 239, 0.8);
+  }
+
+  .site-header.is-transparent .main-nav .dropdown-menu a {
+    color: var(--color-text) !important;
+    text-shadow: none !important;
+  }
+
+  .site-header.is-transparent .main-nav .dropdown-menu a:hover {
+    background-color: var(--color-bg-alt) !important;
+    color: var(--color-primary) !important;
+  }
+
+  /* Liquid Glass Scrolled State (on scroll down) */
+  .site-header.is-scrolled {
+    background-color: rgba(255, 255, 255, 0.82) !important;
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    backdrop-filter: blur(16px) saturate(180%);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08) !important;
+    border-bottom: 1px solid rgba(225, 231, 239, 0.7);
+  }
+
+  .site-header.is-scrolled .logo-img {
+    filter: none;
+  }
+
+  .site-header.is-scrolled .main-nav > ul > li > a {
+    color: var(--color-text) !important;
+    text-shadow: none;
+  }
+
+  .site-header.is-scrolled .main-nav > ul > li > a:hover,
+  .site-header.is-scrolled .main-nav > ul > li > a.active {
+    color: var(--color-primary) !important;
+  }
+
+  .site-header.is-scrolled .main-nav .has-dropdown > a::after {
+    border-top-color: currentColor;
+  }
+
+  .site-header.is-scrolled .lang-btn {
+    color: var(--color-text);
+    border-color: rgba(0, 0, 0, 0.12);
+    background-color: transparent;
+  }
+
+  .site-header.is-scrolled .lang-btn:hover,
+  .site-header.is-scrolled .lang-btn.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+  }
 }
 
 .section-header {
@@ -587,6 +717,7 @@ body.mobile-menu-open {
   flex: 1;
   display: -webkit-box;
   -webkit-line-clamp: 3;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -2454,7 +2585,7 @@ textarea.form-control {
 /* BetterGov Improvements */
 
 /* Enhanced Focus States for Accessibility */
-:focus-visible {
+*:focus-visible {
   outline: 3px solid var(--color-accent);
   outline-offset: 2px;
 }
@@ -3928,7 +4059,7 @@ cklist with Icons - Proper Indentation */
 }
 
 .barangay-item-row[data-width] .barangay-bar {
-  width: attr(data-width %);
+  width: 100%;
 }
 
 /* Set bar widths via CSS */
