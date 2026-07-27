@@ -10907,3 +10907,197 @@ a.a11y-contact-item:hover i {
     padding: 20px 20px 24px;
   }
 }
+
+/* ==========================================================================
+   Public Works & Infrastructure Homepage DPWH Section
+   ========================================================================== */
+.home-dpwh-section {
+  padding: 60px 0;
+}
+
+.home-dpwh-card {
+  background: linear-gradient(135deg, #0036a7 0%, #002170 100%);
+  border-radius: 24px;
+  padding: 36px;
+  box-shadow: 0 16px 40px -12px rgba(0, 50, 160, 0.25);
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-dpwh-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+
+.home-dpwh-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-dpwh-logo-wrapper {
+  width: 76px;
+  height: 76px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  padding: 6px;
+}
+
+.home-dpwh-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.home-dpwh-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.home-dpwh-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.5;
+  margin-bottom: 28px;
+  max-width: 380px;
+}
+
+.home-dpwh-action {
+  width: 100%;
+}
+
+.home-dpwh-btn {
+  background: #ffffff !important;
+  color: #0036a7 !important;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 12px 24px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.25s ease;
+  text-decoration: none;
+}
+
+.home-dpwh-btn:hover {
+  background: #f8fafc !important;
+  color: #002170 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+.home-dpwh-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.home-dpwh-stat-card {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 18px;
+  padding: 22px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: all 0.25s ease;
+}
+
+.home-dpwh-stat-card:hover {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+}
+
+.home-dpwh-stat-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.home-dpwh-stat-header i {
+  font-size: 1.1rem;
+  color: #7dd3fc;
+}
+
+.home-dpwh-stat-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.home-dpwh-stat-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  letter-spacing: -0.5px;
+}
+
+.home-dpwh-stat-sub {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.home-dpwh-source {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  margin-top: 14px;
+}
+
+.home-dpwh-source a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .home-dpwh-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-dpwh-card {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+
+  .home-dpwh-stats-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .home-dpwh-heading {
+    font-size: 1.4rem;
+  }
+
+  .home-dpwh-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+

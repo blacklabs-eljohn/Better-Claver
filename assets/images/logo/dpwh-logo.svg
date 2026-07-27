@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="120" height="120">
+  <!-- 1. Outer Dark Navy Gear Wheel Body -->
+  <g fill="#000066">
+    <circle cx="250" cy="250" r="215"/>
+    
+    <!-- 16 Outer Gear Teeth -->
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(0 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(22.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(45 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(67.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(90 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(112.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(135 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(157.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(180 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(202.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(225 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(247.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(270 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(292.5 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(315 250 250)"/>
+    <rect x="235" y="5" width="30" height="30" rx="3" transform="rotate(337.5 250 250)"/>
+  </g>
+
+  <!-- 2. Concentric White Border Ring -->
+  <circle cx="250" cy="250" r="202" fill="none" stroke="#ffffff" stroke-width="7"/>
+
+  <!-- 3. Inner Dark Navy Field -->
+  <circle cx="250" cy="250" r="197" fill="#000066"/>
+
+  <!-- 4. Left White Column -->
+  <g fill="#ffffff">
+    <rect x="105" y="150" width="102" height="16" rx="2"/>
+    <rect x="105" y="173" width="102" height="11" rx="2"/>
+    <rect x="115" y="190" width="92" height="8" rx="1"/>
+    <rect x="115" y="202" width="92" height="8" rx="1"/>
+
+    <!-- Pillar Body with 2 Arch Openings -->
+    <path d="M 118,217 L 198,217 L 198,320 L 118,320 Z M 130,232 L 152,232 Q 157,232 157,237 L 157,308 L 130,308 Z M 165,232 L 187,232 Q 192,232 192,237 L 192,308 L 165,308 Z" fill-rule="evenodd"/>
+  </g>
+
+  <!-- 5. Right White Column -->
+  <g fill="#ffffff">
+    <rect x="293" y="150" width="102" height="16" rx="2"/>
+    <rect x="293" y="173" width="102" height="11" rx="2"/>
+    <rect x="293" y="190" width="92" height="8" rx="1"/>
+    <rect x="293" y="202" width="92" height="8" rx="1"/>
+
+    <!-- Pillar Body with 2 Arch Openings -->
+    <path d="M 302,217 L 382,217 L 382,320 L 302,320 Z M 314,232 L 336,232 Q 341,232 341,237 L 341,308 L 314,308 Z M 349,232 L 371,232 Q 376,232 376,237 L 376,308 L 349,308 Z" fill-rule="evenodd"/>
+  </g>
+
+  <!-- 6. Official Red Road Lanes (Sweeping Curved Highway) -->
+  <!-- Left Red Lane -->
+  <path d="M 213,150 L 235,150 L 235,275 L 412,352 Q 390,392 355,420 L 88,348 L 213,285 Z" fill="#e63900"/>
+
+  <!-- Right Red Lane -->
+  <path d="M 287,150 L 265,150 L 265,275 L 88,352 Q 110,392 145,420 L 412,348 L 287,285 Z" fill="#e63900"/>
+</svg>

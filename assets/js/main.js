@@ -612,5 +612,35 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   initHeaderScrollEffect();
+
+  // Dynamic DPWH Stats Loader for Homepage
+  const initHomeDPWHStats = async () => {
+    const totalEl = document.getElementById('home-dpwh-total');
+    if (!totalEl) return;
+
+    try {
+      const res = await fetch('data/dpwh-projects.json');
+      if (!res.ok) return;
+      const data = await res.json();
+      if (!data || !data.summary) return;
+
+      const summary = data.summary;
+      if (summary.totalProjects) totalEl.textContent = summary.totalProjects;
+      const compEl = document.getElementById('home-dpwh-completed');
+      if (compEl && summary.completedProjects !== undefined) compEl.textContent = summary.completedProjects;
+      const ongEl = document.getElementById('home-dpwh-ongoing');
+      if (ongEl && summary.ongoingProjects !== undefined) ongEl.textContent = summary.ongoingProjects;
+      const budEl = document.getElementById('home-dpwh-budget');
+      if (budEl && summary.totalCost) {
+        const costMillions = (summary.totalCost / 1000000).toFixed(1);
+        budEl.textContent = `₱${costMillions}M`;
+      }
+    } catch (e) {
+      // Keep static fallback values if fetch is unavailable
+    }
+  };
+
+  initHomeDPWHStats();
 });
+
 
