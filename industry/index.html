@@ -3,52 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Industry & Community Portal - Factual, transparent, and educational information on the mining industry, SDMP projects, community investments, environmental monitoring, and public reports in Claver, Surigao del Norte."
-    />
+    <meta name="description" content="Industry & Community Portal - Factual, transparent, and educational information on the mining industry, SDMP projects, community investments, environmental monitoring, and public reports in Claver, Surigao del Norte." />
     <meta name="author" content="BetterClaver" />
-    <meta
-      name="keywords"
-      content="Claver mining, SDMP Claver, Taganito Mining, PGMC, THPAL, DENR MGB, mining royalties, community investments, mine rehabilitation, Surigao del Norte"
-    />
+    <meta name="keywords" content="Claver mining, SDMP Claver, Taganito Mining, PGMC, THPAL, DENR MGB, mining royalties, community investments, mine rehabilitation, Surigao del Norte" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://betterclaver.org/industry/" />
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://betterclaver.org/industry/" />
-    <meta property="og:title" content="Industry & Community Portal | BetterClaver.org" />
-    <meta
-      property="og:description"
-      content="Centralized, transparent, and factual source of verified public information on the mining industry and community investments in Claver."
-    />
-    <meta property="og:image" content="https://betterclaver.org/assets/images/banners/opengraph.png" />
-
     <title>Industry & Community Portal | BetterClaver.org</title>
-
     <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
     <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
-    />
-
-    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/accessibility.css" />
     <link rel="stylesheet" href="../assets/css/footer.css" />
-
     <style>
+      .ind-hero h1 {
+        color: #ffffff !important;
+      }
       .ind-hero {
-        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        background: linear-gradient(135deg, #0032a0 0%, #001a54 100%);
         color: white;
         padding: 56px 0 44px;
         position: relative;
@@ -57,8 +33,8 @@
         display: inline-flex;
         align-items: center;
         gap: 8px;
-        background: rgba(255, 255, 255, 0.12);
-        border: 1px solid rgba(255, 255, 255, 0.22);
+        background: rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
         padding: 6px 16px;
         border-radius: 50px;
         font-size: 0.8125rem;
@@ -67,10 +43,11 @@
         backdrop-filter: blur(8px);
       }
       .ind-hero-title {
-        font-size: 2.35rem;
+        font-size: 2.25rem;
         font-weight: 800;
         margin-bottom: 12px;
-        letter-spacing: -0.5px;
+        line-height: 1.2;
+        color: #ffffff !important;
       }
       .ind-hero-desc {
         font-size: 1rem;
@@ -86,8 +63,8 @@
         margin-top: 24px;
       }
       .dash-card {
-        background: rgba(255, 255, 255, 0.08);
-        border: 1px solid rgba(255, 255, 255, 0.15);
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 12px;
         padding: 16px;
         backdrop-filter: blur(8px);
@@ -95,7 +72,7 @@
       }
       .dash-card i {
         font-size: 1.35rem;
-        color: #f59e0b;
+        color: #f77f00;
         margin-bottom: 6px;
       }
       .dash-card .val {
@@ -110,7 +87,6 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
       }
-
       .section-nav-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -166,22 +142,12 @@
         color: var(--color-primary);
         text-decoration: none;
       }
-
       .attribution-box {
         background: #f8fafc;
         border: 1px solid #e2e8f0;
         border-radius: 12px;
         padding: 20px;
         margin: 40px 0 24px;
-      }
-      .attribution-header {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        font-size: 0.9375rem;
-        font-weight: 700;
-        color: #334155;
-        margin-bottom: 10px;
       }
       .attribution-grid {
         display: grid;
@@ -190,7 +156,6 @@
         font-size: 0.8125rem;
         color: #64748b;
       }
-
       .disclaimer-banner {
         background: #fffbe6;
         border: 1px solid #ffe58f;
@@ -201,19 +166,8 @@
         gap: 14px;
         align-items: flex-start;
       }
-      .disclaimer-banner i {
-        font-size: 1.25rem;
-        color: #d48806;
-        flex-shrink: 0;
-        margin-top: 2px;
-      }
-      .disclaimer-banner p {
-        font-size: 0.8125rem;
-        color: #595959;
-        line-height: 1.55;
-        margin: 0;
-      }
-
+      .disclaimer-banner i { font-size: 1.25rem; color: #d48806; flex-shrink: 0; margin-top: 2px; }
+      .disclaimer-banner p { font-size: 0.8125rem; color: #595959; line-height: 1.55; margin: 0; }
       @media(max-width: 992px) {
         .dashboard-grid { grid-template-columns: repeat(2, 1fr); }
         .section-nav-grid { grid-template-columns: repeat(2, 1fr); }
@@ -221,24 +175,46 @@
       }
       @media(max-width: 576px) {
         .dashboard-grid, .section-nav-grid, .attribution-grid { grid-template-columns: 1fr; }
-        .ind-hero-title { font-size: 1.75rem; }
+        .ind-hero-title {
+        font-size: 2.25rem;
+        font-weight: 800;
+        margin-bottom: 12px;
+        line-height: 1.2;
+        color: #ffffff !important;
+      }
       }
     </style>
   </head>
   <body>
+    <!-- Hotline Bar -->
+    <div class="hotline-bar">
+      <div class="container">
+        <div class="hotline-inner">
+          <div class="hotline-items">
+            <a href="tel:09274008033" class="hotline-item"><i class="bi bi-shield-fill"></i><span>Police: 0927 400 8033</span></a>
+            <a href="tel:09162840885" class="hotline-item"><i class="bi bi-heart-fill"></i><span>MSWDO: 0916 284 0885</span></a>
+            <a href="tel:09360620305" class="hotline-item"><i class="bi bi-fire"></i><span>Fire: 0936 062 0305</span></a>
+            <a href="tel:0906188086" class="hotline-item"><i class="bi bi-building"></i><span>DILG: 0906 188 086</span></a>
+            <a href="tel:09263833744" class="hotline-item"><i class="bi bi-exclamation-triangle-fill"></i><span>MDRRMO: 0926 383 3744</span></a>
+            <a href="tel:09068195569" class="hotline-item"><i class="bi bi-truck"></i><span>R2TMC: 0906 819 5569</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Header -->
     <header class="site-header">
       <div class="container header-inner">
         <div class="logo-container">
           <a href="../">
-            <img src="../assets/images/logo/better-claver-logo.svg" alt="BetterClaver Logo" class="logo-img" />
+            <img src="../assets/images/logo/better-claver-logo.svg" alt="Better Claver Logo" class="logo-img" />
           </a>
         </div>
         <nav class="main-nav" aria-label="Main Navigation">
           <ul>
             <li><a href="../">Home</a></li>
             <li class="has-dropdown">
-              <a href="../services/">Services</a>
+              <a href="../services/" aria-haspopup="true" aria-expanded="false">Services</a>
               <ul class="dropdown-menu">
                 <li><a href="../services/certificates.html">Certificates</a></li>
                 <li><a href="../services/business.html">Business</a></li>
@@ -258,12 +234,14 @@
                 <li><a href="../government/profile.html">Municipal Profile</a></li>
                 <li><a href="../government/index.html">Government Officials</a></li>
                 <li><a href="../government/barangays.html">Barangays</a></li>
+                <li><a href="../government/mayors-corner.html">Mayor's Corner</a></li>
+
                 <li><a href="../emergency/">Emergency Response</a></li>
                 <li><a href="../industry/">Industry & Community</a></li>
               </ul>
             </li>
             <li class="has-dropdown">
-              <a href="../legislative/">Legislative</a>
+              <a href="../legislative/" aria-haspopup="true" aria-expanded="false">Legislative</a>
               <ul class="dropdown-menu">
                 <li><a href="../legislative/ordinance-framework.html">Ordinance Framework</a></li>
                 <li><a href="../legislative/resolution-framework.html">Resolution Framework</a></li>
@@ -273,6 +251,13 @@
             <li><a href="../contact/">Contact</a></li>
           </ul>
         </nav>
+        <div class="header-actions">
+          <div class="lang-selector">
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
+            <button type="button" class="btn btn-secondary btn-sm lang-btn" data-lang="sug">SUG</button>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -286,7 +271,7 @@
             <span aria-current="page" style="color: rgba(255,255,255,0.7);">Industry & Community</span>
           </nav>
           <span class="ind-hero-badge"><i class="bi bi-shield-check"></i> Public Transparency & Education</span>
-          <h1 class="ind-hero-title">Industry & Community Information Portal</h1>
+          <h1 style="color: #ffffff !important;" class="ind-hero-title">Industry & Community Information Portal</h1>
           <p class="ind-hero-desc">
             A centralized, transparent, and factual source of publicly available information on the mining industry, Social Development and Management Programs (SDMP), public infrastructure, employment, and environmental monitoring in the Municipality of Claver, Surigao del Norte.
           </p>
@@ -410,7 +395,7 @@
 
           <!-- Source Attribution Box -->
           <div class="attribution-box">
-            <div class="attribution-header">
+            <div style="font-weight: 700; color: #334155; margin-bottom: 10px;">
               <i class="bi bi-info-circle-fill" style="color: var(--color-primary);"></i> Source & Data Attribution
             </div>
             <div class="attribution-grid">
@@ -433,28 +418,108 @@
     </main>
 
     <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
+      <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-new">
         <div class="footer-brand">
-          <img src="../assets/images/logo/better-claver-logo.svg" alt="BetterClaver" class="footer-logo" />
-          <p class="footer-desc">Empowering the citizens of Claver with transparent, reliable access to municipal information, public services, and official records.</p>
+          <img src="../assets/images/logo/better-claver-logo-white.svg" alt="Better Claver logo" class="footer-logo" />
+          <p class="footer-tagline" data-i18n="home-empowering-the-people-of-claver-with-transparent">
+            Empowering the people of Claver with transparent access to the services, programs, and
+            public funds of LGU Claver.
+          </p>
+          <div class="footer-social-new">
+            <a href="https://www.facebook.com/betterclaver.org" class="footer-social-btn" target="_blank"
+              rel="noopener noreferrer" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/betterclaver/" class="footer-social-btn" target="_blank"
+              rel="noopener noreferrer" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://discord.com/invite/qeSu7RJkjQ" class="footer-social-btn" target="_blank"
+              rel="noopener noreferrer" aria-label="Discord"><i class="bi bi-discord"></i></a>
+          </div>
         </div>
-        <div class="footer-links">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="../">Home</a></li>
-            <li><a href="../services/">Services</a></li>
-            <li><a href="../government/">Government</a></li>
-            <li><a href="../industry/">Industry & Community</a></li>
-            <li><a href="../budget/">Transparency</a></li>
+        <div class="footer-column">
+          <h4 data-i18n="home-quick-links">Quick Links</h4>
+          <ul class="footer-links-new">
+            <li>
+              <a href="https://claver.gov.ph/" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-claver-info">Claver Info</a>
+            </li>
+            <li><a href="../sitemap/" data-i18n="home-sitemap">Sitemap</a></li>
+            <li>
+              <a href="https://claver.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf" target="_blank"
+                rel="noopener noreferrer" data-i18n="home-citizens-charter">Citizen's Charter</a>
+            </li>
+            <li><a href="../terms/" data-i18n="home-terms-of-use">Terms of Use</a></li>
+            <li><a href="../privacy/" data-i18n="home-privacy-policy">Privacy Policy</a></li>
+            <li><a href="../accessibility/" data-i18n="home-accessibility">Accessibility</a></li>
+            <li><a href="../faq/">FAQ</a></li>
           </ul>
         </div>
-      </div>
-      <div class="footer-bottom">
-        <div class="container text-center">
-          <p>&copy; 2026 BetterClaver.org | Public Information Portal. All rights reserved.</p>
+        <div class="footer-column">
+          <h4 data-i18n="home-resources">Resources</h4>
+          <ul class="footer-links-new">
+            <li>
+              <a href="https://data.gov.ph" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-open-data-philippines">Open Data Philippines</a>
+            </li>
+            <li>
+              <a href="https://www.foi.gov.ph/" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-freedom-of-information">Freedom of Information</a>
+            </li>
+            <li>
+              <a href="https://claver.gov.ph/" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-official-lgu-claver-portal">Official LGU Claver Portal</a>
+            </li>
+            <li>
+              <a href="https://sangguniangbayan.claver.gov.ph/" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-sangguniang-bayan">Sangguniang Bayan</a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/lguclaver/" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-lgu-claver-facebook">LGU Claver Facebook</a>
+            </li>
+            <li>
+              <a href="https://blgf.gov.ph/" target="_blank" rel="noopener noreferrer" data-i18n="home-blgf-portal">BLGF
+                Portal</a>
+            </li>
+            <li>
+              <a href="https://cmci.dti.gov.ph/" target="_blank" rel="noopener noreferrer"
+                data-i18n="home-cmci-dti-portal">CMCI DTI Portal</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <div class="footer-cost" role="status" aria-label="Cost to the People of Claver: Zero Pesos">
+            Cost to the People of Claver = <span class="footer-cost-value">₱0</span>
+          </div>
+          <a href="../volunteer/" class="footer-contribute"><i class="bi bi-envelope-heart"></i>
+            Volunteer with us</a>
+          <a href="https://github.com/BetterClaver/betterclaver" class="footer-contribute" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-github"></i> Contribute code with us</a>
+          <div class="footer-partners">
+            <a href="https://abakada.org" target="_blank" rel="noopener noreferrer" aria-label="Abakada.org"><img
+                src="../assets/images/logo/abakada-footer.svg" alt="Abakada.org" class="footer-partner-logo" width="120"
+                height="28" loading="lazy" /></a>
+            <a href="https://hivcareph.org/" target="_blank" rel="noopener noreferrer"
+              aria-label="HIV Care Philippines"><img src="../assets/images/logo/hiv-care-logo-footer.svg"
+                alt="HIV Care Philippines" class="footer-partner-logo" width="120" height="28" loading="lazy" /></a>
+            <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer" aria-label="BetterGov.ph"><img
+                src="../assets/images/logo/bettergov-footer.svg" alt="BetterGov.ph" class="footer-partner-logo" width="120"
+                height="28" loading="lazy" /></a>
+          </div>
         </div>
       </div>
-    </footer>
+      <div class="footer-bottom-new">
+        <div class="footer-copyright">
+          <span class="footer-copyright-left">
+            &copy; 2026 BetterClaver.org | All public information sourced from official government portals.
+          </span>
+          <span class="footer-copyright-right">
+            Developed by <a href="https://ethan.stoodioph.com/founder.html" target="_blank"
+              rel="noopener noreferrer">Ethan</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
   </body>
 </html>
