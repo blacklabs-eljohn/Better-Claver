@@ -32,8 +32,43 @@
       .disclaimer-banner { background: #fffbe6; border: 1px solid #ffe58f; border-radius: 10px; padding: 16px 20px; margin-bottom: 40px; display: flex; gap: 14px; align-items: flex-start; }
       @media(max-width:768px){ .doc-card{ flex-direction: column; align-items: flex-start; } .attribution-grid{ grid-template-columns: repeat(2,1fr); } }
       @media(max-width:576px){ .attribution-grid{ grid-template-columns: 1fr; } }
+    
+      .site-header .main-nav > ul > li > a,
+      .site-header.is-transparent .main-nav > ul > li > a {
+        color: #334155 !important;
+        font-weight: 600 !important;
+      }
+      .site-header .main-nav > ul > li > a:hover,
+      .site-header .main-nav > ul > li > a.active,
+      .site-header.is-transparent .main-nav > ul > li > a:hover,
+      .site-header.is-transparent .main-nav > ul > li > a.active {
+        color: #0032a0 !important;
+      }
+      .site-header .logo-img,
+      .site-header.is-transparent .logo-img {
+        filter: none !important;
+        opacity: 1 !important;
+      }
+      .site-header .lang-btn,
+      .site-header.is-transparent .lang-btn {
+        color: #334155 !important;
+        border-color: #cbd5e1 !important;
+        background: #f8fafc !important;
+      }
+      .site-header .lang-btn:hover,
+      .site-header .lang-btn.active,
+      .site-header.is-transparent .lang-btn:hover,
+      .site-header.is-transparent .lang-btn.active {
+        background: #0032a0 !important;
+        color: #ffffff !important;
+        border-color: #0032a0 !important;
+      }
+
     </style>
-  </head>
+  
+    
+
+</head>
   <body>
     <!-- Hotline Bar -->
     <div class="hotline-bar">
@@ -64,6 +99,7 @@
                 <li><a href="../government/index.html">Government Officials</a></li>
                 <li><a href="../government/barangays.html">Barangays</a></li>
               <li><a href="../government/mayors-corner.html">Mayor's Corner</a></li>
+              <li><a href="../government/department-heads.html">Department Heads</a></li>
                 <li><a href="../emergency/">Emergency Response</a></li>
                 <li><a href="../industry/">Industry & Community</a></li>
               </ul>
@@ -280,5 +316,6 @@
       </div>
     </div>
   </footer>
-  </body>
+    <script defer src="../assets/js/navbar-footer.js"></script>
+</body>
 </html>

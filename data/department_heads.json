@@ -1,0 +1,139 @@
+{
+  "department_heads": [
+    {
+      "id": "dh-01",
+      "name": "Alexander B. Curada",
+      "title": "MHRMD Officer",
+      "office": "Municipal Human Resource Management & Development Office (MHRMDO)",
+      "sector": "Administrative & Civil",
+      "charter_url": "../service-details/human-resource-management.html",
+      "description": "Manages municipal human resources, employee recruitment, personnel records, leaves, capacity building, and organizational development."
+    },
+    {
+      "id": "dh-02",
+      "name": "Eva B. Casido, EnP",
+      "title": "Municipal Planning & Development Coordinator (MPDC)",
+      "office": "Municipal Planning & Development Office (MPDO)",
+      "sector": "Financial & Planning",
+      "charter_url": "../service-details/municipal-planning.html",
+      "description": "Leads comprehensive land use planning (CLUP), zoning clearances, socioeconomic profiling, and municipal development investment programming."
+    },
+    {
+      "id": "dh-03",
+      "name": "Dr. Landley T. Chua",
+      "title": "Rural Health Physician / Municipal Health Officer",
+      "office": "Rural Health Unit / Municipal Health Office (MHO)",
+      "sector": "Health & Social",
+      "charter_url": "../service-details/municipal-health-office.html",
+      "description": "Oversees primary healthcare delivery, outpatient consultations, immunization, Animal Bite Treatment Center (ABTC), and sanitary permits."
+    },
+    {
+      "id": "dh-04",
+      "name": "Caryll Dee C. Lukban, CPA",
+      "title": "Municipal Treasurer",
+      "office": "Municipal Treasury Office (MTO)",
+      "sector": "Financial & Planning",
+      "charter_url": "../service-details/municipal-treasurer.html",
+      "description": "Directs local revenue collection, Real Property Tax (RPT), Cedula issuance, business tax collections, and municipal cash disbursements."
+    },
+    {
+      "id": "dh-05",
+      "name": "Marjoriz T. Ignacio, CPA",
+      "title": "Municipal Budget Officer",
+      "office": "Municipal Budget Office (MBO)",
+      "sector": "Financial & Planning",
+      "charter_url": "../service-details/municipal-budget.html",
+      "description": "Manages municipal annual and supplemental budgets, obligation slips, budget execution, and fiscal allocation monitoring."
+    },
+    {
+      "id": "dh-06",
+      "name": "Lucille T. Arlan, CPA",
+      "title": "Municipal Accountant",
+      "office": "Municipal Accounting Office (MAO)",
+      "sector": "Financial & Planning",
+      "charter_url": "../service-details/municipal-accounting.html",
+      "description": "Handles municipal financial accounting, audit compliance, voucher processing, financial statements, and fund disbursements."
+    },
+    {
+      "id": "dh-07",
+      "name": "Engr. Napoleon P. Paqueo",
+      "title": "Municipal Engineer",
+      "office": "Municipal Engineering Office (MEO)",
+      "sector": "Infrastructure & Environment",
+      "charter_url": "../service-details/municipal-engineering.html",
+      "description": "Oversees municipal public works, infrastructure project execution, building permits, occupancy certificates, and engineering surveys."
+    },
+    {
+      "id": "dh-08",
+      "name": "Engr. Angelique G. Casa\u00f1a, REAB",
+      "title": "Municipal Assessor",
+      "office": "Municipal Assessor's Office (MAO)",
+      "sector": "Financial & Planning",
+      "charter_url": "../service-details/municipal-assessor.html",
+      "description": "Manages real property assessment, Tax Declaration (TD) issuance, property appraisals, tax mapping, and land ownership transfers."
+    },
+    {
+      "id": "dh-09",
+      "name": "Engr. Jonathan R. Go Jr.",
+      "title": "LDRRM Officer",
+      "office": "Local Disaster Risk Reduction & Management Office (LDRRMO)",
+      "sector": "Administrative & Civil",
+      "charter_url": "../service-details/ldrrmo.html",
+      "description": "Coordinates 24/7 disaster emergency rescue, relief operations, RDANA assessments, climate adaptation programs, and safety trainings."
+    },
+    {
+      "id": "dh-10",
+      "name": "Emmanuel D. Paqueo",
+      "title": "Municipal Civil Registrar",
+      "office": "Municipal Civil Registry Office (MCRO)",
+      "sector": "Administrative & Civil",
+      "charter_url": "../service-details/civil-registrar.html",
+      "description": "Registers vital statistics: birth, marriage, and death certificates, marriage licenses, RA 9048/10172 petitions, and legal corrections."
+    },
+    {
+      "id": "dh-11",
+      "name": "Ernesto P. Sulapas",
+      "title": "AMGS Officer",
+      "office": "General Services Office (GSO)",
+      "sector": "Administrative & Civil",
+      "charter_url": "../service-details/general-services.html",
+      "description": "Manages municipal property assets, procurement logistics, janitorial services, facility maintenance, and public sound system rentals."
+    },
+    {
+      "id": "dh-12",
+      "name": "Glendhel L. Maturan, RSW",
+      "title": "MSWD Officer",
+      "office": "Municipal Social Welfare & Development Office (MSWDO)",
+      "sector": "Health & Social",
+      "charter_url": "../service-details/mswdo.html",
+      "description": "Provides social protection, AICS financial assistance, Senior Citizen / PWD assistance, solo parent IDs, and child welfare services."
+    },
+    {
+      "id": "dh-13",
+      "name": "Eric Carlo B. Elpa",
+      "title": "LEEDM Officer",
+      "office": "Local Economic Enterprise Development & Management Office (LEEDMO)",
+      "sector": "Agriculture & Enterprise",
+      "charter_url": "../service-details/seedo-public-market.html",
+      "description": "Manages municipal economic enterprises including public market stall rentals, slaughterhouse operations, and municipal commercial spaces."
+    },
+    {
+      "id": "dh-14",
+      "name": "Engr. Angelita M. Espinosa",
+      "title": "Municipal Agriculturist",
+      "office": "Municipal Agriculture Office (MAO)",
+      "sector": "Agriculture & Enterprise",
+      "charter_url": "../service-details/municipal-agriculture.html",
+      "description": "Provides technical agricultural assistance, RSBSA farmer registration, seed distribution, PCIC crop insurance, and BoatR fisherfolk support."
+    },
+    {
+      "id": "dh-15",
+      "name": "Atty. Jeffrey P. Galido",
+      "title": "Municipal Environment & Natural Resources Officer (MENRO)",
+      "office": "Municipal Environment & Natural Resources Office (MENRO)",
+      "sector": "Infrastructure & Environment",
+      "charter_url": "../service-details/menro.html",
+      "description": "Directs environmental compliance, Environmental Permit to Operate (EPO), tree cutting permit recommendations, and coastal conservation."
+    }
+  ]
+}
