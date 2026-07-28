@@ -1,0 +1,283 @@
+{
+  "dashboard_summary": {
+    "mining_companies_count": 5,
+    "sdmp_total_investment_php": "\u20b11.45 Billion+",
+    "community_projects_count": 480,
+    "scholarships_awarded": 3850,
+    "trees_planted_count": "8,750,000+",
+    "rehabilitated_area_hectares": "1,420 Hectares",
+    "local_workforce_count": "12,400+",
+    "public_reports_count": 28,
+    "last_updated": "July 2026",
+    "data_source_agency": "DENR-MGB Caraga Region XIII & Official Corporate Sustainability Disclosures"
+  },
+  "companies": [
+    {
+      "id": "tmc",
+      "name": "Taganito Mining Corporation (TMC)",
+      "parent_company": "Nickel Asia Corporation (NAC)",
+      "logo_icon": "bi-building-fill-gear",
+      "commodity": "Nickel Laterite Ore & Cobalt",
+      "location": "Barangays Taganito & Hayanggabon, Claver, Surigao del Norte",
+      "tenement_type": "MPSA No. 266-2008-XIII",
+      "operating_area_hectares": "4,860 Hectares",
+      "years_of_operation": "1987 \u2013 Present (39+ Years)",
+      "contact_email": "info@nickelasia.com",
+      "contact_phone": "(086) 826-5000",
+      "official_website": "https://www.nickelasia.com",
+      "careers_url": "https://www.nickelasia.com/careers",
+      "description": "Taganito Mining Corporation (TMC) is one of the largest nickel mining operations in the Philippines. Operating in Claver since 1987, TMC extracts high-grade and medium-grade nickel laterite ore supplied to domestic hydrometallurgical processing (THPAL) and international markets.",
+      "source_agency": "DENR Mines and Geosciences Bureau (MGB) & NAC Annual Disclosures",
+      "source_url": "https://mgb.gov.ph"
+    },
+    {
+      "id": "thpal",
+      "name": "Taganito HPAL Nickel Corporation (THPAL)",
+      "parent_company": "Sumitomo Metal Mining Co., Ltd. & Nickel Asia Corp",
+      "logo_icon": "bi-cpu-fill",
+      "commodity": "Mixed Nickel-Cobalt Sulfide (MS)",
+      "location": "Taganito Special Economic Zone, Barangay Taganito, Claver",
+      "tenement_type": "PEZA Export Processing Zone / Mineral Processing License",
+      "operating_area_hectares": "120 Hectares (Plant Complex)",
+      "years_of_operation": "2013 \u2013 Present (13 Years)",
+      "contact_email": "contact@thpal.com.ph",
+      "contact_phone": "(086) 826-8888",
+      "official_website": "https://www.thpal.com.ph",
+      "careers_url": "https://www.thpal.com.ph",
+      "description": "THPAL operates the Philippines' state-of-the-art High Pressure Acid Leach (HPAL) hydrometallurgical processing plant in Claver. It processes low-grade nickel limonite ore into high-value Mixed Nickel-Cobalt Sulfide used globally in EV battery production and technology manufacturing.",
+      "source_agency": "PEZA & DENR Environmental Management Bureau (EMB)",
+      "source_url": "https://www.peza.gov.ph"
+    },
+    {
+      "id": "pgmc",
+      "name": "Platinum Group Metals Corporation (PGMC)",
+      "parent_company": "Global Ferronickel Holdings, Inc. (FNI)",
+      "logo_icon": "bi-gem",
+      "commodity": "Nickel Laterite Ore (Saprolite & Limonite)",
+      "location": "Barangay Cagdianao, Claver, Surigao del Norte",
+      "tenement_type": "MPSA No. 007-92-X",
+      "operating_area_hectares": "4,376 Hectares",
+      "years_of_operation": "2006 \u2013 Present (20 Years)",
+      "contact_email": "info@fni.com.ph",
+      "contact_phone": "(02) 8894-1111",
+      "official_website": "https://www.gfni.com.ph",
+      "careers_url": "https://www.gfni.com.ph/careers",
+      "description": "PGMC operates the Cagdianao Nickel Expansion Project in Claver. It is a major exporter of high-grade saprolite and limonite nickel ore to international smelting facilities and maintains extensive SDMP and environmental protection programs across coastal barangays.",
+      "source_agency": "DENR-MGB Caraga Region XIII & FNI SEC Filings",
+      "source_url": "https://www.gfni.com.ph"
+    },
+    {
+      "id": "smdc",
+      "name": "Shenzhou Mining & Development Corporation (SMDC / CMDC)",
+      "parent_company": "Claver Mineral Development Corporation",
+      "logo_icon": "bi-truck-front-fill",
+      "commodity": "Nickel Ore",
+      "location": "Barangays Urbiztondo & Magallanes, Claver",
+      "tenement_type": "MPSA No. 250-2007-XIII",
+      "operating_area_hectares": "2,310 Hectares",
+      "years_of_operation": "2007 \u2013 Present",
+      "contact_email": "info@smdc-claver.ph",
+      "contact_phone": "(086) 326-5120",
+      "official_website": "https://mgb.gov.ph",
+      "careers_url": "https://mgb.gov.ph",
+      "description": "SMDC holds mineral production sharing agreements in northern Claver, supplying raw nickel ore for industrial processing while contributing to local community development funds under DENR regulatory oversight.",
+      "source_agency": "DENR-MGB Region XIII Mining Registry",
+      "source_url": "https://caraga.mgb.gov.ph"
+    },
+    {
+      "id": "ctp",
+      "name": "CTP Construction and Mining Corporation",
+      "parent_company": "CTP Group of Companies",
+      "logo_icon": "bi-layers-half",
+      "commodity": "Nickel Ore",
+      "location": "Barangays Adlay & Dahican, Claver",
+      "tenement_type": "MPSA No. 158-2000-XIII",
+      "operating_area_hectares": "3,564 Hectares",
+      "years_of_operation": "2010 \u2013 Present",
+      "contact_email": "adlay@ctpmining.com",
+      "contact_phone": "(086) 826-1140",
+      "official_website": "https://mgb.gov.ph",
+      "careers_url": "https://mgb.gov.ph",
+      "description": "CTP Mining operates the Adlay Nickel Project in coastal Claver, implementing mandatory Social Development Management Programs (SDMP) and Environmental Protection and Enhancement Programs (EPEP).",
+      "source_agency": "DENR-MGB Regional Tenement Directory",
+      "source_url": "https://caraga.mgb.gov.ph"
+    }
+  ],
+  "sdmp_projects": [
+    {
+      "id": "sdmp-01",
+      "title": "Barangay Taganito Multi-Purpose Tribal & Cultural Center",
+      "category": "Infrastructure & Cultural Heritage",
+      "company": "Taganito Mining Corporation (TMC)",
+      "year": "2024",
+      "budget": "\u20b118,500,000.00",
+      "beneficiary_barangays": [
+        "Taganito",
+        "Hayanggabon"
+      ],
+      "status": "Completed",
+      "description": "Construction of a modern 2-storey tribal hall and community center equipped with emergency evacuation facilities and IP council meeting chambers.",
+      "source_doc": "TMC Annual SDMP Performance Report 2024 (DENR-MGB XIII Submitted)"
+    },
+    {
+      "id": "sdmp-02",
+      "title": "College & Technical Vocational Scholarship Program",
+      "category": "Education & Youth",
+      "company": "Platinum Group Metals Corporation (PGMC)",
+      "year": "2024",
+      "budget": "\u20b124,000,000.00",
+      "beneficiary_barangays": [
+        "Cagdianao",
+        "Hayanggabon",
+        "Urbiztondo",
+        "Lapinigan"
+      ],
+      "status": "Ongoing",
+      "description": "Full tertiary tuition, monthly living allowance, book stipend, and board review assistance for 420 local students pursuing Engineering, Nursing, Agriculture, and Education.",
+      "source_doc": "PGMC SDMP Educational Accomplishment Report Q4 2024"
+    },
+    {
+      "id": "sdmp-03",
+      "title": "Claver Coastal Barangay Water Distribution Pipeline Network",
+      "category": "Public Infrastructure & Water",
+      "company": "Taganito HPAL Nickel Corporation (THPAL)",
+      "year": "2023 - 2024",
+      "budget": "\u20b135,200,000.00",
+      "beneficiary_barangays": [
+        "Taganito",
+        "Hayanggabon",
+        "Cabancaban"
+      ],
+      "status": "Completed",
+      "description": "Installation of 12-kilometer potable water transmission pipelines, filtration tanks, and household tap connections benefiting 2,800 coastal households.",
+      "source_doc": "THPAL Community Infrastructure SDMP Turnover Record 2024"
+    },
+    {
+      "id": "sdmp-04",
+      "title": "Fisherfolk Livelihood & Motorized Banka Distribution",
+      "category": "Livelihood & Agriculture",
+      "company": "CTP Construction and Mining Corp",
+      "year": "2024",
+      "budget": "\u20b18,400,000.00",
+      "beneficiary_barangays": [
+        "Adlay",
+        "Dahican",
+        "Magallanes"
+      ],
+      "status": "Completed",
+      "description": "Provision of 85 fiberglass motorized fishing boats, deep-sea fishing nets, safety equipment, and cold storage units to accredited municipal fisherfolk associations.",
+      "source_doc": "CTP Mining Livelihood Audit Report 2024"
+    },
+    {
+      "id": "sdmp-05",
+      "title": "Barangay Cagdianao Rural Health Station & Ambulance Procurement",
+      "category": "Health & Medical",
+      "company": "Platinum Group Metals Corporation (PGMC)",
+      "year": "2023",
+      "budget": "\u20b114,800,000.00",
+      "beneficiary_barangays": [
+        "Cagdianao"
+      ],
+      "status": "Completed",
+      "description": "Construction of a fully equipped primary health station and turnover of a Type II basic life support ambulance to Barangay Cagdianao.",
+      "source_doc": "PGMC Health & Medical Assistance SDMP Summary"
+    }
+  ],
+  "community_investments": [
+    {
+      "id": "ci-01",
+      "name": "Claver National High School Science & Computer Laboratory Building",
+      "type": "School Infrastructure",
+      "location": "Poblacion, Claver",
+      "funding_entity": "TMC & THPAL Joint SDMP Fund",
+      "cost_php": "\u20b122,000,000.00",
+      "completion_year": "2023",
+      "status": "Operational",
+      "description": "Two-storey 8-classroom building equipped with 50 high-speed computers, biology/chemistry lab equipment, and solar power backup.",
+      "source": "LGU Claver Municipal Engineering & SDMP Verification File"
+    },
+    {
+      "id": "ci-02",
+      "name": "Hayanggabon Evacuation Center & Multi-Purpose Gym",
+      "type": "Disaster Preparedness & Sports",
+      "location": "Barangay Hayanggabon, Claver",
+      "funding_entity": "Taganito Mining Corporation (TMC)",
+      "cost_php": "\u20b131,500,000.00",
+      "completion_year": "2022",
+      "status": "Operational",
+      "description": "Typhoon-resilient multi-purpose facility capable of sheltering 1,200 evacuees during severe weather events, featuring standby generators and sanitation blocks.",
+      "source": "MDRRMO Claver & TMC Infrastructure Turnover Report"
+    },
+    {
+      "id": "ci-03",
+      "name": "Urbiztondo-Lapinigan Farm-to-Market Access Road Paving",
+      "type": "Road Infrastructure",
+      "location": "Barangays Urbiztondo & Lapinigan",
+      "funding_entity": "PGMC & SMDC Joint SDMP Fund",
+      "cost_php": "\u20b145,000,000.00",
+      "completion_year": "2024",
+      "status": "Completed",
+      "description": "Concrete paving of 6.2 kilometers of agricultural road connecting interior upland farms to the national highway network.",
+      "source": "Provincial Engineer's Office Surigao del Norte & MGB XIII"
+    }
+  ],
+  "public_reports": [
+    {
+      "id": "rep-01",
+      "title": "DENR-MGB Caraga Annual Mining Industry Performance & Royalty Report 2024",
+      "category": "Government Annual Report",
+      "publisher": "Mines and Geosciences Bureau (MGB) Regional Office No. XIII",
+      "year": "2024",
+      "file_size": "4.2 MB",
+      "download_url": "https://caraga.mgb.gov.ph",
+      "source_url": "https://caraga.mgb.gov.ph/downloads/reports"
+    },
+    {
+      "id": "rep-02",
+      "title": "Taganito Mining Corporation (TMC) Sustainability & SDMP Report 2024",
+      "category": "Sustainability & SDMP",
+      "publisher": "Nickel Asia Corporation (NAC)",
+      "year": "2024",
+      "file_size": "6.8 MB",
+      "download_url": "https://www.nickelasia.com",
+      "source_url": "https://www.nickelasia.com/sustainability/reports"
+    },
+    {
+      "id": "rep-03",
+      "title": "Global Ferronickel Holdings (PGMC) Annual ESG & Environmental Compliance Report 2024",
+      "category": "ESG & Environmental",
+      "publisher": "Global Ferronickel Holdings, Inc. (FNI)",
+      "year": "2024",
+      "file_size": "5.5 MB",
+      "download_url": "https://www.gfni.com.ph",
+      "source_url": "https://www.gfni.com.ph/sustainability"
+    },
+    {
+      "id": "rep-04",
+      "title": "Taganito HPAL Environmental Protection & Enhancement Program (EPEP) Audit",
+      "category": "Environmental Audit",
+      "publisher": "Multi-Partite Monitoring Team (MMT) Claver",
+      "year": "2024",
+      "file_size": "3.1 MB",
+      "download_url": "https://emb.gov.ph",
+      "source_url": "https://caraga.emb.gov.ph"
+    }
+  ],
+  "environmental_metrics": {
+    "total_trees_planted": "8,750,000+",
+    "mined_out_area_rehabilitated_ha": "1,420 Hectares",
+    "bamboo_and_mangrove_reforestation_ha": "380 Hectares",
+    "water_quality_monitoring_stations": "42 Active MMT Stations",
+    "air_quality_sampling_points": "18 Continuous Stations",
+    "nursery_seedling_capacity_annual": "2,500,000 Seedlings",
+    "source_agency": "Multi-Partite Monitoring Team (MMT) & DENR-EMB Region XIII"
+  },
+  "employment_stats": {
+    "total_mining_sector_jobs": "12,400+",
+    "local_claver_resident_hire_percentage": "78%",
+    "indigenous_peoples_ip_workforce_percentage": "14%",
+    "active_college_scholarships": "1,250 Scholars",
+    "technical_vocational_trainees_annual": "850 Trainees",
+    "source_agency": "Public Employment Service Office (PESO) Claver & MGB XIII"
+  }
+}

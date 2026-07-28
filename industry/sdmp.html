@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Social Development and Management Program (SDMP) Archive - Publicly available records of community development, education, medical, livelihood, and infrastructure projects in Claver, Surigao del Norte."
+    />
+    <meta name="author" content="BetterClaver" />
+    <meta
+      name="keywords"
+      content="SDMP Claver, Social Development Management Program, DENR MGB SDMP, mining scholarships Claver, community projects Claver, Surigao del Norte"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://betterclaver.org/industry/sdmp.html" />
+
+    <title>Social Development & Management Program (SDMP) | BetterClaver.org</title>
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/logo/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/logo/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="../assets/css/accessibility.css" />
+    <link rel="stylesheet" href="../assets/css/footer.css" />
+
+    <style>
+      .ind-hero {
+        background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+        color: white;
+        padding: 48px 0 36px;
+      }
+      .ind-hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        padding: 6px 16px;
+        border-radius: 50px;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        margin-bottom: 14px;
+      }
+      .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 24px 0;
+        align-items: center;
+      }
+      .filter-btn {
+        background: #f1f5f9;
+        border: 1px solid #cbd5e1;
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 0.8125rem;
+        font-weight: 600;
+        color: #334155;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .filter-btn.active, .filter-btn:hover {
+        background: var(--color-primary);
+        color: white;
+        border-color: var(--color-primary);
+      }
+
+      .sdmp-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+      .sdmp-card {
+        background: white;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      }
+      .sdmp-header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      .sdmp-header h3 {
+        font-size: 1.15rem;
+        font-weight: 700;
+        color: #0f172a;
+        margin: 0;
+      }
+      .sdmp-tag {
+        background: #f0fdf4;
+        color: #15803d;
+        font-size: 0.75rem;
+        font-weight: 700;
+        padding: 4px 10px;
+        border-radius: 50px;
+      }
+      .sdmp-meta-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        background: #f8fafc;
+        padding: 12px 16px;
+        border-radius: 8px;
+        font-size: 0.8125rem;
+        margin-bottom: 14px;
+      }
+      .sdmp-meta-grid div strong {
+        display: block;
+        color: #334155;
+      }
+      .sdmp-desc {
+        font-size: 0.875rem;
+        color: #475569;
+        line-height: 1.6;
+        margin-bottom: 14px;
+      }
+      .sdmp-doc {
+        font-size: 0.8125rem;
+        color: #64748b;
+        background: #f1f5f9;
+        padding: 8px 12px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .attribution-box {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 20px;
+        margin: 40px 0 24px;
+      }
+      .attribution-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+        font-size: 0.8125rem;
+        color: #64748b;
+      }
+      .disclaimer-banner {
+        background: #fffbe6;
+        border: 1px solid #ffe58f;
+        border-radius: 10px;
+        padding: 16px 20px;
+        margin-bottom: 40px;
+        display: flex;
+        gap: 14px;
+        align-items: flex-start;
+      }
+      @media(max-width: 992px) {
+        .sdmp-meta-grid { grid-template-columns: repeat(2, 1fr); }
+        .attribution-grid { grid-template-columns: repeat(2, 1fr); }
+      }
+      @media(max-width: 576px) {
+        .sdmp-meta-grid, .attribution-grid { grid-template-columns: 1fr; }
+        .sdmp-header { flex-direction: column; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo-container">
+          <a href="../">
+            <img src="../assets/images/logo/better-claver-logo.svg" alt="BetterClaver Logo" class="logo-img" />
+          </a>
+        </div>
+        <nav class="main-nav" aria-label="Main Navigation">
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li class="has-dropdown">
+              <a href="../services/">Services</a>
+              <ul class="dropdown-menu">
+                <li><a href="../services/certificates.html">Certificates</a></li>
+                <li><a href="../services/business.html">Business</a></li>
+                <li><a href="../services/tax-payments.html">Tax Payments</a></li>
+                <li><a href="../services/social-services.html">Social Services</a></li>
+                <li><a href="../services/health.html">Health</a></li>
+                <li><a href="../services/agriculture.html">Agriculture</a></li>
+                <li><a href="../services/infrastructure.html">Infrastructure</a></li>
+                <li><a href="../services/education.html">Education</a></li>
+                <li><a href="../services/public-safety.html">Public Safety</a></li>
+                <li><a href="../services/environment.html">Environment</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="../government/" class="active" aria-haspopup="true" aria-expanded="false">Government</a>
+              <ul class="dropdown-menu">
+                <li><a href="../government/profile.html">Municipal Profile</a></li>
+                <li><a href="../government/index.html">Government Officials</a></li>
+                <li><a href="../government/barangays.html">Barangays</a></li>
+                <li><a href="../emergency/">Emergency Response</a></li>
+                <li><a href="../industry/">Industry & Community</a></li>
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="../legislative/">Legislative</a>
+              <ul class="dropdown-menu">
+                <li><a href="../legislative/ordinance-framework.html">Ordinance Framework</a></li>
+                <li><a href="../legislative/resolution-framework.html">Resolution Framework</a></li>
+              </ul>
+            </li>
+            <li><a href="../budget/">Transparency</a></li>
+            <li><a href="../contact/">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="ind-hero">
+        <div class="container">
+          <nav class="breadcrumbs" aria-label="Breadcrumb" style="margin-bottom: 14px; opacity: 0.85;">
+            <a href="../" style="color: white;">Home</a><span>/</span>
+            <a href="../industry/" style="color: white;">Industry & Community</a><span>/</span>
+            <span aria-current="page" style="color: rgba(255,255,255,0.7);">SDMP Archive</span>
+          </nav>
+          <span class="ind-hero-badge"><i class="bi bi-heart-pulse"></i> Mandatory Social Development</span>
+          <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 10px;">Social Development & Management Program (SDMP)</h1>
+          <p style="font-size: 0.95rem; color: rgba(255,255,255,0.85); max-width: 740px; line-height: 1.6;">
+            Under DENR Administrative Order No. 2010-21, mining permit holders allocate 1.5% of annual operating costs for social development. Below are verified SDMP project records submitted to DENR-MGB.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <!-- Filter Buttons -->
+          <div class="filter-bar">
+            <span style="font-size:0.875rem; font-weight:700; color:#334155; margin-right:6px;"><i class="bi bi-funnel-fill"></i> Filter Category:</span>
+            <button class="filter-btn active">All Projects</button>
+            <button class="filter-btn">Education & Scholarships</button>
+            <button class="filter-btn">Infrastructure</button>
+            <button class="filter-btn">Livelihood & Agriculture</button>
+            <button class="filter-btn">Health & Medical</button>
+          </div>
+
+          <div class="sdmp-list">
+
+            <!-- Item 1 -->
+            <div class="sdmp-card">
+              <div class="sdmp-header">
+                <h3><i class="bi bi-building" style="color:var(--color-primary);"></i> Barangay Taganito Multi-Purpose Tribal & Cultural Center</h3>
+                <span class="sdmp-tag">Infrastructure & Cultural Heritage</span>
+              </div>
+              <div class="sdmp-meta-grid">
+                <div><strong>Operating Company:</strong> Taganito Mining Corporation (TMC)</div>
+                <div><strong>Approved Budget:</strong> ₱18,500,000.00</div>
+                <div><strong>Year Approved:</strong> 2024</div>
+                <div><strong>Beneficiaries:</strong> Barangays Taganito & Hayanggabon</div>
+              </div>
+              <p class="sdmp-desc">
+                Construction of a modern 2-storey tribal hall and community center equipped with emergency evacuation facilities and IP council meeting chambers for indigenous cultural communities in Taganito.
+              </p>
+              <div class="sdmp-doc">
+                <span><i class="bi bi-file-earmark-text"></i> <strong>Supporting Document:</strong> TMC Annual SDMP Performance Report 2024 (DENR-MGB XIII Submitted)</span>
+                <span style="color:#059669; font-weight:700;"><i class="bi bi-check-circle-fill"></i> Completed</span>
+              </div>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="sdmp-card">
+              <div class="sdmp-header">
+                <h3><i class="bi bi-mortarboard-fill" style="color:#2563eb;"></i> College & Technical Vocational Scholarship Program</h3>
+                <span class="sdmp-tag">Education & Youth</span>
+              </div>
+              <div class="sdmp-meta-grid">
+                <div><strong>Operating Company:</strong> Platinum Group Metals Corporation (PGMC)</div>
+                <div><strong>Approved Budget:</strong> ₱24,000,000.00</div>
+                <div><strong>Year Approved:</strong> 2024</div>
+                <div><strong>Beneficiaries:</strong> Cagdianao, Hayanggabon, Urbiztondo, Lapinigan</div>
+              </div>
+              <p class="sdmp-desc">
+                Full tertiary tuition, monthly living allowance, book stipend, and board review assistance for 420 local students pursuing Engineering, Nursing, Agriculture, and Education degrees.
+              </p>
+              <div class="sdmp-doc">
+                <span><i class="bi bi-file-earmark-text"></i> <strong>Supporting Document:</strong> PGMC SDMP Educational Accomplishment Report Q4 2024</span>
+                <span style="color:#0284c7; font-weight:700;"><i class="bi bi-arrow-repeat"></i> Ongoing</span>
+              </div>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="sdmp-card">
+              <div class="sdmp-header">
+                <h3><i class="bi bi-droplet-fill" style="color:#0284c7;"></i> Claver Coastal Barangay Water Distribution Pipeline Network</h3>
+                <span class="sdmp-tag">Public Infrastructure & Water</span>
+              </div>
+              <div class="sdmp-meta-grid">
+                <div><strong>Operating Company:</strong> Taganito HPAL Nickel Corporation (THPAL)</div>
+                <div><strong>Approved Budget:</strong> ₱35,200,000.00</div>
+                <div><strong>Year Approved:</strong> 2023 - 2024</div>
+                <div><strong>Beneficiaries:</strong> Taganito, Hayanggabon, Cabancaban</div>
+              </div>
+              <p class="sdmp-desc">
+                Installation of 12-kilometer potable water transmission pipelines, filtration tanks, and household tap connections benefiting 2,800 coastal households in eastern Claver.
+              </p>
+              <div class="sdmp-doc">
+                <span><i class="bi bi-file-earmark-text"></i> <strong>Supporting Document:</strong> THPAL Community Infrastructure SDMP Turnover Record 2024</span>
+                <span style="color:#059669; font-weight:700;"><i class="bi bi-check-circle-fill"></i> Completed</span>
+              </div>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="sdmp-card">
+              <div class="sdmp-header">
+                <h3><i class="bi bi-anchor" style="color:#059669;"></i> Fisherfolk Livelihood & Motorized Banka Distribution</h3>
+                <span class="sdmp-tag">Livelihood & Agriculture</span>
+              </div>
+              <div class="sdmp-meta-grid">
+                <div><strong>Operating Company:</strong> CTP Construction and Mining Corp</div>
+                <div><strong>Approved Budget:</strong> ₱8,400,000.00</div>
+                <div><strong>Year Approved:</strong> 2024</div>
+                <div><strong>Beneficiaries:</strong> Adlay, Dahican, Magallanes</div>
+              </div>
+              <p class="sdmp-desc">
+                Provision of 85 fiberglass motorized fishing boats, deep-sea fishing nets, safety equipment, and cold storage units to accredited municipal fisherfolk associations.
+              </p>
+              <div class="sdmp-doc">
+                <span><i class="bi bi-file-earmark-text"></i> <strong>Supporting Document:</strong> CTP Mining Livelihood Audit Report 2024</span>
+                <span style="color:#059669; font-weight:700;"><i class="bi bi-check-circle-fill"></i> Completed</span>
+              </div>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="sdmp-card">
+              <div class="sdmp-header">
+                <h3><i class="bi bi-hospital-fill" style="color:#dc2626;"></i> Barangay Cagdianao Health Station & Ambulance Turnover</h3>
+                <span class="sdmp-tag">Health & Medical</span>
+              </div>
+              <div class="sdmp-meta-grid">
+                <div><strong>Operating Company:</strong> Platinum Group Metals Corporation (PGMC)</div>
+                <div><strong>Approved Budget:</strong> ₱14,800,000.00</div>
+                <div><strong>Year Approved:</strong> 2023</div>
+                <div><strong>Beneficiaries:</strong> Cagdianao</div>
+              </div>
+              <p class="sdmp-desc">
+                Construction of a fully equipped primary health station and turnover of a Type II basic life support ambulance to Barangay Cagdianao.
+              </p>
+              <div class="sdmp-doc">
+                <span><i class="bi bi-file-earmark-text"></i> <strong>Supporting Document:</strong> PGMC Health & Medical Assistance SDMP Summary</span>
+                <span style="color:#059669; font-weight:700;"><i class="bi bi-check-circle-fill"></i> Completed</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Source Attribution Box -->
+          <div class="attribution-box">
+            <div style="font-weight: 700; color: #334155; margin-bottom: 10px;">
+              <i class="bi bi-info-circle-fill" style="color: var(--color-primary);"></i> Source & Data Attribution
+            </div>
+            <div class="attribution-grid">
+              <div><strong>Primary Source:</strong> DENR-MGB Caraga Region XIII & Company SDMP Files</div>
+              <div><strong>Publication Date:</strong> July 2026</div>
+              <div><strong>Last Updated:</strong> July 28, 2026</div>
+              <div><strong>Official Registry:</strong> <a href="https://caraga.mgb.gov.ph" target="_blank" rel="noopener">caraga.mgb.gov.ph</a></div>
+            </div>
+          </div>
+
+          <!-- Neutrality Disclaimer -->
+          <div class="disclaimer-banner">
+            <i class="bi bi-exclamation-triangle-fill"></i>
+            <p>
+              <strong>BetterClaver Disclaimer:</strong> BetterClaver is an independent, community-driven platform that compiles publicly available information from official government agencies and company disclosures. BetterClaver does not endorse or oppose any company. The purpose of this section is to improve public access to verified information.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <img src="../assets/images/logo/better-claver-logo.svg" alt="BetterClaver" class="footer-logo" />
+          <p class="footer-desc">Empowering the citizens of Claver with transparent, reliable access to municipal information, public services, and official records.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../services/">Services</a></li>
+            <li><a href="../government/">Government</a></li>
+            <li><a href="../industry/">Industry & Community</a></li>
+            <li><a href="../budget/">Transparency</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container text-center">
+          <p>&copy; 2026 BetterClaver.org | Public Information Portal. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
