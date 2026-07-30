@@ -1,7 +1,7 @@
 /**
  * BetterClaver Globalized Master Navbar & Footer Component System
- * Single Source of Truth for site-wide navigation, footer, active link highlighting,
- * dynamic contrast adaptation, and Apple-grade Liquid Glass scroll transitions.
+ * Single Source of Truth for site-wide navigation, footer, parent + child active link highlighting,
+ * dynamic contrast adaptation, mobile drawer toggle, and Apple-grade Liquid Glass scroll transitions.
  */
 
 (function () {
@@ -260,35 +260,123 @@
     }
 
     highlightActiveNav();
+    initMobileMenu();
     initNavbarScrollBehavior();
   }
 
+  // Parent & Active Child Page Detection
   function highlightActiveNav() {
-    const path = window.location.pathname;
-    const navLinks = document.querySelectorAll('.main-nav a[data-nav]');
+    const path = window.location.pathname.toLowerCase();
+    const currentFilename = path.split('/').filter(Boolean).pop() || 'index.html';
     
-    navLinks.forEach(link => {
+    // 1. Highlight Parent Top-Level Nav Link
+    const parentNavLinks = document.querySelectorAll('.main-nav > ul > li > a[data-nav]');
+    parentNavLinks.forEach(link => {
       const navKey = link.getAttribute('data-nav');
-      let isActive = false;
+      let isParentActive = false;
 
-      if (navKey === 'home' && (path === '/' || path.endsWith('/index.html') && !path.includes('/government/') && !path.includes('/services/') && !path.includes('/industry/') && !path.includes('/budget/') && !path.includes('/legislative/') && !path.includes('/about/'))) {
-        isActive = true;
-      } else if (navKey && path.includes('/' + navKey + '/')) {
-        isActive = true;
+      if (navKey === 'home') {
+        const isRoot = path === '/' || path.endsWith('/index.html') || path.endsWith('/betterclaver/') || path.endsWith('/betterclaver/index.html');
+        const isSubFolder = path.includes('/government/') || path.includes('/services/') || path.includes('/industry/') || path.includes('/budget/') || path.includes('/legislative/') || path.includes('/about/') || path.includes('/contact/') || path.includes('/emergency/') || path.includes('/service-details/');
+        if (isRoot && !isSubFolder) isParentActive = true;
+      } else if (navKey) {
+        if (path.includes('/' + navKey + '/') || (navKey === 'services' && path.includes('/service-details/'))) {
+          isParentActive = true;
+        }
       }
 
-      if (isActive) {
+      if (isParentActive) {
         link.classList.add('active');
+        link.setAttribute('aria-current', 'page');
       } else {
         link.classList.remove('active');
+        link.removeAttribute('aria-current');
       }
     });
+
+    // 2. Highlight Specific Active Child Item inside Dropdowns
+    const dropdownLinks = document.querySelectorAll('.main-nav .dropdown-menu a');
+    dropdownLinks.forEach(childLink => {
+      const href = (childLink.getAttribute('href') || '').toLowerCase();
+      let isChildActive = false;
+
+      if (href && href !== '#') {
+        const hrefFilename = href.split('/').filter(Boolean).pop();
+        if (hrefFilename && currentFilename && hrefFilename === currentFilename) {
+          isChildActive = true;
+        }
+      }
+
+      if (isChildActive) {
+        childLink.classList.add('active', 'active-child');
+        childLink.style.fontWeight = '700';
+        childLink.style.color = '#0032a0';
+        childLink.style.backgroundColor = 'rgba(0, 50, 160, 0.08)';
+      } else {
+        childLink.classList.remove('active', 'active-child');
+        childLink.style.fontWeight = '';
+        childLink.style.color = '';
+        childLink.style.backgroundColor = '';
+      }
+    });
+  }
+
+  // Mobile Menu & Touch Dropdown Controller
+  function initMobileMenu() {
+    const siteHeader = document.querySelector('.site-header');
+    if (!siteHeader) return;
+    const headerInner = siteHeader.querySelector('.header-inner');
+    const mainNav = siteHeader.querySelector('.main-nav');
+    if (!headerInner || !mainNav) return;
+
+    if (!siteHeader.querySelector('.mobile-menu-toggle')) {
+      const toggleBtn = document.createElement('button');
+      toggleBtn.className = 'mobile-menu-toggle btn btn-secondary';
+      toggleBtn.type = 'button';
+      toggleBtn.innerHTML = '<i class="bi bi-list" aria-hidden="true"></i>';
+      toggleBtn.setAttribute('aria-label', 'Toggle Navigation');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.setAttribute('aria-controls', 'main-nav');
+
+      const actions = siteHeader.querySelector('.header-actions');
+      if (actions) {
+        headerInner.insertBefore(toggleBtn, actions);
+      } else {
+        headerInner.appendChild(toggleBtn);
+      }
+
+      toggleBtn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
+        if (isExpanded) {
+          mainNav.classList.remove('is-open');
+          toggleBtn.setAttribute('aria-expanded', 'false');
+          toggleBtn.innerHTML = '<i class="bi bi-list" aria-hidden="true"></i>';
+        } else {
+          mainNav.classList.add('is-open');
+          toggleBtn.setAttribute('aria-expanded', 'true');
+          toggleBtn.innerHTML = '<i class="bi bi-x-lg" aria-hidden="true"></i>';
+        }
+      });
+
+      // Touch dropdown triggers for mobile
+      const dropdownTriggers = mainNav.querySelectorAll('.has-dropdown > a');
+      dropdownTriggers.forEach(trigger => {
+        trigger.addEventListener('click', function (e) {
+          if (window.innerWidth <= 1024) {
+            e.preventDefault();
+            const parentLi = trigger.parentElement;
+            parentLi.classList.toggle('mobile-expanded');
+          }
+        });
+      });
+    }
   }
 
   // Detect whether top of page hero background is dark tone
   function isDarkHeroPage() {
     const firstSection = document.querySelector('main > section:first-child, body > section:first-child, .home-hero-v2, .about-hero, .ind-hero, .page-hero, .gov-hero, .transparency-hero, .contact-hero');
-    if (!firstSection) return true; // Default dark hero tone for BetterClaver branded pages
+    if (!firstSection) return true;
     
     const className = (firstSection.className || '').toLowerCase();
     if (className.includes('hero') || className.includes('ind-hero') || className.includes('page-header')) return true;
