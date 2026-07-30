@@ -11101,3 +11101,115 @@ a.a11y-contact-item:hover i {
   }
 }
 
+
+
+/* ==========================================================================
+   Master Global Site Header & Liquid Glass System
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding: 12px 0;
+  transition: background-color 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              backdrop-filter 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              -webkit-backdrop-filter 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+              border-color 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* STATE 1: TOP OF PAGE (Fully Transparent) */
+.site-header.is-transparent {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid transparent !important;
+}
+
+/* STATE 1A: Transparent over Dark Hero (White Text & Logo) */
+.site-header.is-transparent.is-dark-hero .main-nav > ul > li > a {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.site-header.is-transparent.is-dark-hero .main-nav > ul > li > a:hover {
+  color: #7dd3fc !important;
+}
+
+.site-header.is-transparent.is-dark-hero .main-nav > ul > li > a.active {
+  color: #7dd3fc !important;
+  font-weight: 700;
+}
+
+.site-header.is-transparent.is-dark-hero .main-nav .has-dropdown > a::after {
+  border-top-color: #ffffff !important;
+}
+
+.site-header.is-transparent.is-dark-hero .lang-btn {
+  color: #ffffff !important;
+  border-color: rgba(255, 255, 255, 0.35) !important;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.site-header.is-transparent.is-dark-hero .lang-btn:hover,
+.site-header.is-transparent.is-dark-hero .lang-btn.active {
+  background-color: #ffffff !important;
+  color: #0032a0 !important;
+  border-color: #ffffff !important;
+}
+
+/* STATE 1B: Transparent over Light Hero (Dark Text & Logo) */
+.site-header.is-transparent.is-light-hero .main-nav > ul > li > a {
+  color: #334155 !important;
+}
+
+.site-header.is-transparent.is-light-hero .main-nav > ul > li > a:hover,
+.site-header.is-transparent.is-light-hero .main-nav > ul > li > a.active {
+  color: #0032a0 !important;
+}
+
+.site-header.is-transparent.is-light-hero .lang-btn {
+  color: #334155 !important;
+  border-color: #cbd5e1 !important;
+  background-color: #f8fafc !important;
+}
+
+/* STATE 2: SCROLLED (Apple-Grade Liquid Glassmorphism) */
+.site-header.is-scrolled {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08) !important;
+  border-bottom: 1px solid rgba(225, 231, 239, 0.75) !important;
+}
+
+.site-header.is-scrolled .main-nav > ul > li > a {
+  color: #334155 !important;
+  text-shadow: none !important;
+}
+
+.site-header.is-scrolled .main-nav > ul > li > a:hover,
+.site-header.is-scrolled .main-nav > ul > li > a.active {
+  color: #0032a0 !important;
+  font-weight: 700;
+}
+
+.site-header.is-scrolled .main-nav .has-dropdown > a::after {
+  border-top-color: #334155 !important;
+}
+
+.site-header.is-scrolled .lang-btn {
+  color: #334155 !important;
+  border-color: #cbd5e1 !important;
+  background-color: #f8fafc !important;
+}
+
+.site-header.is-scrolled .lang-btn:hover,
+.site-header.is-scrolled .lang-btn.active {
+  background-color: #0032a0 !important;
+  color: #ffffff !important;
+  border-color: #0032a0 !important;
+}

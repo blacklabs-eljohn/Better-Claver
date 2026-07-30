@@ -1,7 +1,7 @@
 /**
- * BetterClaver Globalized Navbar & Footer Component System
- * Single source of truth for site-wide navigation, footer, active link highlighting,
- * and page-specific Liquid Glass header scroll transitions.
+ * BetterClaver Globalized Master Navbar & Footer Component System
+ * Single Source of Truth for site-wide navigation, footer, active link highlighting,
+ * dynamic contrast adaptation, and Apple-grade Liquid Glass scroll transitions.
  */
 
 (function () {
@@ -10,14 +10,11 @@
   // Compute relative path prefix based on current pathname depth
   function getRelPrefix() {
     const path = window.location.pathname;
-    // Strip trailing slash if present for counting
     const cleanPath = path.endsWith('/') ? path.slice(0, -1) : path;
     const segments = cleanPath.split('/').filter(Boolean);
 
-    // If local file:// protocol or root path, inspect path relative to BetterClaver root
     if (segments.length === 0) return './';
     
-    // Check key known directories
     const lastSeg = segments[segments.length - 1];
     if (lastSeg.endsWith('.html')) segments.pop();
     
@@ -28,8 +25,7 @@
 
   const rel = getRelPrefix();
 
-  // Canonical Header HTML
-  function getCanonicalHeaderHTML() {
+  function getHotlineHTML() {
     return `
     <div class="hotline-bar">
       <div class="container">
@@ -44,16 +40,20 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>`;
+  }
 
-    <header class="site-header">
+  function getHeaderHTML() {
+    return `
+    <header class="site-header" id="main-site-header">
       <div class="container header-inner">
         <div class="logo-container">
-          <a href="${rel}">
-            <img src="${rel}assets/images/logo/better-claver-logo.svg" alt="Better Claver Logo" class="logo-img" />
+          <a href="${rel}" aria-label="Better Claver Home">
+            <img src="${rel}assets/images/logo/better-claver-logo.svg" alt="Better Claver Logo" class="logo-img logo-img-colored" />
+            <img src="${rel}assets/images/logo/better-claver-logo-white.svg" alt="Better Claver Logo" class="logo-img logo-img-white" style="display:none;" />
           </a>
         </div>
-        <nav class="main-nav" aria-label="Main Navigation">
+        <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
           <ul>
             <li><a href="${rel}" data-nav="home">Home</a></li>
             <li class="has-dropdown">
@@ -107,8 +107,7 @@
     </header>`;
   }
 
-  // Canonical Home Page Default Footer HTML
-  function getCanonicalFooterHTML() {
+  function getFooterHTML() {
     return `
     <footer class="site-footer">
       <div class="container">
@@ -216,47 +215,54 @@
     </footer>`;
   }
 
-  // Inject or Hydrate Header and Footer
+  // Inject Header & Footer directly into Body
   function initHeaderAndFooter() {
-    // Replace/hydrate Header
-    const existingHeader = document.querySelector('.site-header');
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = getHotlineHTML() + getHeaderHTML();
+
+    const newHotline = tempDiv.querySelector('.hotline-bar');
+    const newHeader = tempDiv.querySelector('.site-header');
+
     const existingHotline = document.querySelector('.hotline-bar');
+    const existingHeader = document.querySelector('.site-header');
+    const globalWrapper = document.getElementById('global-header-wrapper');
 
-    if (existingHeader) {
+    if (globalWrapper) {
+      globalWrapper.parentNode.insertBefore(newHotline, globalWrapper);
+      globalWrapper.parentNode.insertBefore(newHeader, globalWrapper);
+      globalWrapper.remove();
+    } else if (existingHeader) {
       const parent = existingHeader.parentNode;
-      const headerWrapper = document.createElement('div');
-      headerWrapper.id = 'global-header-wrapper';
-      headerWrapper.innerHTML = getCanonicalHeaderHTML();
-
       if (existingHotline) existingHotline.remove();
-      parent.replaceChild(headerWrapper, existingHeader);
+      parent.insertBefore(newHotline, existingHeader);
+      parent.insertBefore(newHeader, existingHeader);
+      existingHeader.remove();
     } else {
-      const wrapper = document.createElement('div');
-      wrapper.id = 'global-header-wrapper';
-      wrapper.innerHTML = getCanonicalHeaderHTML();
-      document.body.insertBefore(wrapper, document.body.firstChild);
+      document.body.insertBefore(newHeader, document.body.firstChild);
+      document.body.insertBefore(newHotline, newHeader);
     }
 
     // Replace/hydrate Footer
     const existingFooter = document.querySelector('.site-footer');
-    if (existingFooter) {
-      const parent = existingFooter.parentNode;
-      const footerWrapper = document.createElement('div');
-      footerWrapper.id = 'global-footer-wrapper';
-      footerWrapper.innerHTML = getCanonicalFooterHTML();
-      parent.replaceChild(footerWrapper, existingFooter);
+    const globalFooterWrapper = document.getElementById('global-footer-wrapper');
+
+    const tempFooterDiv = document.createElement('div');
+    tempFooterDiv.innerHTML = getFooterHTML();
+    const newFooter = tempFooterDiv.querySelector('.site-footer');
+
+    if (globalFooterWrapper) {
+      globalFooterWrapper.parentNode.insertBefore(newFooter, globalFooterWrapper);
+      globalFooterWrapper.remove();
+    } else if (existingFooter) {
+      existingFooter.parentNode.replaceChild(newFooter, existingFooter);
     } else {
-      const wrapper = document.createElement('div');
-      wrapper.id = 'global-footer-wrapper';
-      wrapper.innerHTML = getCanonicalFooterHTML();
-      document.body.appendChild(wrapper);
+      document.body.appendChild(newFooter);
     }
 
     highlightActiveNav();
     initNavbarScrollBehavior();
   }
 
-  // Active Nav Link Highlighting
   function highlightActiveNav() {
     const path = window.location.pathname;
     const navLinks = document.querySelectorAll('.main-nav a[data-nav]');
@@ -265,7 +271,7 @@
       const navKey = link.getAttribute('data-nav');
       let isActive = false;
 
-      if (navKey === 'home' && (path === '/' || path.endsWith('/index.html') && !path.includes('/government/') && !path.includes('/services/') && !path.includes('/industry/') && !path.includes('/budget/') && !path.includes('/legislative/'))) {
+      if (navKey === 'home' && (path === '/' || path.endsWith('/index.html') && !path.includes('/government/') && !path.includes('/services/') && !path.includes('/industry/') && !path.includes('/budget/') && !path.includes('/legislative/') && !path.includes('/about/'))) {
         isActive = true;
       } else if (navKey && path.includes('/' + navKey + '/')) {
         isActive = true;
@@ -279,45 +285,70 @@
     });
   }
 
-  // Navbar Scroll & Liquid Glass Transition Rules
+  // Detect whether top of page hero background is dark tone
+  function isDarkHeroPage() {
+    const firstSection = document.querySelector('main > section:first-child, body > section:first-child, .home-hero-v2, .about-hero, .ind-hero, .page-hero, .gov-hero, .transparency-hero, .contact-hero');
+    if (!firstSection) return true; // Default dark hero tone for BetterClaver branded pages
+    
+    const className = (firstSection.className || '').toLowerCase();
+    if (className.includes('hero') || className.includes('ind-hero') || className.includes('page-header')) return true;
+    return true;
+  }
+
+  // Apple-Grade Liquid Glass Scroll Controller
   function initNavbarScrollBehavior() {
     const siteHeader = document.querySelector('.site-header');
     if (!siteHeader) return;
 
-    const path = window.location.pathname;
-    // Check if current page is Home page or About page
-    const isHomeOrAbout = (
-      path === '/' ||
-      path.endsWith('/index.html') && path.split('/').filter(Boolean).length <= 1 ||
-      path.includes('/about/')
-    );
+    const darkHero = isDarkHeroPage();
+    const coloredLogo = siteHeader.querySelector('.logo-img-colored');
+    const whiteLogo = siteHeader.querySelector('.logo-img-white');
+
+    let ticking = false;
 
     const updateHeaderState = () => {
       const scrollY = window.scrollY || window.pageYOffset;
 
-      if (isHomeOrAbout) {
-        // Rule 1: Home & About page start transparent, transition to liquid glass on scroll
-        if (scrollY <= 20) {
-          siteHeader.classList.add('is-transparent');
-          siteHeader.classList.remove('is-scrolled');
+      if (scrollY <= 20) {
+        // STATE 1 — TOP OF PAGE (Fully Transparent)
+        siteHeader.classList.add('is-transparent');
+        siteHeader.classList.remove('is-scrolled');
+
+        if (darkHero) {
+          siteHeader.classList.add('is-dark-hero');
+          siteHeader.classList.remove('is-light-hero');
+          if (coloredLogo && whiteLogo) {
+            coloredLogo.style.display = 'none';
+            whiteLogo.style.display = 'inline-block';
+          }
         } else {
-          siteHeader.classList.remove('is-transparent');
-          siteHeader.classList.add('is-scrolled');
+          siteHeader.classList.add('is-light-hero');
+          siteHeader.classList.remove('is-dark-hero');
+          if (coloredLogo && whiteLogo) {
+            coloredLogo.style.display = 'inline-block';
+            whiteLogo.style.display = 'none';
+          }
         }
       } else {
-        // Rule 2: All other interior pages start solid white, transition to liquid glass on scroll
-        if (scrollY <= 20) {
-          siteHeader.classList.remove('is-transparent');
-          siteHeader.classList.remove('is-scrolled');
-        } else {
-          siteHeader.classList.remove('is-transparent');
-          siteHeader.classList.add('is-scrolled');
+        // STATE 2 — SCROLLED (Liquid Glassmorphism)
+        siteHeader.classList.remove('is-transparent', 'is-dark-hero', 'is-light-hero');
+        siteHeader.classList.add('is-scrolled');
+
+        if (coloredLogo && whiteLogo) {
+          coloredLogo.style.display = 'inline-block';
+          whiteLogo.style.display = 'none';
         }
       }
+      ticking = false;
     };
 
     updateHeaderState();
-    window.addEventListener('scroll', updateHeaderState, { passive: true });
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeaderState);
+        ticking = true;
+      }
+    }, { passive: true });
   }
 
   if (document.readyState === 'loading') {
